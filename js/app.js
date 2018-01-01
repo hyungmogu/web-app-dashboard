@@ -15,20 +15,20 @@ let trafficChart = new Chart(TRAFFIC, {
       fill: true,
       lineTension: 0.1,
       backgroundColor: "rgba(116, 119, 190, 0.4)",
-      borderColor: "rgba(75, 192, 192, 1)",
-      borderWidth: 1,
+      borderColor: "rgba(116, 119, 190, 1)",
+      borderWidth: 2,
       borderCapStyle: "butt",
       borderDash: [],
       borderDashOffset: 0.0,
       borderJoinStyle: "miter",
-      pointBorderColor: "rgba(75,192,192,1)",
-      pointBackgroundColor: "#fff",
-      pointBorderWidth: 1,
+      pointBorderColor: "rgba(116, 119, 190, 1)",
+      pointBackgroundColor: "white",
+      pointBorderWidth: 3,
       pointHoverRadius: 5,
-      pointHoverBackgroundColor: "rgba(75,192,192,1)",
+      pointHoverBackgroundColor: "rgba(116, 119, 190, 1)",
       pointHoverBorderWidth: 2,
-      pointRadius: 1,
-      pointHitRadius: 10,
+      pointRadius: 6,
+      pointHitRadius: 15,
       data: [0,500, 1000, 750, 1250, 1750, 1250, 1500, 1000, 1500, 2000, 1500, 2000]
     }]
   },
@@ -39,7 +39,9 @@ let trafficChart = new Chart(TRAFFIC, {
           offsetGridLines: true
         },
         ticks: {
-          beginAtZero: true
+          beginAtZero: true,
+          stepSize: 500,
+          suggestedMax: 2500
         }
       }],
       xAxes: [{
@@ -71,7 +73,9 @@ let dtrafficChart = new Chart(DTRAFFIC, {
           offsetGridLines: true
         },
         ticks: {
-          beginAtZero: true
+          beginAtZero: true,
+          stepSize: 50,
+          suggestedMax: 250
         }
       }]
     },
