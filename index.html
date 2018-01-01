@@ -7,6 +7,58 @@
         <link rel="stylesheet" href="css/style.css" />
     </head>
     <body>
-        Hello World
+        <div class="grid__row">
+          <div class="g__col--6">
+            <div class="traffic">
+              <h3 class="section__title">Daily Traffic</h3>
+              <canvas id="graph--dtraffic" width="100%"></canvas>
+            </div>
+          </div>
+          <div class="g__col--6">
+            <div class="users">
+              <h3 class="section__title">Number of Users</h3>
+              <canvas id="graph--user" width="100%"></canvas>
+            </div>
+          </div>
+        </div>
+        <div class="grid__row">
+          <div class="g__col--4">
+            <div class="stat--fb">
+              <div class="stat__icon">
+                <svg width="50px" height="50px">
+                  <use xlink:href="sprite.svg#icon-facebook" class="icon--fb">
+                </svg>
+              </div>
+              <h4 class="stat__title">Facebook</h4>
+              <span class="stat__number">400000</span>
+            </div>
+          </div>
+          <div class="g__col--4">
+            <div class="stat--twt">
+              <div class="stat__icon">
+                <svg width="50px" height="50px">
+                  <use xlink:href="sprite.svg#icon-twitter" class="icon--twt">
+                </svg>
+              </div>
+              <h4 class="stat__title">Twitter</h4>
+              <span class="stat__number">400000</span>
+            </div>
+          </div>
+          <div class="g__col--4">
+            <div class="stat--gp">
+              <div class="stat__icon">
+                <svg width="50px" height="50px">
+                  <use xlink:href="sprite.svg#icon-google-plus" class="icon--gp">
+                </svg>
+              </div>
+              <h4 class="stat__title">Google Plus</h4>
+              <span class="stat__number">400000</span>
+            </div>
+          </div>
+        </div>
+        <div class="grid__row">
+        </div>
+        <div class="grid__row">
+        </div>
     </body>
 </html>
