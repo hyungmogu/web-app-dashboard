@@ -44,6 +44,9 @@ let trafficChart = new Chart(TRAFFIC, {
           offsetGridLines: true
         }
       }]
+    },
+    legend: {
+      display: false
     }
   }
 });
@@ -59,9 +62,16 @@ let dtrafficChart = new Chart(DTRAFFIC, {
     }]
   },
   options: {
-      scales: {
-
-      }
+    scales: {
+      yAxes: [{
+        gridLines: {
+          offsetGridLines: true
+        }
+      }]
+    },
+    legend: {
+      display: false
+    }
   }
 });
 
