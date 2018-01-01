@@ -37,6 +37,9 @@ let trafficChart = new Chart(TRAFFIC, {
       yAxes: [{
         gridLines: {
           offsetGridLines: true
+        },
+        ticks: {
+          beginAtZero: true
         }
       }],
       xAxes: [{
@@ -66,6 +69,9 @@ let dtrafficChart = new Chart(DTRAFFIC, {
       yAxes: [{
         gridLines: {
           offsetGridLines: true
+        },
+        ticks: {
+          beginAtZero: true
         }
       }]
     },
