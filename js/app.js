@@ -36,12 +36,13 @@ let trafficChart = new Chart(TRAFFIC, {
     scales: {
       yAxes: [{
         gridLines: {
-          offsetGridLines: true
+          offsetGridLines: true,
+          drawTicks: false
         },
         ticks: {
           beginAtZero: true,
           stepSize: 500,
-          suggestedMax: 2500
+          suggestedMax: 3000
         }
       }],
       xAxes: [{
@@ -70,7 +71,8 @@ let dtrafficChart = new Chart(DTRAFFIC, {
     scales: {
       yAxes: [{
         gridLines: {
-          offsetGridLines: true
+          offsetGridLines: true,
+          drawTicks: false
         },
         ticks: {
           beginAtZero: true,
