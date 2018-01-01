@@ -10,9 +10,8 @@ const USER = document.getElementById("graph--user");
 let trafficChart = new Chart(TRAFFIC, {
   type: "line",
   data: {
-    labels: ["Red", "Blue", "Yellow", "Green", "Purple", "Orange"],
+    labels: ["9-15","16-22", "23-29", "30-5", "6-12", "13-19", "20-26", "27-3", "4-10", "11-17", "18-24", "25-31"],
     datasets: [{
-      label: "My first dataset",
       fill: true,
       lineTension: 0.1,
       backgroundColor: "rgba(116, 119, 190, 0.4)",
@@ -30,8 +29,22 @@ let trafficChart = new Chart(TRAFFIC, {
       pointHoverBorderWidth: 2,
       pointRadius: 1,
       pointHitRadius: 10,
-      data: [12, 19, 3, 5, 2, 3]
+      data: [0,500, 1000, 750, 1250, 1750, 1250, 1500, 1000, 1500, 2000, 1500, 2000]
     }]
+  },
+  options: {
+    scales: {
+      yAxes: [{
+        gridLines: {
+          offsetGridLines: true
+        }
+      }],
+      xAxes: [{
+        gridLines: {
+          offsetGridLines: true
+        }
+      }]
+    }
   }
 });
 
@@ -40,7 +53,6 @@ let dtrafficChart = new Chart(DTRAFFIC, {
   data: {
     labels: ["S", "M", "T", "W", "T", "F", "S"],
     datasets: [{
-      label: "Daily Traffic",
       data: [50, 75, 175, 100, 200, 175, 75],
       backgroundColor: "rgba(116, 119, 190, 1)",
       borderWidth: 1
@@ -56,7 +68,7 @@ let dtrafficChart = new Chart(DTRAFFIC, {
 let userChart = new Chart(USER, {
   type: "doughnut",
   data: {
-    labels: ["strength", "skill", "health"],
+    labels: ["Desktop", "Tablet", "Mobile"],
     datasets: [{
       label: "My Strength",
       backgroundColor: ["#7477BE", "#81C98F", "#74B1BF"],
