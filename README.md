@@ -7,7 +7,7 @@
 - Usage
 
 ## Rubric
-- The rubric of this project can be found [here](https://drive.google.com/open?id=1b_CzkTu1fXhnLcMHK6FbpCCyVufHU1z1)
+- See [here](https://drive.google.com/open?id=1b_CzkTu1fXhnLcMHK6FbpCCyVufHU1z1)
 - The finished version of this project must look like the [following](https://drive.google.com/open?id=1sJFmBBuHhQLzU648M1aYBsjiFhM-OlWU)
 
 ## Demo
