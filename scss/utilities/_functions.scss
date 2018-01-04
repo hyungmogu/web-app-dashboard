@@ -1,0 +1,8 @@
+/*
+*
+* @description - converts font unit to em
+*
+*/
+@function em($target, $context: $font__size--base) {
+  @return ($target/$context) * 1em;
+}

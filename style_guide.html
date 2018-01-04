@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Web app dashboard style guide</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="grid__row">
+      <div class="g__col--3">
+        <a class="link" href="/">
+          <h1 class="logo">YourApp</h1>
+        </a>
+      </div>
+      <div class="g__col--9">
+        <nav role="navigation">
+          <ul class="nav--primary">
+            <li class="nav__item">
+              <a href="#">
+                <svg>
+                  <use class="icon icon--bell" xlink:href="sprite.svg#icon-bell" />
+                </svg>
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#">
+                <div class="branding">
+                  <img class="img--profile" src="#" />
+                </div>
+                <span>John Wilks</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <h4>Buttons</h4>
+    <div class="grid__row">
+      <div class="g__col--12">
+        <button class="btn btn--default">Default</button>
+        <button class="btn btn--info">Info</button>
+        <button class="btn btn--success">Success</button>
+      </div>
+    </div>
+    <h4>Grid Systems</h4>
+    <div class="grid__row">
+      <div class="g__col--12 theme__colors border">.grid__col--12</div>
+    </div>
+    <div class="grid__row">
+      <div class="g__col--6 theme__colors border">.grid__col--6</div>
+      <div class="g__col--6 theme__colors border">.grid__col--6</div>
+    </div>
+    <div class="grid__row">
+      <div class="g__col--4 theme__colors border">.grid__col--4</div>
+      <div class="g__col--4 theme__colors border">.grid__col--4</div>
+      <div class="g__col--4 theme__colors border">.grid__col--4</div>
+    </div>
+    <div class="grid__row">
+      <div class="g__col--3 theme__colors border">.grid__col--3</div>
+      <div class="g__col--3 theme__colors border">.grid__col--3</div>
+      <div class="g__col--3 theme__colors border">.grid__col--3</div>
+      <div class="g__col--3 theme__colors border">.grid__col--3</div>
+    </div>
+    <div class="grid__row">
+      <div class="g__col--5 theme__colors border">.grid__col--5</div>
+      <div class="g__col--7 theme__colors border">.grid__col--7</div>
+    </div>
+    <div class="grid__row">
+      <div class="g__col--8 theme__colors border">.grid__col--8</div>
+      <div class="g__col--4 theme__colors border">.grid__col--4</div>
+    </div>
+  </body>
+</html>
