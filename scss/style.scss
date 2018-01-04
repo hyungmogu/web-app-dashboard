@@ -52,151 +52,16 @@
   display: flex;
   flex-direction: column;
 
-  @media (min-width: 454px) {
+  @media #{$brk-mobile} {
     flex-direction: row;
   }
 }
 
-.g__col--12 {
-  padding: 25px;
-  width: 100%;
-
-  &.theme__colors {
-    background-color: darken(#7477BE, 0%);
-  }
-  @media (min-width: 454px) {
-    width: 100%;
-  }
-}
-
-.g__col--11 {
-  padding: 25px;
-  width: 100%;
-
-  &.theme__colors {
-    background-color: darken(#7477BE, 0%);
-  }
-  @media (min-width: 454px) {
-    width: 91.66666666%;
-  }
-}
-
-.g__col--10 {
-  padding: 25px;
-  width: 100%;
-
-  &.theme__colors {
-    background-color: darken(grey, 0%);
-  }
-  @media (min-width: 454px) {
-    width: 83.33333333%;
-  }
-}
-
-.g__col--9 {
-  padding: 25px;
-  width: 100%;
-
-  &.theme__colors {
-    background-color: darken(grey, 0%);
-  }
-  @media (min-width: 454px) {
-    width: 75%;
-  }
-}
-
-.g__col--8 {
-  padding: 25px;
-  width: 100%;
-
-  &.theme__colors {
-    background-color: darken(grey, 0%);
-  }
-  @media (min-width: 454px) {
-    width: 66.6666666%;
-  }
-}
-
-.g__col--7 {
-  padding: 25px;
-  width: 100%;
-
-  &.theme__colors {
-    background-color: darken(grey, 0%);
-  }
-  @media (min-width: 454px) {
-    width: 58.33333333%;
-  }
-}
-
-.g__col--6 {
-  padding: 25px;
-  width: 100%;
-
-  &.theme__colors {
-    background-color: darken(grey, 0%);
-  }
-  @media (min-width: 454px) {
-    width: 50%;
-  }
-}
-
-.g__col--5 {
-  padding: 25px;
-  width: 100%;
-
-  &.theme__colors {
-    background-color: darken(grey, 0%);
-  }
-  @media (min-width: 454px) {
-    width: 41.6666666%;
-  }
-}
-
-.g__col--4 {
-  padding: 25px;
-  width: 100%;
-
-  &.theme__colors {
-    background-color: darken(grey, 0%);
-  }
-  @media (min-width: 454px) {
-    width: 33.33333333%;
-  }
-}
-
-.g__col--3 {
-  padding: 25px;
-  width: 100%;
-
-  &.theme__colors {
-    background-color: darken(grey, 0%);
-  }
-  @media (min-width: 454px) {
-    width: 25%;
-  }
-}
-
-.g__col--2 {
-  padding: 25px;
-  width: 100%;
-
-  &.theme__colors {
-    background-color: darken(grey, 0%);
-  }
-  @media (min-width: 454px) {
-    width: 16.6666667%;
-  }
-}
-
-.g__col--1 {
-  padding: 25px;
-  width: 100%;
-
-  &.theme__colors {
-    background-color: darken(grey, 0%);
-  }
-  @media (min-width: 454px) {
-    width: 8.33333333%;
+@for $i from 1 through $g-col-count {
+  .g__col--#{$i} {
+    @extend %g__col;
+    @media #{$brk-mobile} {
+      width: percentage($i/$g-col-count);
+    }
   }
 }
