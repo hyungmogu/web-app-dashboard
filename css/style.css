@@ -4,16 +4,16 @@
 *
 */
 .g__col--1, .g__col--2, .g__col--3, .g__col--4, .g__col--5, .g__col--6, .g__col--7, .g__col--8, .g__col--9, .g__col--10, .g__col--11, .g__col--12 {
-  padding: 25px;
+  padding: 1.5625em;
   width: 100%; }
   .theme__colors.g__col--1, .theme__colors.g__col--2, .theme__colors.g__col--3, .theme__colors.g__col--4, .theme__colors.g__col--5, .theme__colors.g__col--6, .theme__colors.g__col--7, .theme__colors.g__col--8, .theme__colors.g__col--9, .theme__colors.g__col--10, .theme__colors.g__col--11, .theme__colors.g__col--12 {
     background-color: grey; }
 
 .btn {
   border-style: none;
-  border-radius: 5px;
+  border-radius: 0.3125em;
   color: white;
-  padding: 15px 30px;
+  padding: 0.9375em 1.875em;
   cursor: pointer; }
 
 /*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */
@@ -411,7 +411,7 @@ template {
   box-sizing: border-box; }
 
 .border {
-  border: 1px solid darkgrey; }
+  border: 0.0625em solid darkgrey; }
 
 .btn--default {
   background-color: #7477BE; }

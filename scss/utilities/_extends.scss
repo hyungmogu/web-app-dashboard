@@ -1,5 +1,5 @@
 %g__col {
-  padding: 25px;
+  padding: em(25px);
   width: 100%;
 
   &.theme__colors {
@@ -9,8 +9,8 @@
 
 %btn {
   border-style: none;
-  border-radius: 5px;
+  border-radius: em(5px);
   color: white;
-  padding: 15px 30px;
+  padding: em(15px) em(30px);
   cursor: pointer;
 }
