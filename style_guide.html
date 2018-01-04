@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Web app dashboard style guide</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="grid__row">
+      <div class="g__col--3">
+        <a class="link" href="/">
+          <h1 class="logo">YourApp</h1>
+        </a>
+      </div>
+      <div class="g__col--9">
+        <nav role="navigation">
+          <ul class="nav--primary">
+            <li class="nav__item">
+              <a href="#">
+                <svg>
+                  <use class="icon icon--bell" xlink:href="sprite.svg#icon-bell" />
+                </svg>
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#">
+                <div class="branding">
+                  <img class="img--profile" src="#" />
+                </div>
+                <span>John Wilks</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <h4>Buttons</h4>
+    <div class="grid__row">
+      <div class="g__col--12">
+        <button class="btn--default">Default</button>
+        <button class="btn--info">Info</button>
+        <button class="btn--success">Success</button>
+      </div>
+    </div>
+  </body>
+</html>

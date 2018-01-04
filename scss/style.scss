@@ -1,3 +1,35 @@
 @import "utilities/index";
 @import "base/index";
 @import "components/index";
+
+
+//------------------------------------------------------
+// Buttons
+//------------------------------------------------------
+
+.btn--default {
+  border-style: none;
+  border-radius: 5px;
+  color: white;
+  padding: 15px 30px;
+  background-color: #7477BE;
+  cursor: pointer;
+}
+
+.btn--info {
+  border-style: none;
+  border-radius: 5px;
+  color: white;
+  padding: 15px 30px;
+  background-color: grey;
+  cursor: pointer;
+}
+
+.btn--success {
+  border-style: none;
+  border-radius: 5px;
+  color: white;
+  padding: 15px 30px;
+  background-color: #81C98F;
+  cursor: pointer;
+}
