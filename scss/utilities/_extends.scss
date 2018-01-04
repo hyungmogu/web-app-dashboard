@@ -4,5 +4,13 @@
 
   &.theme__colors {
     background-color: grey;
-  }  
+  }
+}
+
+%btn {
+  border-style: none;
+  border-radius: 5px;
+  color: white;
+  padding: 15px 30px;
+  cursor: pointer;
 }

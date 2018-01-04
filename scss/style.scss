@@ -17,31 +17,20 @@
 // Buttons
 //------------------------------------------------------
 
-.btn--default {
-  border-style: none;
-  border-radius: 5px;
-  color: white;
-  padding: 15px 30px;
-  background-color: #7477BE;
-  cursor: pointer;
-}
+.btn {
+  @extend %btn;
 
-.btn--info {
-  border-style: none;
-  border-radius: 5px;
-  color: white;
-  padding: 15px 30px;
-  background-color: grey;
-  cursor: pointer;
-}
+  &--default {
+    background-color: #7477BE;
+  }
 
-.btn--success {
-  border-style: none;
-  border-radius: 5px;
-  color: white;
-  padding: 15px 30px;
-  background-color: #81C98F;
-  cursor: pointer;
+  &--info {
+    background-color: grey;
+  }
+
+  &--success {
+    background-color: #81C98F;
+  }
 }
 
 //------------------------------------------------------
