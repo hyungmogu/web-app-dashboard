@@ -429,6 +429,8 @@ template {
     width: 33.333333%; }
   .stat__detail {
     width: 66.666666%; }
+  .stat__title {
+    margin-top: 0; }
 
 .grid__row {
   display: flex;
