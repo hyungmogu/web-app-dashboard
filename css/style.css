@@ -413,12 +413,29 @@ template {
 .border {
   border: 0.0625em solid darkgrey; }
 
+.list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0; }
+
 .btn--default {
   background-color: #7477BE; }
 .btn--info {
   background-color: grey; }
 .btn--success {
   background-color: #81C98F; }
+
+.stat {
+  display: flex;
+  padding: 1.5625em;
+  background-color: #f8f8f8;
+  align-items: center; }
+  .stat__icon {
+    width: 33.333333%; }
+  .stat__detail {
+    width: 66.666666%; }
+  .stat__title {
+    margin-top: 0; }
 
 .grid__row {
   display: flex;
@@ -474,5 +491,33 @@ template {
 @media (min-width: 454px) {
   .g__col--12 {
     width: 100%; } }
+
+.notification {
+  display: flex;
+  align-items: center;
+  padding: 1.25em 1.25em;
+  border-radius: 0.3125em;
+  color: white; }
+  .notification .title {
+    margin: 0 0.625em 0 0; }
+  .notification .detail {
+    margin-left: 0.625em; }
+  .notification .close {
+    margin-left: auto; }
+    .notification .close * {
+      border-style: none;
+      background-color: transparent;
+      color: white;
+      cursor: pointer;
+      font-weight: bold; }
+  .notification--default {
+    background-color: #7477BE; }
+  .notification--info {
+    background-color: grey; }
+  .notification--success {
+    background-color: #81C98F; }
+
+.img--profile {
+  border-radius: 50%; }
 
 /*# sourceMappingURL=style.css.map */

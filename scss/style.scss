@@ -13,6 +13,12 @@
   border: em(1px) solid darkgrey;
 }
 
+.list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
 //------------------------------------------------------
 // Buttons
 //------------------------------------------------------
@@ -34,6 +40,32 @@
 }
 
 //------------------------------------------------------
+// Social stats
+//------------------------------------------------------
+
+.stat {
+  display: flex;
+  padding: em(25px);
+  background-color: lighten(grey, 47%);
+  align-items:center;
+
+  &__icon {
+    width: 33.333333%;
+  }
+
+  &__detail {
+    width: 66.666666%
+
+  }
+
+  &__title {
+    margin-top: 0;
+  }
+}
+
+
+
+//------------------------------------------------------
 // Grid
 //------------------------------------------------------
 
@@ -53,4 +85,52 @@
       width: percentage($i/$g-col-count);
     }
   }
+}
+
+//------------------------------------------------------
+// Notifications
+//------------------------------------------------------
+
+.notification {
+  display: flex;
+  align-items: center;
+  padding: em(20px) em(20px);
+  border-radius: em(5px);
+  color: white;
+
+  .title {
+    margin: 0 em(10px) 0 0;
+  }
+  .detail {
+    margin-left: em(10px);
+  }
+  .close {
+    margin-left: auto;
+
+    * {
+      border-style: none;
+      background-color: transparent;
+      color: white;
+      cursor: pointer;
+      font-weight: bold;
+    }
+  }
+
+  &--default {
+    background-color: #7477BE;
+  }
+
+  &--info {
+    background-color: grey;
+  }
+
+  &--success {
+    background-color: #81C98F;
+  }
+}
+//------------------------------------------------------
+// Image
+//------------------------------------------------------
+.img--profile {
+  border-radius: 50%;
 }
