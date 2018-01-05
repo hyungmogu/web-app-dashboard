@@ -475,4 +475,7 @@ template {
   .g__col--12 {
     width: 100%; } }
 
+.img--profile {
+  border-radius: 50%; }
+
 /*# sourceMappingURL=style.css.map */
