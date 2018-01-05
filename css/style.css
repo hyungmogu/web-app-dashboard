@@ -423,7 +423,8 @@ template {
 .stat {
   display: flex;
   padding: 1.5625em;
-  background-color: #f8f8f8; }
+  background-color: #f8f8f8;
+  align-items: center; }
   .stat__icon {
     width: 33.333333%; }
   .stat__detail {
