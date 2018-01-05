@@ -13,6 +13,12 @@
   border: em(1px) solid darkgrey;
 }
 
+.list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
 //------------------------------------------------------
 // Buttons
 //------------------------------------------------------
@@ -52,5 +58,47 @@
     @media #{$brk-mobile} {
       width: percentage($i/$g-col-count);
     }
+  }
+}
+
+//------------------------------------------------------
+// Notifications
+//------------------------------------------------------
+
+.notification {
+  display: flex;
+  align-items: center;
+  padding: em(20px) em(20px);
+  border-radius: em(5px);
+  color: white;
+
+  .title {
+    margin: 0 em(10px) 0 0;
+  }
+  .detail {
+    margin-left: em(10px);
+  }
+  .close {
+    margin-left: auto;
+
+    * {
+      border-style: none;
+      background-color: transparent;
+      color: white;
+      cursor: pointer;
+      font-weight: bold;
+    }
+  }
+
+  &--default {
+    background-color: #7477BE;
+  }
+
+  &--info {
+    background-color: grey;
+  }
+
+  &--success {
+    background-color: #81C98F;
   }
 }
