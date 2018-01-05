@@ -39,6 +39,8 @@
 
 .stat {
   display: flex;
+  padding: em(25px);
+  background-color: lighten(grey, 47%);
 
   &__icon {
     width: 33.333333%;
