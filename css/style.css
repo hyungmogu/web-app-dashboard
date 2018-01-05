@@ -420,6 +420,13 @@ template {
 .btn--success {
   background-color: #81C98F; }
 
+.stat {
+  display: flex; }
+  .stat__icon {
+    width: 33.333333%; }
+  .stat__detail {
+    width: 66.666666%; }
+
 .grid__row {
   display: flex;
   flex-direction: column; }
