@@ -425,6 +425,18 @@ template {
 .btn--success {
   background-color: #81C98F; }
 
+.stat {
+  display: flex;
+  padding: 1.5625em;
+  background-color: #f8f8f8;
+  align-items: center; }
+  .stat__icon {
+    width: 33.333333%; }
+  .stat__detail {
+    width: 66.666666%; }
+  .stat__title {
+    margin-top: 0; }
+
 .grid__row {
   display: flex;
   flex-direction: column; }
