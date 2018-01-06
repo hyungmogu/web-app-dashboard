@@ -171,7 +171,25 @@
   .see-more {
     width: 10%;
     transform: rotate(-135deg);
-    text-align: center;Z
+    text-align: center;
+  }
+}
+
+.infobox--members {
+  display: flex;
+  flex-direction: column;
+
+  .date {
+    width: 100%;
+
+    @media #{$brk-mobile} {
+      width: initial;
+      text-align: center;
+    }
+  }
+
+  @media #{$brk-mobile} {
+    flex-direction: row;
   }
 }
 

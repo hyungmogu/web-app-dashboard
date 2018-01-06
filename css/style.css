@@ -1,57 +1,583 @@
 /*
-Error: Invalid CSS after "...align: center;Z": expected "{", was "}"
-        on line 175 of scss/style.scss
-
-170: 
-171:   .see-more {
-172:     width: 10%;
-173:     transform: rotate(-135deg);
-174:     text-align: center;Z
-175:   }
-176: }
-177: 
-178: .infobox {
-179:   display: flex;
-180:   align-items: center;
-
-Backtrace:
-scss/style.scss:175
-/var/lib/gems/2.3.0/gems/sass-3.5.4/lib/sass/scss/parser.rb:1278:in `expected'
-/var/lib/gems/2.3.0/gems/sass-3.5.4/lib/sass/scss/parser.rb:1208:in `expected'
-/var/lib/gems/2.3.0/gems/sass-3.5.4/lib/sass/scss/parser.rb:1203:in `tok!'
-/var/lib/gems/2.3.0/gems/sass-3.5.4/lib/sass/scss/parser.rb:677:in `block'
-/var/lib/gems/2.3.0/gems/sass-3.5.4/lib/sass/scss/parser.rb:747:in `declaration_or_ruleset'
-/var/lib/gems/2.3.0/gems/sass-3.5.4/lib/sass/scss/parser.rb:697:in `block_child'
-/var/lib/gems/2.3.0/gems/sass-3.5.4/lib/sass/scss/parser.rb:689:in `block_contents'
-/var/lib/gems/2.3.0/gems/sass-3.5.4/lib/sass/scss/parser.rb:678:in `block'
-/var/lib/gems/2.3.0/gems/sass-3.5.4/lib/sass/scss/parser.rb:747:in `declaration_or_ruleset'
-/var/lib/gems/2.3.0/gems/sass-3.5.4/lib/sass/scss/parser.rb:697:in `block_child'
-/var/lib/gems/2.3.0/gems/sass-3.5.4/lib/sass/scss/parser.rb:689:in `block_contents'
-/var/lib/gems/2.3.0/gems/sass-3.5.4/lib/sass/scss/parser.rb:678:in `block'
-/var/lib/gems/2.3.0/gems/sass-3.5.4/lib/sass/scss/parser.rb:670:in `ruleset'
-/var/lib/gems/2.3.0/gems/sass-3.5.4/lib/sass/scss/parser.rb:696:in `block_child'
-/var/lib/gems/2.3.0/gems/sass-3.5.4/lib/sass/scss/parser.rb:689:in `block_contents'
-/var/lib/gems/2.3.0/gems/sass-3.5.4/lib/sass/scss/parser.rb:137:in `stylesheet'
-/var/lib/gems/2.3.0/gems/sass-3.5.4/lib/sass/scss/parser.rb:41:in `parse'
-/var/lib/gems/2.3.0/gems/sass-3.5.4/lib/sass/engine.rb:414:in `_to_tree'
-/var/lib/gems/2.3.0/gems/sass-3.5.4/lib/sass/engine.rb:389:in `_render_with_sourcemap'
-/var/lib/gems/2.3.0/gems/sass-3.5.4/lib/sass/engine.rb:307:in `render_with_sourcemap'
-/var/lib/gems/2.3.0/gems/sass-3.5.4/lib/sass/plugin/compiler.rb:462:in `update_stylesheet'
-/var/lib/gems/2.3.0/gems/sass-3.5.4/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
-/var/lib/gems/2.3.0/gems/sass-3.5.4/lib/sass/plugin/compiler.rb:209:in `each'
-/var/lib/gems/2.3.0/gems/sass-3.5.4/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
-/var/lib/gems/2.3.0/gems/sass-3.5.4/lib/sass/plugin/compiler.rb:443:in `on_file_changed'
-/var/lib/gems/2.3.0/gems/sass-3.5.4/lib/sass/plugin/compiler.rb:320:in `block in watch'
-/var/lib/gems/2.3.0/gems/sass-listen-4.0.0/lib/sass-listen/event/config.rb:23:in `call'
-/var/lib/gems/2.3.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:115:in `_process_changes'
-/var/lib/gems/2.3.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:19:in `block in loop_for'
-/var/lib/gems/2.3.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:15:in `loop'
-/var/lib/gems/2.3.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:15:in `loop_for'
-/var/lib/gems/2.3.0/gems/sass-listen-4.0.0/lib/sass-listen/event/loop.rb:84:in `_wait_for_changes'
-/var/lib/gems/2.3.0/gems/sass-listen-4.0.0/lib/sass-listen/event/loop.rb:42:in `block in setup'
-/var/lib/gems/2.3.0/gems/sass-listen-4.0.0/lib/sass-listen/internals/thread_pool.rb:6:in `block in add'
+*
+* @description - converts font unit to em
+*
 */
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: Invalid CSS after \"...align: center;Z\": expected \"{\", was \"}\"\A         on line 175 of scss/style.scss\A \A 170: \A 171:   .see-more {\A 172:     width: 10%;\A 173:     transform: rotate(-135deg);\A 174:     text-align: center;Z\A 175:   }\A 176: }\A 177: \A 178: .infobox {\A 179:   display: flex;\A 180:   align-items: center;"; }
+.g__col--1, .g__col--2, .g__col--3, .g__col--4, .g__col--5, .g__col--6, .g__col--7, .g__col--8, .g__col--9, .g__col--10, .g__col--11, .g__col--12 {
+  padding: 1.5625em;
+  width: 100%; }
+  .theme__colors.g__col--1, .theme__colors.g__col--2, .theme__colors.g__col--3, .theme__colors.g__col--4, .theme__colors.g__col--5, .theme__colors.g__col--6, .theme__colors.g__col--7, .theme__colors.g__col--8, .theme__colors.g__col--9, .theme__colors.g__col--10, .theme__colors.g__col--11, .theme__colors.g__col--12 {
+    background-color: grey; }
+
+.btn {
+  border-style: none;
+  border-radius: 0.3125em;
+  color: white;
+  padding: 0.9375em 1.875em;
+  cursor: pointer; }
+
+/*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */
+/* Document
+   ========================================================================== */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in
+ *    IE on Windows Phone and in iOS.
+ */
+html {
+  line-height: 1.15;
+  /* 1 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */ }
+
+/* Sections
+   ========================================================================== */
+/**
+ * Remove the margin in all browsers (opinionated).
+ */
+body {
+  margin: 0; }
+
+/**
+ * Add the correct display in IE 9-.
+ */
+article,
+aside,
+footer,
+header,
+nav,
+section {
+  display: block; }
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0; }
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * Add the correct display in IE 9-.
+ * 1. Add the correct display in IE.
+ */
+figcaption,
+figure,
+main {
+  /* 1 */
+  display: block; }
+
+/**
+ * Add the correct margin in IE 8.
+ */
+figure {
+  margin: 1em 40px; }
+
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+hr {
+  box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */ }
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+pre {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */ }
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * 1. Remove the gray background on active links in IE 10.
+ * 2. Remove gaps in links underline in iOS 8+ and Safari 8+.
+ */
+a {
+  background-color: transparent;
+  /* 1 */
+  -webkit-text-decoration-skip: objects;
+  /* 2 */ }
+
+/**
+ * 1. Remove the bottom border in Chrome 57- and Firefox 39-.
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  text-decoration: underline dotted;
+  /* 2 */ }
+
+/**
+ * Prevent the duplicate application of `bolder` by the next rule in Safari 6.
+ */
+b,
+strong {
+  font-weight: inherit; }
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+b,
+strong {
+  font-weight: bolder; }
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */ }
+
+/**
+ * Add the correct font style in Android 4.3-.
+ */
+dfn {
+  font-style: italic; }
+
+/**
+ * Add the correct background and color in IE 9-.
+ */
+mark {
+  background-color: #ff0;
+  color: #000; }
+
+/**
+ * Add the correct font size in all browsers.
+ */
+small {
+  font-size: 80%; }
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+sub {
+  bottom: -0.25em; }
+
+sup {
+  top: -0.5em; }
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Add the correct display in IE 9-.
+ */
+audio,
+video {
+  display: inline-block; }
+
+/**
+ * Add the correct display in iOS 4-7.
+ */
+audio:not([controls]) {
+  display: none;
+  height: 0; }
+
+/**
+ * Remove the border on images inside links in IE 10-.
+ */
+img {
+  border-style: none; }
+
+/**
+ * Hide the overflow in IE.
+ */
+svg:not(:root) {
+  overflow: hidden; }
+
+/* Forms
+   ========================================================================== */
+/**
+ * 1. Change the font styles in all browsers (opinionated).
+ * 2. Remove the margin in Firefox and Safari.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: sans-serif;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
+  margin: 0;
+  /* 2 */ }
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+button,
+input {
+  /* 1 */
+  overflow: visible; }
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+button,
+select {
+  /* 1 */
+  text-transform: none; }
+
+/**
+ * 1. Prevent a WebKit bug where (2) destroys native `audio` and `video`
+ *    controls in Android 4.
+ * 2. Correct the inability to style clickable types in iOS and Safari.
+ */
+button,
+html [type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */ }
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0; }
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText; }
+
+/**
+ * Correct the padding in Firefox.
+ */
+fieldset {
+  padding: 0.35em 0.75em 0.625em; }
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+legend {
+  box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */ }
+
+/**
+ * 1. Add the correct display in IE 9-.
+ * 2. Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+progress {
+  display: inline-block;
+  /* 1 */
+  vertical-align: baseline;
+  /* 2 */ }
+
+/**
+ * Remove the default vertical scrollbar in IE.
+ */
+textarea {
+  overflow: auto; }
+
+/**
+ * 1. Add the correct box sizing in IE 10-.
+ * 2. Remove the padding in IE 10-.
+ */
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto; }
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */ }
+
+/**
+ * Remove the inner padding and cancel buttons in Chrome and Safari on macOS.
+ */
+[type="search"]::-webkit-search-cancel-button,
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */ }
+
+/* Interactive
+   ========================================================================== */
+/*
+ * Add the correct display in IE 9-.
+ * 1. Add the correct display in Edge, IE, and Firefox.
+ */
+details,
+menu {
+  display: block; }
+
+/*
+ * Add the correct display in all browsers.
+ */
+summary {
+  display: list-item; }
+
+/* Scripting
+   ========================================================================== */
+/**
+ * Add the correct display in IE 9-.
+ */
+canvas {
+  display: inline-block; }
+
+/**
+ * Add the correct display in IE.
+ */
+template {
+  display: none; }
+
+/* Hidden
+   ========================================================================== */
+/**
+ * Add the correct display in IE 10-.
+ */
+[hidden] {
+  display: none; }
+
+* {
+  box-sizing: border-box;
+  word-wrap: break-word; }
+
+.border {
+  border: 0.0625em solid darkgrey; }
+
+.border--bottom {
+  border-bottom: 0.0625em solid darkgrey; }
+
+.list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0; }
+
+.btn--default {
+  background-color: #7477BE; }
+.btn--info {
+  background-color: grey; }
+.btn--success {
+  background-color: #81C98F; }
+
+.stat {
+  display: flex;
+  padding: 1.5625em;
+  background-color: #f8f8f8;
+  align-items: center; }
+  .stat__icon {
+    width: 33.333333%; }
+  .stat__detail {
+    width: 66.666666%; }
+  .stat__title {
+    margin-top: 0; }
+
+.grid__row {
+  display: flex;
+  flex-direction: column; }
+  @media (min-width: 454px) {
+    .grid__row {
+      flex-direction: row; } }
+
+@media (min-width: 454px) {
+  .g__col--1 {
+    width: 8.3333333333%; } }
+
+@media (min-width: 454px) {
+  .g__col--2 {
+    width: 16.6666666667%; } }
+
+@media (min-width: 454px) {
+  .g__col--3 {
+    width: 25%; } }
+
+@media (min-width: 454px) {
+  .g__col--4 {
+    width: 33.3333333333%; } }
+
+@media (min-width: 454px) {
+  .g__col--5 {
+    width: 41.6666666667%; } }
+
+@media (min-width: 454px) {
+  .g__col--6 {
+    width: 50%; } }
+
+@media (min-width: 454px) {
+  .g__col--7 {
+    width: 58.3333333333%; } }
+
+@media (min-width: 454px) {
+  .g__col--8 {
+    width: 66.6666666667%; } }
+
+@media (min-width: 454px) {
+  .g__col--9 {
+    width: 75%; } }
+
+@media (min-width: 454px) {
+  .g__col--10 {
+    width: 83.3333333333%; } }
+
+@media (min-width: 454px) {
+  .g__col--11 {
+    width: 91.6666666667%; } }
+
+@media (min-width: 454px) {
+  .g__col--12 {
+    width: 100%; } }
+
+.notification {
+  display: flex;
+  align-items: center;
+  padding: 1.25em 1.25em;
+  border-radius: 0.3125em;
+  color: white; }
+  .notification .title {
+    margin: 0 0.625em 0 0; }
+  .notification .detail {
+    margin-left: 0.625em; }
+  .notification .close {
+    margin-left: auto; }
+    .notification .close * {
+      border-style: none;
+      background-color: transparent;
+      color: white;
+      cursor: pointer;
+      font-weight: bold; }
+  .notification--default {
+    background-color: #7477BE; }
+  .notification--info {
+    background-color: grey; }
+  .notification--success {
+    background-color: #81C98F; }
+
+.img--profile {
+  border-radius: 50%; }
+
+.link--arrow {
+  text-decoration: none;
+  color: #7477BE;
+  font-size: 1.5625em; }
+
+.infobox--activity {
+  display: flex;
+  flex-direction: row; }
+  .infobox--activity .content {
+    width: 90%; }
+    @media (min-width: 454px) {
+      .infobox--activity .content {
+        display: flex;
+        align-items: center; } }
+  .infobox--activity .see-more {
+    width: 10%;
+    transform: rotate(-135deg);
+    text-align: center; }
+
+.infobox--members {
+  display: flex;
+  flex-direction: column; }
+  .infobox--members .date {
+    width: 100%; }
+    @media (min-width: 454px) {
+      .infobox--members .date {
+        width: initial;
+        text-align: center; } }
+  @media (min-width: 454px) {
+    .infobox--members {
+      flex-direction: row; } }
+
+.infobox {
+  display: flex;
+  align-items: center;
+  padding: 1.5em 0; }
+  .infobox .profile-pic {
+    margin: 0 0 1em 0; }
+    @media (min-width: 454px) {
+      .infobox .profile-pic {
+        margin: 0 1.25em 0 0; } }
+  .infobox .detail * {
+    display: block; }
+  @media (min-width: 454px) {
+    .infobox .detail {
+      margin: 0 1.25em 0 0; } }
+  .infobox > div:last-child {
+    margin: 0; }
+    @media (min-width: 454px) {
+      .infobox > div:last-child {
+        margin-left: auto; } }
+  @media (min-width: 454px) {
+    .infobox {
+      flex-direction: row;
+      align-items: center; } }
+
+/*# sourceMappingURL=style.css.map */
