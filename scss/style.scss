@@ -164,8 +164,11 @@
     @media #{$brk-mobile} {
       display: flex;
       align-items: center;
-
     }
+  }
+
+  .activity {
+    margin-bottom: 0.5em;
   }
 
   .see-more {
@@ -190,8 +193,10 @@
 
   .content {
     width: 100%;
+    margin-bottom: 0.5em;
 
     @media #{$brk-mobile} {
+      margin: 0;
       display: flex;
       flex-direction: row;
       align-items: center;

@@ -538,6 +538,8 @@ template {
       .infobox--activity .content {
         display: flex;
         align-items: center; } }
+  .infobox--activity .activity {
+    margin-bottom: 0.5em; }
   .infobox--activity .see-more {
     width: 10%;
     transform: rotate(-135deg);
@@ -553,9 +555,11 @@ template {
         width: 30%;
         text-align: right; } }
   .infobox--members .content {
-    width: 100%; }
+    width: 100%;
+    margin-bottom: 0.5em; }
     @media (min-width: 454px) {
       .infobox--members .content {
+        margin: 0;
         display: flex;
         flex-direction: row;
         align-items: center;
