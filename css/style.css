@@ -413,6 +413,9 @@ template {
 .border {
   border: 0.0625em solid darkgrey; }
 
+.border--bottom {
+  border-bottom: 0.0625em solid darkgrey; }
+
 .list {
   list-style-type: none;
   padding: 0;
@@ -519,5 +522,13 @@ template {
 
 .img--profile {
   border-radius: 50%; }
+
+.list__item {
+  padding: 1.5em 0; }
+  .list__item:first-child {
+    padding-top: 0; }
+
+.box--profile-pic {
+  margin: 0 0 1em 0; }
 
 /*# sourceMappingURL=style.css.map */
