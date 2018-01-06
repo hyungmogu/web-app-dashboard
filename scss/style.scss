@@ -160,6 +160,12 @@
 
   .content {
     width: 90%;
+
+    @media #{$brk-mobile} {
+      display: flex;
+      align-items: center;
+
+    }
   }
 
   .see-more {

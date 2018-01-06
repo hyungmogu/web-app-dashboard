@@ -534,6 +534,10 @@ template {
   flex-direction: row; }
   .infobox--activity .content {
     width: 90%; }
+    @media (min-width: 454px) {
+      .infobox--activity .content {
+        display: flex;
+        align-items: center; } }
   .infobox--activity .see-more {
     width: 10%; }
 
