@@ -153,9 +153,31 @@
 }
 
 //------------------------------------------------------
-// Containers
+// Infobox
 //------------------------------------------------------
 
-.box--profile-pic {
-  margin: 0 0 em(16px) 0;
+.infobox {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  align-items: initial;
+
+  .box--profile-pic {
+    margin: 0 0 em(16px) 0;
+
+    @media #{$brk-mobile} {
+      margin: 0 em(20px) 0 0;
+    }
+  }
+
+  .detail {
+    @media #{$brk-mobile} {
+      margin: 0 em(20px) 0 0;
+    }
+  }
+
+  @media #{$brk-mobile} {
+    flex-direction: row;
+    align-items: center;
+  }
 }
