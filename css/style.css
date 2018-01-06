@@ -556,6 +556,9 @@ template {
     width: 100%; }
     @media (min-width: 454px) {
       .infobox--members .content {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
         width: 70%; } }
   @media (min-width: 454px) {
     .infobox--members {

@@ -192,7 +192,11 @@
     width: 100%;
 
     @media #{$brk-mobile} {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
       width: 70%;
+
     }
   }
 
