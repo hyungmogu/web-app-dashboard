@@ -539,9 +539,16 @@ template {
     @media (min-width: 454px) {
       .infobox .profile-pic {
         margin: 0 1.25em 0 0; } }
+  .infobox .detail * {
+    display: block; }
   @media (min-width: 454px) {
     .infobox .detail {
       margin: 0 1.25em 0 0; } }
+  .infobox > div:last-child {
+    margin: 0; }
+    @media (min-width: 454px) {
+      .infobox > div:last-child {
+        margin-left: auto; } }
   @media (min-width: 454px) {
     .infobox {
       flex-direction: row;

@@ -171,8 +171,18 @@
   }
 
   .detail {
+    * {
+      display: block;
+    }
     @media #{$brk-mobile} {
       margin: 0 em(20px) 0 0;
+    }
+  }
+
+  & > div:last-child {
+    margin: 0;
+    @media #{$brk-mobile} {
+      margin-left: auto;
     }
   }
 
