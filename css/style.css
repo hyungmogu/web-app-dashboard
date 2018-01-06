@@ -408,7 +408,8 @@ template {
   display: none; }
 
 * {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  word-wrap: break-word; }
 
 .border {
   border: 0.0625em solid darkgrey; }
