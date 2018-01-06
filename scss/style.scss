@@ -170,6 +170,8 @@
 
   .see-more {
     width: 10%;
+    transform: rotate(-135deg);
+    text-align: center;Z
   }
 }
 
@@ -193,10 +195,6 @@
     @media #{$brk-mobile} {
       margin: 0 em(20px) 0 0;
     }
-  }
-
-  .see-more {
-    transform: rotate(-135deg);
   }
 
   & > div:last-child {
