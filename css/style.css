@@ -418,6 +418,36 @@ template {
   padding: 0;
   margin: 0; }
 
+*::placeholder {
+  color: darkgrey; }
+
+*:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: darkgrey; }
+
+*::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: darkgrey; }
+
+select {
+  background-color: #f8f8f8;
+  padding: 10px 15px;
+  border-radius: 5px;
+  border: 0.0625em solid darkgrey;
+  color: darkgrey; }
+
+input {
+  background-color: #f8f8f8;
+  padding: 10px 15px;
+  border-radius: 5px;
+  border: 0.0625em solid darkgrey; }
+
+textarea {
+  background-color: #f8f8f8;
+  padding: 10px 15px;
+  border-radius: 5px;
+  border: 0.0625em solid darkgrey; }
+
 .btn--default {
   background-color: #7477BE; }
 .btn--info {
@@ -538,13 +568,28 @@ form {
     width: 100%;
     margin: 0 0 0.5em 0; }
     form button:last-child {
-      margin: 0; }
+      margin-bottom: 0; }
     @media (min-width: 454px) {
       form button {
-        margin: 0; } }
+        margin-bottom: 0; } }
 
-.form-group {
+.form--setting button {
+  width: 100%; }
+  @media (min-width: 454px) {
+    .form--setting button {
+      width: 50%;
+      margin: 0 2%; } }
+@media (min-width: 454px) {
+  .form--setting button:first-child {
+    margin-left: 0; } }
+@media (min-width: 454px) {
+  .form--setting button:last-child {
+    margin-right: 0; } }
+.form--setting .form-group {
   display: flex;
   flex-direction: column; }
+  @media (min-width: 454px) {
+    .form--setting .form-group {
+      flex-direction: row; } }
 
 /*# sourceMappingURL=style.css.map */

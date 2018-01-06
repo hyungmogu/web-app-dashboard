@@ -20,6 +20,44 @@
 }
 
 //------------------------------------------------------
+// Inputs
+//------------------------------------------------------
+
+*::placeholder {
+  color: darkgrey; // the same color as the border color
+}
+
+*:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: darkgrey;
+}
+
+*::-ms-input-placeholder { /* Microsoft Edge */
+    color: darkgrey;
+}
+
+select {
+  background-color: lighten(grey, 47%); // same background color as .stats
+  padding: 10px 15px;
+  border-radius: 5px;
+  border: em(1px) solid darkgrey; //same value as .border
+  color: darkgrey; // same color as placeholder & border
+}
+
+input {
+  background-color: lighten(grey, 47%); // same background color as .stats
+  padding: 10px 15px;
+  border-radius: 5px;
+  border: em(1px) solid darkgrey; //same value as .border
+}
+
+textarea {
+  background-color: lighten(grey, 47%); // same background as .stats
+  padding: 10px 15px;
+  border-radius: 5px;
+  border: em(1px) solid darkgrey; //same value as .border
+}
+
+//------------------------------------------------------
 // Buttons
 //------------------------------------------------------
 
@@ -167,16 +205,43 @@ form {
     margin: 0 0 em(8px) 0;
 
     &:last-child {
-      margin: 0;
+      margin-bottom: 0;
     }
 
     @media #{$brk-mobile} {
-      margin: 0;
+      margin-bottom: 0;
     }
   }
 }
 
-.form-group {
-  display: flex;
-  flex-direction: column;
+.form--setting {
+  button {
+    width: 100%;
+    @media #{$brk-mobile} {
+      width: 50%;
+      margin: 0 2%;
+    }
+  }
+
+  button:first-child {
+    @media #{$brk-mobile} {
+      margin-left: 0;
+    }
+  }
+
+  button:last-child {
+    @media #{$brk-mobile} {
+      margin-right: 0;
+    }
+  }
+
+  .form-group {
+    display: flex;
+    flex-direction: column;
+
+    @media #{$brk-mobile} {
+      flex-direction: row;
+    }
+
+  }
 }
