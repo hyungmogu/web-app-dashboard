@@ -532,9 +532,16 @@ form {
   form select {
     width: 100%;
     margin: 0 0 1em 0; }
+  form label {
+    margin: 0 0 1em 0; }
   form button {
     width: 100%;
     margin: 0 0 0.5em 0; }
+    form button:last-child {
+      margin: 0; }
+    @media (min-width: 454px) {
+      form button {
+        margin: 0; } }
 
 .form-group {
   display: flex;

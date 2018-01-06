@@ -158,9 +158,21 @@ form {
     margin: 0 0 em(16px) 0;
   }
 
+  label {
+    margin: 0 0 em(16px) 0;
+  }
+
   button {
     width: 100%;
     margin: 0 0 em(8px) 0;
+
+    &:last-child {
+      margin: 0;
+    }
+
+    @media #{$brk-mobile} {
+      margin: 0;
+    }
   }
 }
 
