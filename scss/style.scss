@@ -7,10 +7,15 @@
 //------------------------------------------------------
 * {
   box-sizing: border-box;
+  word-wrap: break-word;
 }
 
 .border {
   border: em(1px) solid darkgrey;
+}
+
+.border--bottom {
+  border-bottom: em(1px) solid darkgrey;
 }
 
 .list {
@@ -246,10 +251,6 @@ form {
   }
 }
 
-//------------------------------------------------------
-// Slider -- referenced from w3school
-//------------------------------------------------------
-
 .switch input {
   display: none;
 }
@@ -310,4 +311,109 @@ input:checked + .switch__slider:before {
   -webkit-transform: translateX(43px);
   -ms-transform: translateX(43px);
   transform: translateX(43px);
+
+}
+//------------------------------------------------------
+// Link
+//------------------------------------------------------
+
+.link--arrow {
+  text-decoration: none;
+  color: #7477BE;
+  font-size: em(25px);
+}
+
+//------------------------------------------------------
+// Infobox
+//------------------------------------------------------
+
+.infobox--activity {
+  display: flex;
+  flex-direction: row;
+
+  .content {
+    width: 90%;
+
+    @media #{$brk-mobile} {
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  .activity {
+    margin-bottom: 0.5em;
+  }
+
+  .see-more {
+    width: 10%;
+    transform: rotate(-135deg);
+    text-align: center;
+  }
+}
+
+.infobox--members {
+  display: flex;
+  flex-direction: column;
+
+  .date {
+    width: 100%;
+
+    @media #{$brk-mobile} {
+      width: 30%;
+      text-align: right;
+    }
+  }
+
+  .content {
+    width: 100%;
+    margin-bottom: 0.5em;
+
+    @media #{$brk-mobile} {
+      margin: 0;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      width: 70%;
+
+    }
+  }
+
+  @media #{$brk-mobile} {
+    flex-direction: row;
+  }
+}
+
+.infobox {
+  display: flex;
+  align-items: center;
+  padding: em(24px) 0;
+
+  .profile-pic {
+    margin: 0 0 em(16px) 0;
+
+    @media #{$brk-mobile} {
+      margin: 0 em(20px) 0 0;
+    }
+  }
+
+  .detail {
+    * {
+      display: block;
+    }
+    @media #{$brk-mobile} {
+      margin: 0 em(20px) 0 0;
+    }
+  }
+
+  & > div:last-child {
+    margin: 0;
+    @media #{$brk-mobile} {
+      margin-left: auto;
+    }
+  }
+
+  @media #{$brk-mobile} {
+    flex-direction: row;
+    align-items: center;
+  }
 }
