@@ -235,14 +235,20 @@
       <div class="g__col--6">
         <form class="form--setting">
           <div class="form-group">
-            <label>Send Email Notifications</label>
-            <input id="email-notifications" name="" type="checkbox" />
-            <span class="slider--round"></span>
+            <span>Send Email Notifications</span>
+            <label class="switch">
+              <input id="email-notifications" type="checkbox" name="email-notification" id="send-email-notification" />
+              <span class="switch__slider"></span>
+              <span class="switch__text">On</span>
+            </label>
           </div>
           <div class="form-group">
-            <label>set Profile to Public</label>
-            <input id="profile-to-public" name="" type="checkbox" />
-            <span class="slider--round"></span>
+            <span>set Profile to Public</span>
+            <label class="switch">
+              <input id="email-notifications" type="checkbox" name="public-profile" id="set-public-profile" />
+              <span class="switch__slider"></span>
+              <span class="switch__text">On</span>
+            </label>
           </div>
           <div class="form-group">
             <select>
