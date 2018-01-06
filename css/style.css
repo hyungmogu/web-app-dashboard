@@ -534,10 +534,10 @@ template {
   align-items: center;
   flex-direction: column;
   align-items: initial; }
-  .infobox .box--profile-pic {
+  .infobox .profile-pic {
     margin: 0 0 1em 0; }
     @media (min-width: 454px) {
-      .infobox .box--profile-pic {
+      .infobox .profile-pic {
         margin: 0 1.25em 0 0; } }
   @media (min-width: 454px) {
     .infobox .detail {

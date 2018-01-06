@@ -162,7 +162,7 @@
   flex-direction: column;
   align-items: initial;
 
-  .box--profile-pic {
+  .profile-pic {
     margin: 0 0 em(16px) 0;
 
     @media #{$brk-mobile} {
