@@ -134,3 +134,37 @@
 .img--profile {
   border-radius: 50%;
 }
+
+//------------------------------------------------------
+// Form
+//------------------------------------------------------
+
+form {
+  display: flex;
+  flex-direction: column;
+
+  input {
+    width: 100%;
+    margin: 0 0 em(16px) 0;
+  }
+
+  textarea {
+    width: 100%;
+    margin: 0 0 em(16px) 0;
+  }
+
+  select {
+    width: 100%;
+    margin: 0 0 em(16px) 0;
+  }
+
+  button {
+    width: 100%;
+    margin: 0 0 em(8px) 0;
+  }
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}

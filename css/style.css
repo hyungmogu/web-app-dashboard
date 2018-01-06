@@ -520,4 +520,24 @@ template {
 .img--profile {
   border-radius: 50%; }
 
+form {
+  display: flex;
+  flex-direction: column; }
+  form input {
+    width: 100%;
+    margin: 0 0 1em 0; }
+  form textarea {
+    width: 100%;
+    margin: 0 0 1em 0; }
+  form select {
+    width: 100%;
+    margin: 0 0 1em 0; }
+  form button {
+    width: 100%;
+    margin: 0 0 0.5em 0; }
+
+.form-group {
+  display: flex;
+  flex-direction: column; }
+
 /*# sourceMappingURL=style.css.map */
