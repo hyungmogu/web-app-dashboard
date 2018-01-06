@@ -141,18 +141,35 @@
 }
 
 //------------------------------------------------------
-// List
+// Link
 //------------------------------------------------------
+
+.link--arrow {
+  text-decoration: none;
+  color: #7477BE;
+  font-size: em(25px);
+}
 
 //------------------------------------------------------
 // Infobox
 //------------------------------------------------------
 
+.infobox--activity {
+  display: flex;
+  flex-direction: row;
+
+  .content {
+    width: 90%;
+  }
+
+  .see-more {
+    width: 10%;
+  }
+}
+
 .infobox {
   display: flex;
   align-items: center;
-  flex-direction: column;
-  align-items: initial;
   padding: em(24px) 0;
 
   .profile-pic {
@@ -170,6 +187,10 @@
     @media #{$brk-mobile} {
       margin: 0 em(20px) 0 0;
     }
+  }
+
+  .see-more {
+    transform: rotate(-135deg);
   }
 
   & > div:last-child {

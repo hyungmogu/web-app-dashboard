@@ -524,11 +524,22 @@ template {
 .img--profile {
   border-radius: 50%; }
 
+.link--arrow {
+  text-decoration: none;
+  color: #7477BE;
+  font-size: 1.5625em; }
+
+.infobox--activity {
+  display: flex;
+  flex-direction: row; }
+  .infobox--activity .content {
+    width: 90%; }
+  .infobox--activity .see-more {
+    width: 10%; }
+
 .infobox {
   display: flex;
   align-items: center;
-  flex-direction: column;
-  align-items: initial;
   padding: 1.5em 0; }
   .infobox .profile-pic {
     margin: 0 0 1em 0; }
@@ -540,6 +551,8 @@ template {
   @media (min-width: 454px) {
     .infobox .detail {
       margin: 0 1.25em 0 0; } }
+  .infobox .see-more {
+    transform: rotate(-135deg); }
   .infobox > div:last-child {
     margin: 0; }
     @media (min-width: 454px) {
