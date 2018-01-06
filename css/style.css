@@ -418,6 +418,36 @@ template {
   padding: 0;
   margin: 0; }
 
+*::placeholder {
+  color: darkgrey; }
+
+*:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: darkgrey; }
+
+*::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: darkgrey; }
+
+select {
+  background-color: #f8f8f8;
+  padding: 10px 15px;
+  border-radius: 5px;
+  border: 0.0625em solid darkgrey;
+  color: darkgrey; }
+
+input {
+  background-color: #f8f8f8;
+  padding: 10px 15px;
+  border-radius: 5px;
+  border: 0.0625em solid darkgrey; }
+
+textarea {
+  background-color: #f8f8f8;
+  padding: 10px 15px;
+  border-radius: 5px;
+  border: 0.0625em solid darkgrey; }
+
 .btn--default {
   background-color: #7477BE; }
 .btn--info {
@@ -519,5 +549,101 @@ template {
 
 .img--profile {
   border-radius: 50%; }
+
+form {
+  display: flex;
+  flex-direction: column; }
+  form input {
+    width: 100%;
+    margin: 0 0 1em 0; }
+  form textarea {
+    width: 100%;
+    margin: 0 0 1em 0; }
+  form select {
+    width: 100%;
+    margin: 0 0 1em 0; }
+  form label {
+    margin: 0 0 1em 0; }
+  form button {
+    width: 100%;
+    margin: 0 0 0.5em 0; }
+    form button:last-child {
+      margin-bottom: 0; }
+    @media (min-width: 454px) {
+      form button {
+        margin-bottom: 0; } }
+
+.form--setting button {
+  width: 100%; }
+  @media (min-width: 454px) {
+    .form--setting button {
+      width: 50%;
+      margin: 0 2%; } }
+@media (min-width: 454px) {
+  .form--setting button:first-child {
+    margin-left: 0; } }
+@media (min-width: 454px) {
+  .form--setting button:last-child {
+    margin-right: 0; } }
+.form--setting .form-group {
+  display: flex;
+  flex-direction: column; }
+  @media (min-width: 454px) {
+    .form--setting .form-group {
+      flex-direction: row; } }
+
+.switch input {
+  display: none; }
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 4.6875em;
+  height: 1.875em; }
+
+.switch__text {
+  position: absolute;
+  z-index: 2;
+  top: 6px;
+  left: 7px;
+  opacity: 0;
+  transition: opacity 0.4s ease-out;
+  color: white;
+  text-transform: uppercase; }
+
+.switch__slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: .4s;
+  border-radius: 34px; }
+
+.switch__slider:before {
+  position: absolute;
+  z-index: 3;
+  content: "";
+  height: 24px;
+  width: 24px;
+  left: 4px;
+  bottom: 3px;
+  background-color: white;
+  transition: 0.4s;
+  border-radius: 50%; }
+
+input:checked + .switch__slider {
+  background-color: #7477BE; }
+
+input:checked ~ .switch__text {
+  display: initial;
+  opacity: 1; }
+
+input:checked + .switch__slider:before {
+  -webkit-transform: translateX(43px);
+  -ms-transform: translateX(43px);
+  transform: translateX(43px); }
 
 /*# sourceMappingURL=style.css.map */
