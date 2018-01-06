@@ -550,8 +550,13 @@ template {
     width: 100%; }
     @media (min-width: 454px) {
       .infobox--members .date {
-        width: initial;
-        text-align: center; } }
+        width: 30%;
+        text-align: right; } }
+  .infobox--members .content {
+    width: 100%; }
+    @media (min-width: 454px) {
+      .infobox--members .content {
+        width: 70%; } }
   @media (min-width: 454px) {
     .infobox--members {
       flex-direction: row; } }

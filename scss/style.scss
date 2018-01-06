@@ -183,8 +183,16 @@
     width: 100%;
 
     @media #{$brk-mobile} {
-      width: initial;
-      text-align: center;
+      width: 30%;
+      text-align: right;
+    }
+  }
+
+  .content {
+    width: 100%;
+
+    @media #{$brk-mobile} {
+      width: 70%;
     }
   }
 
