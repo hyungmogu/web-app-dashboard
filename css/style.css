@@ -855,4 +855,8 @@ input:checked + .switch__slider:before {
       flex-direction: row;
       align-items: center; } }
 
+.stat__title {
+  color: #7477BE;
+  margin: 0; }
+
 /*# sourceMappingURL=style.css.map */
