@@ -417,13 +417,25 @@ template {
 .border--bottom {
   border-bottom: 0.0625em solid darkgrey; }
 
+.main {
+  display: flex; }
+
+.content {
+  width: calc(100% - em(77px)); }
+
 .list {
   list-style-type: none;
   padding: 0;
   margin: 0; }
 
-.list--secondary-menu .list__item {
-  padding: 0.625em 0; }
+.list--secondary-menu {
+  display: inline-block;
+  background-color: #181a34; }
+  .list--secondary-menu .list__item {
+    padding: 0.625em 0; }
+
+.secondary-menu {
+  width: 4.8125em; }
 
 *::placeholder {
   color: darkgrey; }

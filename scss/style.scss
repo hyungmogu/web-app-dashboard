@@ -18,6 +18,14 @@
   border-bottom: em(1px) solid darkgrey;
 }
 
+.main {
+  display: flex;
+}
+
+.content {
+  width: calc(100% - em(77px));
+}
+
 //------------------------------------------------------
 // List
 //------------------------------------------------------
@@ -29,9 +37,19 @@
 }
 
 .list--secondary-menu {
+  display: inline-block;
+  background-color: darken(#7477BE, 45%);
   .list__item {
     padding: em(10px) 0;
   }
+}
+
+//------------------------------------------------------
+// Navigations
+//------------------------------------------------------
+
+.secondary-menu {
+  width: em(77px);
 }
 
 //------------------------------------------------------
