@@ -8,9 +8,9 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.bundle.min.js"></script>
     </head>
     <body>
-        <header class="nav--primary">
+        <header>
           <h1 class="logo">YourApp</h1>
-          <nav>
+          <nav class="primary-menu">
             <ul class="list">
               <li class="list__item">
                 <a href="#">
@@ -30,40 +30,40 @@
             </ul>
           </nav>
         </header>
-        <div class="content">
-          <div class="nav--secondary">
-            <ul class="list">
+        <div class="main">
+          <nav class="secondary-menu">
+            <ul class="list list--secondary-menu">
               <li class="list__item">
-                <a href="#">
-                  <svg>
-                    <use class="icon icon--dashboard" xlink:href="sprite.svg#icon-dashboard" />
+                <a class="link--secondary-menu" href="#">
+                  <svg class="icon icon--secondary-menu">
+                    <use xlink:href="sprite.svg#icon-dashboard" />
                   </svg>
                 </a>
               </li>
               <li class="list__item">
-                <a href="#">
-                  <svg>
+                <a class="link--secondary-menu" href="#">
+                  <svg class="icon icon--secondary-menu">
                     <use class="icon icon--members" xlink:href="sprite.svg#icon-members" />
                   </svg>
                 </a>
               </li>
               <li class="list__item">
-                <a href="#">
-                  <svg>
-                    <use class="icon icon--visits" xlink:href="sprite.svg#icon-visits" />
+                <a class="link--secondary-menu" href="#">
+                  <svg class="icon icon--secondary-menu">
+                    <use xlink:href="sprite.svg#icon-visits" />
                   </svg>
                 </a>
               </li>
               <li class="list__item">
-                <a href="#">
-                  <svg>
-                    <use class="icon icon--settings" xlink:href="sprite.svg#icon-settings" />
+                <a class="link--secondary-menu" href="#">
+                  <svg class="icon icon--secondary-menu">
+                    <use xlink:href="sprite.svg#icon-settings" />
                   </svg>
                 </a>
               </li>
             </ul>
-          </div>
-          <div class="content__main">
+          </nav>
+          <div class="content">
             <div class="grid__row">
               <div class="g__col--12">
                 <div class="notifications">
