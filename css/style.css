@@ -664,6 +664,10 @@ input:checked + .switch__slider:before {
   color: #7477BE;
   font-size: 1.5625em; }
 
+.link--secondary-menu {
+  padding: 10px;
+  display: inline-block; }
+
 .infobox--activity {
   display: flex;
   flex-direction: row; }

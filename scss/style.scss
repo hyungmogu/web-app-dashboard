@@ -340,6 +340,11 @@ input:checked + .switch__slider:before {
   font-size: em(25px);
 }
 
+.link--secondary-menu {
+  padding:10px;
+  display:inline-block;
+}
+
 //------------------------------------------------------
 // Infobox
 //------------------------------------------------------
