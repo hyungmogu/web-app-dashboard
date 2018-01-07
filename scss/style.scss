@@ -408,9 +408,17 @@ input:checked + .switch__slider:before {
 .link--profile {
   display: flex;
   align-items: center;
+  text-decoration: none;
+  color: white;
+  transition: color 0.2s ease-out;
+
   .name {
     padding: em(15px);
   }
+}
+
+.link--profile:hover {
+  color: lighten(grey, 25%); 
 }
 
 .link--secondary-menu {

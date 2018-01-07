@@ -712,9 +712,15 @@ input:checked + .switch__slider:before {
 
 .link--profile {
   display: flex;
-  align-items: center; }
+  align-items: center;
+  text-decoration: none;
+  color: white;
+  transition: color 0.2s ease-out; }
   .link--profile .name {
     padding: 0.9375em; }
+
+.link--profile:hover {
+  color: silver; }
 
 .link--secondary-menu {
   padding: 0.625em 1.25em;
