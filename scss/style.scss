@@ -627,3 +627,10 @@ input:checked + .switch__slider:before {
   color: #7477BE;
   margin: 0;
 }
+
+.stat__number {
+  font-size: em(30px);
+  @media #{$brk-mobile} {
+    font-size: em(40px);
+  }
+}
