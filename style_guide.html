@@ -6,6 +6,32 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
+    <header>
+      <h1 class="logo">
+        <a class="link--logo" href="#">
+          Your<span class="reduce-font-weight">App&#8482;</span>
+        </a>
+      </h1>
+      <nav class="primary-menu">
+        <ul class="list--primary-menu">
+          <li class="list__item alarm">
+            <button class="btn--alarm">
+              <svg class="icon--primary-menu">
+                <use xlink:href="sprite.svg#icon-bell" />
+              </svg>
+            </button>
+          </li>
+          <li class="list__item profile">
+            <a class="link--profile" href="#">
+              <div class="profile-pic">
+                <img class="img--profile" src="http://via.placeholder.com/60x60" />
+              </div>
+              <span class="name">John Wilks</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
     <div class="main">
       <nav class="secondary-menu">
         <ul class="list list--secondary-menu">
@@ -40,34 +66,6 @@
         </ul>
       </nav>
       <div class="content">
-        <div class="grid__row">
-          <div class="g__col--3">
-            <a class="link" href="/">
-              <h1 class="logo">YourApp</h1>
-            </a>
-          </div>
-          <div class="g__col--9">
-            <nav role="navigation">
-              <ul class="nav--primary">
-                <li class="nav__item">
-                  <a href="#">
-                    <svg>
-                      <use class="icon icon--bell" xlink:href="sprite.svg#icon-bell" />
-                    </svg>
-                  </a>
-                </li>
-                <li class="nav__item">
-                  <a href="#">
-                    <div class="branding">
-                      <img class="img--profile" src="#" />
-                    </div>
-                    <span>John Wilks</span>
-                  </a>
-                </li>
-              </ul>
-            </nav>
-          </div>
-        </div>
         <h4>Alerts</h4>
         <div class="grid__row">
           <div class="g__col--12">
@@ -166,7 +164,7 @@
                 <div class="infobox infobox--members">
                   <div class="content">
                     <div class="profile-pic">
-                      <img class="img--profile" src="http://via.placeholder.com/75x75"/>
+                      <img class="img--profile" src="http://via.placeholder.com/60x60"/>
                     </div>
                     <div class="detail">
                       <span class="name">Victoria Chambers</span>
@@ -180,7 +178,7 @@
                 <div class="infobox infobox--members">
                   <div class="content">
                     <div class="profile-pic">
-                      <img class="img--profile" src="http://via.placeholder.com/75x75"/>
+                      <img class="img--profile" src="http://via.placeholder.com/60x60"/>
                     </div>
                     <div class="detail">
                       <span class="name">Victoria Chambers</span>
@@ -198,7 +196,7 @@
                 <div class="infobox infobox--activity">
                   <div class="content">
                     <div class="profile-pic">
-                      <img class="img--profile" src="http://via.placeholder.com/75x75"/>
+                      <img class="img--profile" src="http://via.placeholder.com/60x60"/>
                     </div>
                     <div class="detail">
                       <span class="activity">Victoria Chambers Commented on Youtube's CEO tips</span>
@@ -214,7 +212,7 @@
                 <div class="infobox infobox--activity">
                   <div class="content">
                     <div class="profile-pic">
-                      <img class="img--profile" src="http://via.placeholder.com/75x75"/>
+                      <img class="img--profile" src="http://via.placeholder.com/60x60"/>
                     </div>
                     <div class="detail">
                       <span class="activity">Victoria Chambers Commented on Youtube's CEO tips</span>
