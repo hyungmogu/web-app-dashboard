@@ -573,6 +573,10 @@ textarea {
   transition: fill 0.2s ease-out;
   fill: darkgrey; }
 
+.icon--primary-menu {
+  width: 1.875em;
+  height: 1.875em; }
+
 .img--profile {
   border-radius: 50%; }
 
