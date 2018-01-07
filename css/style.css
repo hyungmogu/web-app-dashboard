@@ -422,6 +422,9 @@ template {
   padding: 0;
   margin: 0; }
 
+.list--secondary-menu .list__item {
+  padding: 0.625em 0; }
+
 *::placeholder {
   color: darkgrey; }
 
