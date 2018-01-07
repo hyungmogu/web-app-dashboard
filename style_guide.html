@@ -6,6 +6,28 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
+    <header>
+      <h1 class="logo">YourApp</h1>
+      <nav class="primary-menu">
+        <ul class="list--primary-menu">
+          <li class="list__item">
+            <a class="link--primary-menu" href="#">
+              <svg class="icon--primary-menu">
+                <use xlink:href="sprite.svg#icon-bell" />
+              </svg>
+            </a>
+          </li>
+          <li class="list__item">
+            <a class="link--primary-menu" href="#">
+              <div class="profile-pic">
+                <img class="img--profile" src="http://via.placeholder.com/75x75" />
+              </div>
+              <span class="name">John Wilks</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
     <div class="main">
       <nav class="secondary-menu">
         <ul class="list list--secondary-menu">
@@ -40,34 +62,6 @@
         </ul>
       </nav>
       <div class="content">
-        <div class="grid__row">
-          <div class="g__col--3">
-            <a class="link" href="/">
-              <h1 class="logo">YourApp</h1>
-            </a>
-          </div>
-          <div class="g__col--9">
-            <nav role="navigation">
-              <ul class="nav--primary">
-                <li class="nav__item">
-                  <a href="#">
-                    <svg>
-                      <use class="icon icon--bell" xlink:href="sprite.svg#icon-bell" />
-                    </svg>
-                  </a>
-                </li>
-                <li class="nav__item">
-                  <a href="#">
-                    <div class="branding">
-                      <img class="img--profile" src="#" />
-                    </div>
-                    <span>John Wilks</span>
-                  </a>
-                </li>
-              </ul>
-            </nav>
-          </div>
-        </div>
         <h4>Alerts</h4>
         <div class="grid__row">
           <div class="g__col--12">
