@@ -18,6 +18,10 @@
   border-bottom: em(1px) solid darkgrey;
 }
 
+//------------------------------------------------------
+// List
+//------------------------------------------------------
+
 .list {
   list-style-type: none;
   padding: 0;
@@ -341,8 +345,35 @@ input:checked + .switch__slider:before {
 }
 
 .link--secondary-menu {
-  padding:10px;
+  padding: em(10px) em(20px);
   display:inline-block;
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: em(8px);
+    height: 100%;
+    background-color: #81C98F;
+    border-radius: em(34px);
+    left: em(-4px);
+    top: 0;
+    opacity: 0;
+    transition: opacity 0.2s ease-out;
+  }
+
+  &:hover::before {
+    opacity: 1;
+  }
+
+  &:focus::before {
+    opacity: 1;
+  }
+
+  &:active::before {
+    opacity: 1;
+  }
+
 }
 
 //------------------------------------------------------
