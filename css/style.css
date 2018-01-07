@@ -442,8 +442,14 @@ header {
   margin: 0; }
   .list--primary-menu .list__item {
     padding: 0 1em; }
-    .list--primary-menu .list__item:first-child {
-      border-right: 1px solid #393c7a; }
+  @media (min-width: 454px) {
+    .list--primary-menu .alarm {
+      border-right: 1px solid #393c7a; } }
+  .list--primary-menu .profile {
+    display: none; }
+    @media (min-width: 454px) {
+      .list--primary-menu .profile {
+        display: initial; } }
   .list--primary-menu .img--profile {
     width: 2.3em;
     height: 2.3em; }

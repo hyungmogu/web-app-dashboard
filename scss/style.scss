@@ -52,9 +52,18 @@ header {
 
   .list__item {
     padding: 0 em(16px);
+  }
 
-    &:first-child {
+  .alarm {
+    @media #{$brk-mobile}{
       border-right: 1px solid darken(#7477BE, 25%);
+    }
+  }
+
+  .profile {
+    display: none;
+    @media #{$brk-mobile} {
+      display: initial;
     }
   }
 
