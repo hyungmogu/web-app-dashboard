@@ -710,9 +710,11 @@ input:checked + .switch__slider:before {
   color: #7477BE;
   font-size: 1.5625em; }
 
-.link--primary-menu {
-  display: inline-block;
-  padding: 0.625em; }
+.link--profile {
+  display: flex;
+  align-items: center; }
+  .link--profile .name {
+    padding: 0.9375em; }
 
 .link--secondary-menu {
   padding: 0.625em 1.25em;

@@ -405,9 +405,12 @@ input:checked + .switch__slider:before {
   font-size: em(25px);
 }
 
-.link--primary-menu {
-  display: inline-block;
-  padding: em(10px);
+.link--profile {
+  display: flex;
+  align-items: center;
+  .name {
+    padding: em(15px);
+  }
 }
 
 .link--secondary-menu {
