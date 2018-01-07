@@ -496,7 +496,8 @@ textarea {
   border-style: none;
   background-color: transparent;
   padding: 0.25em;
-  position: relative; }
+  position: relative;
+  cursor: pointer; }
 
 .btn--alarm:hover .icon--primary-menu {
   fill: silver; }
