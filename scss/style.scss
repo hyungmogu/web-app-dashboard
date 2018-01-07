@@ -18,10 +18,39 @@
   border-bottom: em(1px) solid darkgrey;
 }
 
+.main {
+  display: flex;
+}
+
+.content {
+  width: calc(100% - 77px);
+}
+
+//------------------------------------------------------
+// List
+//------------------------------------------------------
+
 .list {
   list-style-type: none;
   padding: 0;
   margin: 0;
+}
+
+.list--secondary-menu {
+  display: inline-block;
+  background-color: darken(#7477BE, 45%);
+  height: 100%;
+  .list__item {
+    padding: em(10px) 0;
+  }
+}
+
+//------------------------------------------------------
+// Navigations
+//------------------------------------------------------
+
+.secondary-menu {
+  width: em(77px);
 }
 
 //------------------------------------------------------
@@ -171,6 +200,18 @@ textarea {
     background-color: #81C98F;
   }
 }
+
+//------------------------------------------------------
+// Icons
+//------------------------------------------------------
+
+.icon--secondary-menu {
+  width: em(37px);
+  height: em(37px);
+  transition: fill 0.2s ease-out;
+  fill: darkgrey;
+}
+
 //------------------------------------------------------
 // Image
 //------------------------------------------------------
@@ -321,6 +362,42 @@ input:checked + .switch__slider:before {
   text-decoration: none;
   color: #7477BE;
   font-size: em(25px);
+}
+
+.link--secondary-menu {
+  padding: em(10px) em(20px);
+  display:inline-block;
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: em(8px);
+    height: 100%;
+    background-color: #81C98F;
+    border-radius: em(34px);
+    left: em(-4px);
+    top: 0;
+    opacity: 0;
+    transition: opacity 0.2s ease-out;
+  }
+
+  &:hover .icon--secondary-menu {
+    fill: white;
+  }
+
+  &:hover::before {
+    opacity: 1;
+  }
+
+  &:focus::before {
+    opacity: 1;
+  }
+
+  &:active::before {
+    opacity: 1;
+  }
+
 }
 
 //------------------------------------------------------
