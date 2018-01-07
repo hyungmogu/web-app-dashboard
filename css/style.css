@@ -486,6 +486,9 @@ textarea {
 .btn--alarm:hover .icon--primary-menu {
   fill: silver; }
 
+.btn--alarm:hover::before {
+  background-color: #56b769; }
+
 .btn--alarm::before {
   position: absolute;
   content: "";
@@ -494,7 +497,8 @@ textarea {
   border-radius: 50%;
   background-color: #81C98F;
   top: 0;
-  right: 0; }
+  right: 0;
+  transition: background-color 0.2s ease-out; }
 
 .stat {
   display: flex;

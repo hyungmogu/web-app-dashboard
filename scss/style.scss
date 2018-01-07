@@ -126,6 +126,10 @@ textarea {
   fill: lighten(grey, 25%);
 }
 
+.btn--alarm:hover::before {
+  background-color: darken(#81C98F, 12%);
+}
+
 .btn--alarm::before {
   position: absolute;
   content: "";
@@ -135,6 +139,7 @@ textarea {
   background-color: #81C98F;
   top: 0;
   right: 0;
+  transition: background-color 0.2s ease-out;
 }
 
 
