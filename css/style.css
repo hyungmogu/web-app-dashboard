@@ -431,6 +431,17 @@ header {
   padding: 0;
   margin: 0; }
 
+.list--primary-menu {
+  display: flex;
+  list-style-type: none;
+  align-items: center;
+  padding: 0;
+  margin: 0; }
+  .list--primary-menu .list__item {
+    padding: 0.625em 1em; }
+    .list--primary-menu .list__item:first-child {
+      border-right: 1px solid #393c7a; }
+
 .list--secondary-menu {
   display: inline-block;
   background-color: #181a34;
