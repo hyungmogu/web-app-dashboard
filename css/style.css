@@ -628,8 +628,8 @@ textarea {
   fill: darkgrey; }
 
 .icon--primary-menu {
-  width: 1.875em;
-  height: 1.875em;
+  width: 1.625em;
+  height: 1.625em;
   transition: fill 0.2s ease-out;
   fill: white; }
 
