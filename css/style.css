@@ -439,7 +439,7 @@ header {
   padding: 0;
   margin: 0; }
   .list--primary-menu .list__item {
-    padding: 0.625em 1em; }
+    padding: 0 1em; }
     .list--primary-menu .list__item:first-child {
       border-right: 1px solid #393c7a; }
 
@@ -582,6 +582,14 @@ textarea {
 @media (min-width: 454px) {
   .g__col--12 {
     width: 100%; } }
+
+.logo {
+  font-size: 1.4375em; }
+  .logo a {
+    color: white;
+    text-decoration: none; }
+  .logo .reduce-font-weight {
+    font-weight: normal; }
 
 .notification {
   display: flex;
