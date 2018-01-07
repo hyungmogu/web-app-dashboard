@@ -551,6 +551,10 @@ textarea {
   .notification--success {
     background-color: #81C98F; }
 
+.icon--secondary-menu {
+  width: 2.8125em;
+  height: 2.8125em; }
+
 .img--profile {
   border-radius: 50%; }
 
