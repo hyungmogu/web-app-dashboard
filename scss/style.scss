@@ -179,33 +179,6 @@ textarea {
   transition: background-color 0.2s ease-out;
 }
 
-
-//------------------------------------------------------
-// Social stats
-//------------------------------------------------------
-
-.stat {
-  display: flex;
-  padding: em(25px);
-  background-color: lighten(grey, 47%);
-  align-items:center;
-
-  &__icon {
-    width: 33.333333%;
-  }
-
-  &__detail {
-    width: 66.666666%
-
-  }
-
-  &__title {
-    margin-top: 0;
-  }
-}
-
-
-
 //------------------------------------------------------
 // Grid
 //------------------------------------------------------
@@ -214,7 +187,7 @@ textarea {
   display: flex;
   flex-direction: column;
 
-  @media #{$brk-mobile} {
+  @media #{$brk-desktop} {
     flex-direction: row;
   }
 }
@@ -222,7 +195,7 @@ textarea {
 @for $i from 1 through $g-col-count {
   .g__col--#{$i} {
     @extend %g__col;
-    @media #{$brk-mobile} {
+    @media #{$brk-desktop} {
       width: percentage($i/$g-col-count);
     }
   }
@@ -305,6 +278,17 @@ textarea {
   height: em(26px);
   transition: fill 0.2s ease-out;
   fill: white;
+}
+
+.icon--stat {
+  fill: #7477BE;
+  width: em(55px);
+  height: em(55px);
+
+  @media #{$brk-wide} {
+    width: em(75px);
+    height: em(75px);
+  }
 }
 
 //------------------------------------------------------
@@ -605,5 +589,56 @@ input:checked + .switch__slider:before {
   @media #{$brk-mobile} {
     flex-direction: row;
     align-items: center;
+  }
+}
+
+//------------------------------------------------------
+// Social Stats Box
+//------------------------------------------------------
+
+.stat {
+  display: flex;
+  padding: em(28.8px) em(27.2px);
+  background-color: lighten(grey, 47%);
+  flex-direction: column;
+
+  &.border {
+    border-radius: em(5px);
+  }
+
+  @media #{$brk-mobile} {
+    flex-direction: row;
+    align-items:center;
+  }
+}
+
+.stat__icon {
+  margin-bottom: 0.5em;
+  width: 100%;
+
+  @media #{$brk-mobile} {
+    width: initial;
+    margin: 0 em(25px) 0 0;
+  }
+}
+
+.stat__detail {
+  width: 100%;
+
+  @media #{$brk-mobile} {
+    width: initial;
+  }
+}
+
+.stat__title {
+  color: #7477BE;
+  margin: 0;
+}
+
+.stat__number {
+  font-size: em(30px);
+  color: darken(grey, 10%);
+  @media #{$brk-wide} {
+    font-size: em(40px);
   }
 }
