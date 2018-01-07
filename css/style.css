@@ -860,7 +860,8 @@ input:checked + .switch__slider:before {
   margin: 0; }
 
 .stat__number {
-  font-size: 1.875em; }
+  font-size: 1.875em;
+  color: #676767; }
   @media (min-width: 454px) {
     .stat__number {
       font-size: 2.5em; } }

@@ -630,6 +630,7 @@ input:checked + .switch__slider:before {
 
 .stat__number {
   font-size: em(30px);
+  color: darken(grey, 10%);
   @media #{$brk-mobile} {
     font-size: em(40px);
   }
