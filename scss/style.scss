@@ -113,7 +113,30 @@ textarea {
   &--success {
     background-color: #81C98F;
   }
+
+  &--alarm {
+    border-style: none;
+    background-color: transparent;
+    padding: em(4px);
+    position: relative;
+  }
 }
+
+.btn--alarm:hover .icon--primary-menu {
+  fill: lighten(grey, 25%);
+}
+
+.btn--alarm::before {
+  position: absolute;
+  content: "";
+  width: em(10px);
+  height: em(10px);
+  border-radius: 50%;
+  background-color: #81C98F;
+  top: 0;
+  right: 0;
+}
+
 
 //------------------------------------------------------
 // Social stats
@@ -373,6 +396,11 @@ input:checked + .switch__slider:before {
   text-decoration: none;
   color: #7477BE;
   font-size: em(25px);
+}
+
+.link--primary-menu {
+  display: inline-block;
+  padding: em(10px);
 }
 
 .link--secondary-menu {

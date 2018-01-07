@@ -477,6 +477,24 @@ textarea {
   background-color: grey; }
 .btn--success {
   background-color: #81C98F; }
+.btn--alarm {
+  border-style: none;
+  background-color: transparent;
+  padding: 0.25em;
+  position: relative; }
+
+.btn--alarm:hover .icon--primary-menu {
+  fill: silver; }
+
+.btn--alarm::before {
+  position: absolute;
+  content: "";
+  width: 0.625em;
+  height: 0.625em;
+  border-radius: 50%;
+  background-color: #81C98F;
+  top: 0;
+  right: 0; }
 
 .stat {
   display: flex;
@@ -685,6 +703,10 @@ input:checked + .switch__slider:before {
   text-decoration: none;
   color: #7477BE;
   font-size: 1.5625em; }
+
+.link--primary-menu {
+  display: inline-block;
+  padding: 0.625em; }
 
 .link--secondary-menu {
   padding: 0.625em 1.25em;
