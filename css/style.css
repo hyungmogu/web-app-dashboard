@@ -430,7 +430,8 @@ template {
 
 .list--secondary-menu {
   display: inline-block;
-  background-color: #181a34; }
+  background-color: #181a34;
+  height: 100%; }
   .list--secondary-menu .list__item {
     padding: 0.625em 0; }
 
