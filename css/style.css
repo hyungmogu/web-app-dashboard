@@ -411,6 +411,12 @@ template {
   box-sizing: border-box;
   word-wrap: break-word; }
 
+header {
+  background-color: #7477BE;
+  display: flex;
+  align-items: center;
+  padding: 0.6em 0; }
+
 .border {
   border: 0.0625em solid darkgrey; }
 
@@ -428,12 +434,35 @@ template {
   padding: 0;
   margin: 0; }
 
+.list--primary-menu {
+  display: flex;
+  list-style-type: none;
+  align-items: center;
+  padding: 0;
+  margin: 0; }
+  .list--primary-menu .list__item {
+    padding: 0 1em; }
+  @media (min-width: 454px) {
+    .list--primary-menu .alarm {
+      border-right: 1px solid #393c7a; } }
+  .list--primary-menu .profile {
+    display: none; }
+    @media (min-width: 454px) {
+      .list--primary-menu .profile {
+        display: initial; } }
+  .list--primary-menu .img--profile {
+    width: 2.3em;
+    height: 2.3em; }
+
 .list--secondary-menu {
   display: inline-block;
   background-color: #181a34;
   height: 100%; }
   .list--secondary-menu .list__item {
     padding: 0.625em 0; }
+
+.primary-menu {
+  margin-left: auto; }
 
 .secondary-menu {
   width: 4.8125em; }
@@ -474,6 +503,29 @@ textarea {
   background-color: grey; }
 .btn--success {
   background-color: #81C98F; }
+.btn--alarm {
+  border-style: none;
+  background-color: transparent;
+  padding: 0.25em;
+  position: relative;
+  cursor: pointer; }
+
+.btn--alarm:hover .icon--primary-menu {
+  fill: silver; }
+
+.btn--alarm:hover::before {
+  background-color: #56b769; }
+
+.btn--alarm::before {
+  position: absolute;
+  content: "";
+  width: 0.625em;
+  height: 0.625em;
+  border-radius: 50%;
+  background-color: #81C98F;
+  top: 0;
+  right: 0;
+  transition: background-color 0.2s ease-out; }
 
 .stat {
   display: flex;
@@ -542,6 +594,16 @@ textarea {
   .g__col--12 {
     width: 100%; } }
 
+.logo {
+  font-size: 1.4375em;
+  margin: 0;
+  padding: 0 1em; }
+  .logo a {
+    color: white;
+    text-decoration: none; }
+  .logo .reduce-font-weight {
+    font-weight: normal; }
+
 .notification {
   display: flex;
   align-items: center;
@@ -573,7 +635,15 @@ textarea {
   transition: fill 0.2s ease-out;
   fill: darkgrey; }
 
+.icon--primary-menu {
+  width: 1.625em;
+  height: 1.625em;
+  transition: fill 0.2s ease-out;
+  fill: white; }
+
 .img--profile {
+  width: 3.4375em;
+  height: 3.4375em;
   border-radius: 50%; }
 
 form {
@@ -676,6 +746,18 @@ input:checked + .switch__slider:before {
   text-decoration: none;
   color: #7477BE;
   font-size: 1.5625em; }
+
+.link--profile {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+  transition: color 0.2s ease-out; }
+  .link--profile .name {
+    padding: 0.9375em; }
+
+.link--profile:hover {
+  color: silver; }
 
 .link--secondary-menu {
   padding: 0.625em 1.25em;
