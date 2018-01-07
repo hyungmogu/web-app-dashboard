@@ -187,7 +187,7 @@ textarea {
   display: flex;
   flex-direction: column;
 
-  @media #{$brk-mobile} {
+  @media #{$brk-desktop} {
     flex-direction: row;
   }
 }
@@ -195,7 +195,7 @@ textarea {
 @for $i from 1 through $g-col-count {
   .g__col--#{$i} {
     @extend %g__col;
-    @media #{$brk-mobile} {
+    @media #{$brk-desktop} {
       width: percentage($i/$g-col-count);
     }
   }
@@ -285,7 +285,7 @@ textarea {
   width: em(55px);
   height: em(55px);
 
-  @media #{$brk-narrow} {
+  @media #{$brk-wide} {
     width: em(75px);
     height: em(75px);
   }
@@ -593,19 +593,8 @@ input:checked + .switch__slider:before {
 }
 
 //------------------------------------------------------
-// Social Stat Box
+// Social Stats Box
 //------------------------------------------------------
-
-.stat {
-  &__icon {
-    width: 33%;
-  }
-
-  &__detail {
-    width: 67%
-
-  }
-}
 
 .stat {
   display: flex;
@@ -613,7 +602,7 @@ input:checked + .switch__slider:before {
   background-color: lighten(grey, 47%);
   flex-direction: column;
 
-  @media #{$brk-narrow} {
+  @media #{$brk-mobile} {
     flex-direction: row;
     align-items:center;
   }
@@ -621,9 +610,19 @@ input:checked + .switch__slider:before {
 
 .stat__icon {
   margin-bottom: 0.5em;
+  width: 100%;
 
-  @media #{$brk-narrow} {
-    margin: 0;
+  @media #{$brk-mobile} {
+    width: initial;
+    margin: 0 em(25px) 0 0;
+  }
+}
+
+.stat__detail {
+  width: 100%;
+
+  @media #{$brk-mobile} {
+    width: initial;
   }
 }
 
@@ -635,7 +634,7 @@ input:checked + .switch__slider:before {
 .stat__number {
   font-size: em(30px);
   color: darken(grey, 10%);
-  @media #{$brk-narrow} {
+  @media #{$brk-wide} {
     font-size: em(40px);
   }
 }
