@@ -421,7 +421,7 @@ template {
   display: flex; }
 
 .content {
-  width: calc(100% - em(77px)); }
+  width: calc(100% - 77px); }
 
 .list {
   list-style-type: none;
@@ -573,9 +573,6 @@ textarea {
   transition: fill 0.2s ease-out;
   fill: darkgrey; }
 
-.icon--secondary-menu:hover {
-  fill: white; }
-
 .img--profile {
   border-radius: 50%; }
 
@@ -695,6 +692,8 @@ input:checked + .switch__slider:before {
     top: 0;
     opacity: 0;
     transition: opacity 0.2s ease-out; }
+  .link--secondary-menu:hover .icon--secondary-menu {
+    fill: white; }
   .link--secondary-menu:hover::before {
     opacity: 1; }
   .link--secondary-menu:focus::before {

@@ -23,7 +23,7 @@
 }
 
 .content {
-  width: calc(100% - em(77px));
+  width: calc(100% - 77px);
 }
 
 //------------------------------------------------------
@@ -212,11 +212,6 @@ textarea {
   fill: darkgrey;
 }
 
-.icon--secondary-menu:hover {
-  fill: white;
-}
-
-
 //------------------------------------------------------
 // Image
 //------------------------------------------------------
@@ -385,6 +380,10 @@ input:checked + .switch__slider:before {
     top: 0;
     opacity: 0;
     transition: opacity 0.2s ease-out;
+  }
+
+  &:hover .icon--secondary-menu {
+    fill: white;
   }
 
   &:hover::before {
