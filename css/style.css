@@ -553,7 +553,12 @@ textarea {
 
 .icon--secondary-menu {
   width: 2.8125em;
-  height: 2.8125em; }
+  height: 2.8125em;
+  transition: fill 0.2s ease-out;
+  fill: darkgrey; }
+
+.icon--secondary-menu:hover {
+  fill: white; }
 
 .img--profile {
   border-radius: 50%; }
