@@ -417,10 +417,26 @@ template {
 .border--bottom {
   border-bottom: 0.0625em solid darkgrey; }
 
+.main {
+  display: flex; }
+
+.content {
+  width: calc(100% - 77px); }
+
 .list {
   list-style-type: none;
   padding: 0;
   margin: 0; }
+
+.list--secondary-menu {
+  display: inline-block;
+  background-color: #181a34;
+  height: 100%; }
+  .list--secondary-menu .list__item {
+    padding: 0.625em 0; }
+
+.secondary-menu {
+  width: 4.8125em; }
 
 *::placeholder {
   color: darkgrey; }
@@ -551,6 +567,12 @@ textarea {
   .notification--success {
     background-color: #81C98F; }
 
+.icon--secondary-menu {
+  width: 2.3125em;
+  height: 2.3125em;
+  transition: fill 0.2s ease-out;
+  fill: darkgrey; }
+
 .img--profile {
   border-radius: 50%; }
 
@@ -654,6 +676,30 @@ input:checked + .switch__slider:before {
   text-decoration: none;
   color: #7477BE;
   font-size: 1.5625em; }
+
+.link--secondary-menu {
+  padding: 0.625em 1.25em;
+  display: inline-block;
+  position: relative; }
+  .link--secondary-menu::before {
+    position: absolute;
+    content: "";
+    width: 0.5em;
+    height: 100%;
+    background-color: #81C98F;
+    border-radius: 2.125em;
+    left: -0.25em;
+    top: 0;
+    opacity: 0;
+    transition: opacity 0.2s ease-out; }
+  .link--secondary-menu:hover .icon--secondary-menu {
+    fill: white; }
+  .link--secondary-menu:hover::before {
+    opacity: 1; }
+  .link--secondary-menu:focus::before {
+    opacity: 1; }
+  .link--secondary-menu:active::before {
+    opacity: 1; }
 
 .infobox--activity {
   display: flex;
