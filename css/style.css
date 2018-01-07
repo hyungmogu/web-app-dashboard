@@ -845,7 +845,7 @@ input:checked + .switch__slider:before {
 
 .stat {
   display: flex;
-  padding: 1.5625em;
+  padding: 1.8em 1.7em;
   background-color: #f8f8f8;
   flex-direction: column; }
   @media (min-width: 454px) {
