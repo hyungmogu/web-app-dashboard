@@ -413,7 +413,8 @@ template {
 
 header {
   background-color: #7477BE;
-  display: flex; }
+  display: flex;
+  align-items: center; }
 
 .border {
   border: 0.0625em solid darkgrey; }
