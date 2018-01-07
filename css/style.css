@@ -442,6 +442,9 @@ header {
     padding: 0 1em; }
     .list--primary-menu .list__item:first-child {
       border-right: 1px solid #393c7a; }
+  .list--primary-menu .img--profile {
+    width: 2.3em;
+    height: 2.3em; }
 
 .list--secondary-menu {
   display: inline-block;
