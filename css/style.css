@@ -642,7 +642,13 @@ textarea {
   fill: white; }
 
 .icon--stat {
-  fill: #7477BE; }
+  fill: #7477BE;
+  width: 3.4375em;
+  height: 3.4375em; }
+  @media (min-width: 454px) {
+    .icon--stat {
+      width: 4.6875em;
+      height: 4.6875em; } }
 
 .img--profile {
   width: 3.4375em;

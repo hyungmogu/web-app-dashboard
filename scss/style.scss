@@ -309,6 +309,13 @@ textarea {
 
 .icon--stat {
   fill: #7477BE;
+  width: em(55px);
+  height: em(55px);
+
+  @media #{$brk-mobile} {
+    width: em(75px);
+    height: em(75px);
+  }
 }
 
 //------------------------------------------------------
