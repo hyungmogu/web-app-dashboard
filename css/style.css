@@ -641,6 +641,9 @@ textarea {
   transition: fill 0.2s ease-out;
   fill: white; }
 
+.icon--stat {
+  fill: #7477BE; }
+
 .img--profile {
   width: 3.4375em;
   height: 3.4375em;
