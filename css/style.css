@@ -605,6 +605,8 @@ textarea {
   fill: white; }
 
 .img--profile {
+  width: 3.75em;
+  height: 3.75em;
   border-radius: 50%; }
 
 form {

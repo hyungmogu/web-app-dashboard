@@ -255,6 +255,8 @@ textarea {
 // Image
 //------------------------------------------------------
 .img--profile {
+  width: em(60px);
+  height: em(60px);
   border-radius: 50%;
 }
 
