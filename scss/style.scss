@@ -602,6 +602,10 @@ input:checked + .switch__slider:before {
   background-color: lighten(grey, 47%);
   flex-direction: column;
 
+  &.border {
+    border-radius: em(5px);
+  }
+
   @media #{$brk-mobile} {
     flex-direction: row;
     align-items:center;
