@@ -412,7 +412,8 @@ template {
   word-wrap: break-word; }
 
 header {
-  background-color: #7477BE; }
+  background-color: #7477BE;
+  display: flex; }
 
 .border {
   border: 0.0625em solid darkgrey; }
@@ -448,6 +449,9 @@ header {
   height: 100%; }
   .list--secondary-menu .list__item {
     padding: 0.625em 0; }
+
+.primary-menu {
+  margin-left: auto; }
 
 .secondary-menu {
   width: 4.8125em; }

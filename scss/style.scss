@@ -12,6 +12,7 @@
 
 header {
   background-color: #7477BE;
+  display: flex;
 }
 
 .border {
@@ -68,6 +69,9 @@ header {
 //------------------------------------------------------
 // Navigations
 //------------------------------------------------------
+.primary-menu {
+  margin-left: auto;
+}
 
 .secondary-menu {
   width: em(77px);
