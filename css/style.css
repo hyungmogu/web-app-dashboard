@@ -411,6 +411,9 @@ template {
   box-sizing: border-box;
   word-wrap: break-word; }
 
+header {
+  background-color: #7477BE; }
+
 .border {
   border: 0.0625em solid darkgrey; }
 
@@ -575,7 +578,9 @@ textarea {
 
 .icon--primary-menu {
   width: 1.875em;
-  height: 1.875em; }
+  height: 1.875em;
+  transition: fill 0.2s ease-out;
+  fill: white; }
 
 .img--profile {
   border-radius: 50%; }
