@@ -33,6 +33,10 @@ header {
   width: calc(100% - 77px);
 }
 
+.no-padding {
+  padding: 0;
+}
+
 //------------------------------------------------------
 // List
 //------------------------------------------------------
@@ -597,14 +601,12 @@ input:checked + .switch__slider:before {
 //------------------------------------------------------
 
 .stat {
+  @extend border;
   display: flex;
   padding: em(28.8px) em(27.2px);
   background-color: lighten(grey, 47%);
   flex-direction: column;
-
-  &.border {
-    border-radius: em(5px);
-  }
+  border-radius: em(5px);
 
   @media #{$brk-mobile} {
     flex-direction: row;
