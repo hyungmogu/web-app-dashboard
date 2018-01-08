@@ -492,7 +492,8 @@ select {
   padding: 10px 15px;
   border-radius: 5px;
   border: 0.0625em solid darkgrey;
-  color: darkgrey; }
+  color: darkgrey;
+  margin: 0; }
 
 input {
   background-color: #f8f8f8;
@@ -690,6 +691,12 @@ form {
 .form--setting .form-group {
   display: flex;
   flex-direction: column; }
+  .form--setting .form-group input {
+    margin: 0; }
+  .form--setting .form-group textarea {
+    margin: 0; }
+  .form--setting .form-group select {
+    margin: 0; }
   @media (min-width: 454px) {
     .form--setting .form-group {
       flex-direction: row; } }
@@ -701,7 +708,8 @@ form {
   position: relative;
   display: inline-block;
   width: 4.6875em;
-  height: 1.875em; }
+  height: 1.875em;
+  margin: 0; }
 
 .switch__text {
   position: absolute;

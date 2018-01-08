@@ -123,6 +123,7 @@ select {
   border-radius: 5px;
   border: em(1px) solid darkgrey; //same value as .border
   color: darkgrey; // same color as placeholder & border
+  margin: 0;
 }
 
 input {
@@ -374,6 +375,18 @@ form {
     display: flex;
     flex-direction: column;
 
+    input {
+      margin: 0;
+    }
+
+    textarea {
+      margin: 0;
+    }
+
+    select {
+      margin: 0;
+    }
+
     @media #{$brk-mobile} {
       flex-direction: row;
     }
@@ -390,6 +403,7 @@ form {
   display: inline-block;
   width: em(75px);
   height: em(30px);
+  margin: 0;
 }
 
 .switch__text {
