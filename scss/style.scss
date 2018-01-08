@@ -601,7 +601,7 @@ input:checked + .switch__slider:before {
 //------------------------------------------------------
 
 .stat {
-  @extend border;
+  @extend %border;
   display: flex;
   padding: em(28.8px) em(27.2px);
   background-color: lighten(grey, 47%);
