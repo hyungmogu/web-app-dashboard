@@ -17,6 +17,10 @@ header {
   padding: 0.6em 0;
 }
 
+form label {
+  display: inline-block;
+}
+
 .border {
   border: em(1px) solid darkgrey;
 }
@@ -31,6 +35,10 @@ header {
 
 .content {
   width: calc(100% - 77px);
+}
+
+.no-padding {
+  padding: 0;
 }
 
 //------------------------------------------------------
@@ -115,6 +123,7 @@ select {
   border-radius: 5px;
   border: em(1px) solid darkgrey; //same value as .border
   color: darkgrey; // same color as placeholder & border
+  margin: 0;
 }
 
 input {
@@ -140,14 +149,26 @@ textarea {
 
   &--default {
     background-color: #7477BE;
+    transition: background-color .2s ease-out;
+    &:hover{
+      background-color: darken(#7477BE, 10%);
+    }
   }
 
   &--info {
     background-color: grey;
+    transition: background-color .2s ease-out;
+    &:hover{
+      background-color: darken(grey, 10%);
+    }
   }
 
   &--success {
     background-color: #81C98F;
+    transition: background-color .2s ease-out;
+    &:hover{
+      background-color: darken(#81C98F, 10%);
+    }
   }
 
   &--alarm {
@@ -365,6 +386,23 @@ form {
   .form-group {
     display: flex;
     flex-direction: column;
+    margin: 0 0 em(16px) 0;
+
+    &:last-child {
+      margin: 0;
+    }
+
+    input {
+      margin: 0;
+    }
+
+    textarea {
+      margin: 0;
+    }
+
+    select {
+      margin: 0;
+    }
 
     @media #{$brk-mobile} {
       flex-direction: row;
@@ -382,6 +420,7 @@ form {
   display: inline-block;
   width: em(75px);
   height: em(30px);
+  margin: 0;
 }
 
 .switch__text {
@@ -508,7 +547,7 @@ input:checked + .switch__slider:before {
   .content {
     width: 90%;
 
-    @media #{$brk-mobile} {
+    @media #{$brk-narrow} {
       display: flex;
       align-items: center;
     }
@@ -532,7 +571,7 @@ input:checked + .switch__slider:before {
   .date {
     width: 100%;
 
-    @media #{$brk-mobile} {
+    @media #{$brk-narrow} {
       width: 30%;
       text-align: right;
     }
@@ -542,7 +581,7 @@ input:checked + .switch__slider:before {
     width: 100%;
     margin-bottom: 0.5em;
 
-    @media #{$brk-mobile} {
+    @media #{$brk-narrow} {
       margin: 0;
       display: flex;
       flex-direction: row;
@@ -552,7 +591,7 @@ input:checked + .switch__slider:before {
     }
   }
 
-  @media #{$brk-mobile} {
+  @media #{$brk-narrow} {
     flex-direction: row;
   }
 }
@@ -565,7 +604,7 @@ input:checked + .switch__slider:before {
   .profile-pic {
     margin: 0 0 em(16px) 0;
 
-    @media #{$brk-mobile} {
+    @media #{$brk-narrow} {
       margin: 0 em(20px) 0 0;
     }
   }
@@ -574,19 +613,19 @@ input:checked + .switch__slider:before {
     * {
       display: block;
     }
-    @media #{$brk-mobile} {
+    @media #{$brk-narrow} {
       margin: 0 em(20px) 0 0;
     }
   }
 
   & > div:last-child {
     margin: 0;
-    @media #{$brk-mobile} {
+    @media #{$brk-narrow} {
       margin-left: auto;
     }
   }
 
-  @media #{$brk-mobile} {
+  @media #{$brk-narrow} {
     flex-direction: row;
     align-items: center;
   }
@@ -597,14 +636,12 @@ input:checked + .switch__slider:before {
 //------------------------------------------------------
 
 .stat {
+  @extend %border;
   display: flex;
   padding: em(28.8px) em(27.2px);
   background-color: lighten(grey, 47%);
   flex-direction: column;
-
-  &.border {
-    border-radius: em(5px);
-  }
+  border-radius: em(5px);
 
   @media #{$brk-mobile} {
     flex-direction: row;
