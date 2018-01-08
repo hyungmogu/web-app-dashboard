@@ -17,6 +17,10 @@ header {
   padding: 0.6em 0;
 }
 
+form label {
+  display: inline-block;
+}
+
 .border {
   border: em(1px) solid darkgrey;
 }
