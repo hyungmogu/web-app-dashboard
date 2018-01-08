@@ -508,11 +508,20 @@ textarea {
   border: 0.0625em solid darkgrey; }
 
 .btn--default {
-  background-color: #7477BE; }
+  background-color: #7477BE;
+  transition: background-color .2s ease-out; }
+  .btn--default:hover {
+    background-color: #5155ae; }
 .btn--info {
-  background-color: grey; }
+  background-color: grey;
+  transition: background-color .2s ease-out; }
+  .btn--info:hover {
+    background-color: #676767; }
 .btn--success {
-  background-color: #81C98F; }
+  background-color: #81C98F;
+  transition: background-color .2s ease-out; }
+  .btn--success:hover {
+    background-color: #5dba6f; }
 .btn--alarm {
   border-style: none;
   background-color: transparent;

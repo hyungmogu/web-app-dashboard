@@ -149,14 +149,26 @@ textarea {
 
   &--default {
     background-color: #7477BE;
+    transition: background-color .2s ease-out;
+    &:hover{
+      background-color: darken(#7477BE, 10%);
+    }
   }
 
   &--info {
     background-color: grey;
+    transition: background-color .2s ease-out;
+    &:hover{
+      background-color: darken(grey, 10%);
+    }
   }
 
   &--success {
     background-color: #81C98F;
+    transition: background-color .2s ease-out;
+    &:hover{
+      background-color: darken(#81C98F, 10%);
+    }
   }
 
   &--alarm {
