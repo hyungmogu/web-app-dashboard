@@ -17,6 +17,10 @@ header {
   padding: 0.6em 0;
 }
 
+form label {
+  display: inline-block;
+}
+
 .border {
   border: em(1px) solid darkgrey;
 }
@@ -31,6 +35,10 @@ header {
 
 .content {
   width: calc(100% - 77px);
+}
+
+.no-padding {
+  padding: 0;
 }
 
 //------------------------------------------------------
@@ -115,6 +123,7 @@ select {
   border-radius: 5px;
   border: em(1px) solid darkgrey; //same value as .border
   color: darkgrey; // same color as placeholder & border
+  margin: 0;
 }
 
 input {
@@ -365,6 +374,23 @@ form {
   .form-group {
     display: flex;
     flex-direction: column;
+    margin: 0 0 em(16px) 0;
+
+    &:last-child {
+      margin: 0;
+    }
+
+    input {
+      margin: 0;
+    }
+
+    textarea {
+      margin: 0;
+    }
+
+    select {
+      margin: 0;
+    }
 
     @media #{$brk-mobile} {
       flex-direction: row;
@@ -382,6 +408,7 @@ form {
   display: inline-block;
   width: em(75px);
   height: em(30px);
+  margin: 0;
 }
 
 .switch__text {
@@ -597,14 +624,12 @@ input:checked + .switch__slider:before {
 //------------------------------------------------------
 
 .stat {
+  @extend %border;
   display: flex;
   padding: em(28.8px) em(27.2px);
   background-color: lighten(grey, 47%);
   flex-direction: column;
-
-  &.border {
-    border-radius: em(5px);
-  }
+  border-radius: em(5px);
 
   @media #{$brk-mobile} {
     flex-direction: row;

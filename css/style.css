@@ -16,6 +16,9 @@
   padding: 0.9375em 1.875em;
   cursor: pointer; }
 
+.stat {
+  border: 0.0625em solid darkgrey; }
+
 /*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -417,6 +420,9 @@ header {
   align-items: center;
   padding: 0.6em 0; }
 
+form label {
+  display: inline-block; }
+
 .border {
   border: 0.0625em solid darkgrey; }
 
@@ -428,6 +434,9 @@ header {
 
 .content {
   width: calc(100% - 77px); }
+
+.no-padding {
+  padding: 0; }
 
 .list {
   list-style-type: none;
@@ -483,7 +492,8 @@ select {
   padding: 10px 15px;
   border-radius: 5px;
   border: 0.0625em solid darkgrey;
-  color: darkgrey; }
+  color: darkgrey;
+  margin: 0; }
 
 input {
   background-color: #f8f8f8;
@@ -680,7 +690,16 @@ form {
     margin-right: 0; } }
 .form--setting .form-group {
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+  margin: 0 0 1em 0; }
+  .form--setting .form-group:last-child {
+    margin: 0; }
+  .form--setting .form-group input {
+    margin: 0; }
+  .form--setting .form-group textarea {
+    margin: 0; }
+  .form--setting .form-group select {
+    margin: 0; }
   @media (min-width: 454px) {
     .form--setting .form-group {
       flex-direction: row; } }
@@ -692,7 +711,8 @@ form {
   position: relative;
   display: inline-block;
   width: 4.6875em;
-  height: 1.875em; }
+  height: 1.875em;
+  margin: 0; }
 
 .switch__text {
   position: absolute;
@@ -847,9 +867,8 @@ input:checked + .switch__slider:before {
   display: flex;
   padding: 1.8em 1.7em;
   background-color: #f8f8f8;
-  flex-direction: column; }
-  .stat.border {
-    border-radius: 0.3125em; }
+  flex-direction: column;
+  border-radius: 0.3125em; }
   @media (min-width: 454px) {
     .stat {
       flex-direction: row;
