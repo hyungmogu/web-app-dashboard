@@ -814,7 +814,7 @@ input:checked + .switch__slider:before {
   flex-direction: row; }
   .infobox--activity .content {
     width: 90%; }
-    @media (min-width: 454px) {
+    @media (min-width: 768px) {
       .infobox--activity .content {
         display: flex;
         align-items: center; } }
@@ -830,21 +830,21 @@ input:checked + .switch__slider:before {
   flex-direction: column; }
   .infobox--members .date {
     width: 100%; }
-    @media (min-width: 454px) {
+    @media (min-width: 768px) {
       .infobox--members .date {
         width: 30%;
         text-align: right; } }
   .infobox--members .content {
     width: 100%;
     margin-bottom: 0.5em; }
-    @media (min-width: 454px) {
+    @media (min-width: 768px) {
       .infobox--members .content {
         margin: 0;
         display: flex;
         flex-direction: row;
         align-items: center;
         width: 70%; } }
-  @media (min-width: 454px) {
+  @media (min-width: 768px) {
     .infobox--members {
       flex-direction: row; } }
 
@@ -854,20 +854,20 @@ input:checked + .switch__slider:before {
   padding: 1.5em 0; }
   .infobox .profile-pic {
     margin: 0 0 1em 0; }
-    @media (min-width: 454px) {
+    @media (min-width: 768px) {
       .infobox .profile-pic {
         margin: 0 1.25em 0 0; } }
   .infobox .detail * {
     display: block; }
-  @media (min-width: 454px) {
+  @media (min-width: 768px) {
     .infobox .detail {
       margin: 0 1.25em 0 0; } }
   .infobox > div:last-child {
     margin: 0; }
-    @media (min-width: 454px) {
+    @media (min-width: 768px) {
       .infobox > div:last-child {
         margin-left: auto; } }
-  @media (min-width: 454px) {
+  @media (min-width: 768px) {
     .infobox {
       flex-direction: row;
       align-items: center; } }
