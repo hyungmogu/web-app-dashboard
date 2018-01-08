@@ -16,6 +16,9 @@
   padding: 0.9375em 1.875em;
   cursor: pointer; }
 
+.stat {
+  border: 0.0625em solid darkgrey; }
+
 /*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -417,6 +420,9 @@ header {
   align-items: center;
   padding: 0.6em 0; }
 
+form label {
+  display: inline-block; }
+
 .border {
   border: 0.0625em solid darkgrey; }
 
@@ -428,6 +434,9 @@ header {
 
 .content {
   width: calc(100% - 77px); }
+
+.no-padding {
+  padding: 0; }
 
 .list {
   list-style-type: none;
@@ -483,7 +492,8 @@ select {
   padding: 10px 15px;
   border-radius: 5px;
   border: 0.0625em solid darkgrey;
-  color: darkgrey; }
+  color: darkgrey;
+  margin: 0; }
 
 input {
   background-color: #f8f8f8;
@@ -498,11 +508,20 @@ textarea {
   border: 0.0625em solid darkgrey; }
 
 .btn--default {
-  background-color: #7477BE; }
+  background-color: #7477BE;
+  transition: background-color .2s ease-out; }
+  .btn--default:hover {
+    background-color: #5155ae; }
 .btn--info {
-  background-color: grey; }
+  background-color: grey;
+  transition: background-color .2s ease-out; }
+  .btn--info:hover {
+    background-color: #676767; }
 .btn--success {
-  background-color: #81C98F; }
+  background-color: #81C98F;
+  transition: background-color .2s ease-out; }
+  .btn--success:hover {
+    background-color: #5dba6f; }
 .btn--alarm {
   border-style: none;
   background-color: transparent;
@@ -680,7 +699,16 @@ form {
     margin-right: 0; } }
 .form--setting .form-group {
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+  margin: 0 0 1em 0; }
+  .form--setting .form-group:last-child {
+    margin: 0; }
+  .form--setting .form-group input {
+    margin: 0; }
+  .form--setting .form-group textarea {
+    margin: 0; }
+  .form--setting .form-group select {
+    margin: 0; }
   @media (min-width: 454px) {
     .form--setting .form-group {
       flex-direction: row; } }
@@ -692,7 +720,8 @@ form {
   position: relative;
   display: inline-block;
   width: 4.6875em;
-  height: 1.875em; }
+  height: 1.875em;
+  margin: 0; }
 
 .switch__text {
   position: absolute;
@@ -785,7 +814,7 @@ input:checked + .switch__slider:before {
   flex-direction: row; }
   .infobox--activity .content {
     width: 90%; }
-    @media (min-width: 454px) {
+    @media (min-width: 768px) {
       .infobox--activity .content {
         display: flex;
         align-items: center; } }
@@ -801,21 +830,21 @@ input:checked + .switch__slider:before {
   flex-direction: column; }
   .infobox--members .date {
     width: 100%; }
-    @media (min-width: 454px) {
+    @media (min-width: 768px) {
       .infobox--members .date {
         width: 30%;
         text-align: right; } }
   .infobox--members .content {
     width: 100%;
     margin-bottom: 0.5em; }
-    @media (min-width: 454px) {
+    @media (min-width: 768px) {
       .infobox--members .content {
         margin: 0;
         display: flex;
         flex-direction: row;
         align-items: center;
         width: 70%; } }
-  @media (min-width: 454px) {
+  @media (min-width: 768px) {
     .infobox--members {
       flex-direction: row; } }
 
@@ -825,20 +854,20 @@ input:checked + .switch__slider:before {
   padding: 1.5em 0; }
   .infobox .profile-pic {
     margin: 0 0 1em 0; }
-    @media (min-width: 454px) {
+    @media (min-width: 768px) {
       .infobox .profile-pic {
         margin: 0 1.25em 0 0; } }
   .infobox .detail * {
     display: block; }
-  @media (min-width: 454px) {
+  @media (min-width: 768px) {
     .infobox .detail {
       margin: 0 1.25em 0 0; } }
   .infobox > div:last-child {
     margin: 0; }
-    @media (min-width: 454px) {
+    @media (min-width: 768px) {
       .infobox > div:last-child {
         margin-left: auto; } }
-  @media (min-width: 454px) {
+  @media (min-width: 768px) {
     .infobox {
       flex-direction: row;
       align-items: center; } }
@@ -847,9 +876,8 @@ input:checked + .switch__slider:before {
   display: flex;
   padding: 1.8em 1.7em;
   background-color: #f8f8f8;
-  flex-direction: column; }
-  .stat.border {
-    border-radius: 0.3125em; }
+  flex-direction: column;
+  border-radius: 0.3125em; }
   @media (min-width: 454px) {
     .stat {
       flex-direction: row;
