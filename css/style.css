@@ -690,7 +690,10 @@ form {
     margin-right: 0; } }
 .form--setting .form-group {
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+  margin: 0 0 1em 0; }
+  .form--setting .form-group:last-child {
+    margin: 0; }
   .form--setting .form-group input {
     margin: 0; }
   .form--setting .form-group textarea {

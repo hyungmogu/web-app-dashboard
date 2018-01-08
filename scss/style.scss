@@ -374,6 +374,11 @@ form {
   .form-group {
     display: flex;
     flex-direction: column;
+    margin: 0 0 em(16px) 0;
+
+    &:last-child {
+      margin: 0;
+    }
 
     input {
       margin: 0;
