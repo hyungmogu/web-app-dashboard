@@ -429,6 +429,23 @@ form label {
 .border--bottom {
   border-bottom: 0.0625em solid darkgrey; }
 
+.header--traffic {
+  display: flex;
+  margin-bottom: 0 0 1em 0;
+  flex-direction: column; }
+  .header--traffic .section__title {
+    margin-top: 0; }
+    @media (min-width: 768px) {
+      .header--traffic .section__title {
+        margin: 0; } }
+  @media (min-width: 768px) {
+    .header--traffic .tab--traffic {
+      margin-left: auto; } }
+  @media (min-width: 768px) {
+    .header--traffic {
+      flex-direction: row;
+      align-items: center; } }
+
 .main {
   display: flex; }
 
@@ -923,8 +940,7 @@ input:checked + .switch__slider:before {
   display: flex;
   list-style-type: none;
   align-items: center;
-  padding: 0;
-  margin: 0 0 1em 0; }
+  padding: 0; }
 
 .tab__item--traffic {
   margin: 0 0.3125em; }
