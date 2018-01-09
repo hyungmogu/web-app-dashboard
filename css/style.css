@@ -449,8 +449,14 @@ form label {
 .main {
   display: flex; }
 
-.content {
-  width: calc(100% - 77px); }
+.main-content {
+  width: 100%;
+  transition: width 0.5s ease-out; }
+  .main-content.make-room {
+    width: calc(100% - 77px); }
+  @media (min-width: 768px) {
+    .main-content {
+      width: calc(100% - 77px); } }
 
 .no-padding {
   padding: 0; }
@@ -491,7 +497,17 @@ form label {
   margin-left: auto; }
 
 .secondary-menu {
-  width: 4.8125em; }
+  width: 4.8125em;
+  display: none;
+  transform: translateX(-77px);
+  transition: transform 0.5s ease-out; }
+  .secondary-menu.open {
+    display: initial;
+    transform: translateX(0px); }
+  @media (min-width: 768px) {
+    .secondary-menu {
+      display: initial;
+      transform: translate(0px); } }
 
 *::placeholder {
   color: darkgrey; }
@@ -556,6 +572,20 @@ textarea {
   @media (min-width: 454px) {
     .btn--tab {
       width: initial; } }
+.btn--menu {
+  background-color: transparent;
+  border-style: none;
+  color: white;
+  font-size: 1.3em;
+  transition: color 0.2s ease-out;
+  cursor: pointer;
+  padding: 7px 14px; }
+  @media (min-width: 768px) {
+    .btn--menu {
+      display: none; } }
+
+.btn--menu:hover {
+  color: silver; }
 
 .btn--alarm:hover .icon--primary-menu {
   fill: silver; }
@@ -636,12 +666,15 @@ textarea {
 .logo {
   font-size: 1.4375em;
   margin: 0;
-  padding: 0 1em; }
+  padding: 0 1em 0 0.3125em; }
   .logo a {
     color: white;
     text-decoration: none; }
   .logo .reduce-font-weight {
     font-weight: normal; }
+  @media (min-width: 454px) {
+    .logo {
+      padding: 0 1em; } }
 
 .notification {
   display: flex;

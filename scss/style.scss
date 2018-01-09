@@ -56,8 +56,17 @@ form label {
   display: flex;
 }
 
-.content {
-  width: calc(100% - 77px);
+.main-content {
+  width: 100%;
+  transition: width 0.5s ease-out;
+
+  &.make-room {
+    width: calc(100% - 77px);
+  }
+
+  @media #{$brk-narrow} {
+    width: calc(100% - 77px);
+  }
 }
 
 .no-padding {
@@ -122,6 +131,19 @@ form label {
 
 .secondary-menu {
   width: em(77px);
+  display: none;
+  transform: translateX(-77px);
+  transition: transform 0.5s ease-out;
+
+  &.open {
+    display: initial;
+    transform: translateX(0px);
+  }
+
+  @media #{$brk-narrow} {
+    display: initial;
+    transform: translate(0px);
+  }
 }
 
 //------------------------------------------------------
@@ -216,6 +238,24 @@ textarea {
       width: initial;
     }
   }
+
+  &--menu {
+    background-color: transparent;
+    border-style: none;
+    color: white;
+    font-size: 1.3em;
+    transition: color 0.2s ease-out;
+    cursor: pointer;
+    padding: 7px 14px;
+
+    @media #{$brk-narrow} {
+      display: none;
+    }
+  }
+}
+
+.btn--menu:hover {
+  color: lighten(grey, 25%);
 }
 
 .btn--alarm:hover .icon--primary-menu {
@@ -273,7 +313,7 @@ textarea {
 .logo {
   font-size: em(23px);
   margin: 0;
-  padding: 0 em(16px);
+  padding: 0 em(16px) 0 em(5px);
 
   a {
     color: white;
@@ -282,6 +322,10 @@ textarea {
 
   .reduce-font-weight {
     font-weight: normal;
+  }
+
+  @media #{$brk-mobile} {
+    padding: 0 em(16px);
   }
 }
 
