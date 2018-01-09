@@ -1,8 +1,23 @@
-/*
-*
-* @description
-*
-*/
+//------------------------------------------------------
+// Menu
+//------------------------------------------------------
+const $menu_id = ".btn--menu"
+
+let toggleMenu = function() {
+  $(".secondary-menu").toggleClass("open");
+  $(".main-content").toggleClass("make-room");
+};
+
+$(function(){
+  $($menu_id).click(function(){
+    toggleMenu();
+  });
+});
+
+//------------------------------------------------------
+// Charts
+//------------------------------------------------------
+
 const TRAFFIC = document.getElementById("graph--traffic");
 const DTRAFFIC = document.getElementById("graph--dtraffic");
 const USER = document.getElementById("graph--user");
