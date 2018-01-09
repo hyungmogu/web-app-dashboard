@@ -549,9 +549,13 @@ textarea {
   border-style: none;
   background-color: transparent;
   border-radius: 2.125em;
+  width: 100%;
   cursor: pointer;
   padding: 0.625em 0.9375em;
   transition: color 0.2s ease-out, background-color 0.2s ease-out; }
+  @media (min-width: 454px) {
+    .btn--tab {
+      width: initial; } }
 
 .btn--alarm:hover .icon--primary-menu {
   fill: silver; }
@@ -939,8 +943,12 @@ input:checked + .switch__slider:before {
 .tab--traffic {
   display: flex;
   list-style-type: none;
-  align-items: center;
+  flex-direction: column;
   padding: 0; }
+  @media (min-width: 454px) {
+    .tab--traffic {
+      align-items: center;
+      flex-direction: row; } }
 
 .tab__item--traffic {
   margin: 0 0.3125em; }

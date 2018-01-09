@@ -206,10 +206,15 @@ textarea {
     border-style: none;
     background-color: transparent;
     border-radius: em(34px);
+    width: 100%;
     cursor: pointer;
     padding: em(10px) em(15px);
     transition: color 0.2s ease-out,
                 background-color 0.2s ease-out;
+
+    @media #{$brk-mobile} {
+      width: initial;
+    }
   }
 }
 
@@ -728,8 +733,13 @@ input:checked + .switch__slider:before {
   &--traffic {
     display: flex;
     list-style-type: none;
-    align-items:center;
+    flex-direction: column;
     padding: 0;
+
+    @media #{$brk-mobile} {
+      align-items:center;
+      flex-direction: row;
+    }
   }
 }
 
