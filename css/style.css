@@ -461,6 +461,10 @@ form label {
 .no-padding {
   padding: 0; }
 
+.chartjs-render-monitor {
+  width: 100% !important;
+  height: auto !important; }
+
 .list {
   list-style-type: none;
   padding: 0;
