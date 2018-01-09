@@ -3,6 +3,42 @@
 //------------------------------------------------------
 $font__size--base: 16px;
 
+//------------------------------------------------
+// Font URL
+//------------------------------------------------
+$font__url--google: "https://fonts.googleapis.com/css?family=Roboto+Slab:700,300";
+
+
+//------------------------------------------------
+// Font Weight
+//------------------------------------------------
+$font__weight--thin: 100;
+$font__weight--light: 300;
+$font__weight--medium: 400;
+$font__weight--bold: 700;
+$font__weight--ultrabold: 900;
+
+//------------------------------------------------
+// Colors
+//------------------------------------------------
+
+// Descriptive Colors
+$ship-cove: #7477BE;
+$de-york: #81C98F;
+$dove-grey: #676767;
+
+
+$color__link: $ship-cove;
+$color__text--primary: $dove-grey;
+$color__text--secondary: white;
+
+// UI theme
+$ui-theme: (
+  default: $ship-cove,
+  info: grey,
+  success: $de-york
+);
+
 //------------------------------------------------------
 // Mobile Queries
 //------------------------------------------------------
