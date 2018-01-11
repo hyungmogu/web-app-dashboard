@@ -18,3 +18,38 @@
 %border {
   border: em(1px) solid darkgrey;
 }
+
+%infobox {
+  display: flex;
+  align-items: center;
+  padding: em(24px) 0;
+
+  .profile-pic {
+    margin: 0 0 em(16px) 0;
+
+    @media #{$brk-narrow} {
+      margin: 0 em(20px) 0 0;
+    }
+  }
+
+  .infobox__detail {
+    * {
+      display: block;
+    }
+    @media #{$brk-narrow} {
+      margin: 0 em(20px) 0 0;
+    }
+  }
+
+  & > div:last-child {
+    margin: 0;
+    @media #{$brk-narrow} {
+      margin-left: auto;
+    }
+  }
+
+  @media #{$brk-narrow} {
+    flex-direction: row;
+    align-items: center;
+  }
+}

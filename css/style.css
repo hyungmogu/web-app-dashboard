@@ -19,6 +19,30 @@
 .stat {
   border: 0.0625em solid darkgrey; }
 
+.infobox--activity, .infobox--members {
+  display: flex;
+  align-items: center;
+  padding: 1.5em 0; }
+  .infobox--activity .profile-pic, .infobox--members .profile-pic {
+    margin: 0 0 1em 0; }
+    @media (min-width: 768px) {
+      .infobox--activity .profile-pic, .infobox--members .profile-pic {
+        margin: 0 1.25em 0 0; } }
+  .infobox--activity .infobox__detail *, .infobox--members .infobox__detail * {
+    display: block; }
+  @media (min-width: 768px) {
+    .infobox--activity .infobox__detail, .infobox--members .infobox__detail {
+      margin: 0 1.25em 0 0; } }
+  .infobox--activity > div:last-child, .infobox--members > div:last-child {
+    margin: 0; }
+    @media (min-width: 768px) {
+      .infobox--activity > div:last-child, .infobox--members > div:last-child {
+        margin-left: auto; } }
+  @media (min-width: 768px) {
+    .infobox--activity, .infobox--members {
+      flex-direction: row;
+      align-items: center; } }
+
 /*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -617,7 +641,6 @@ input:checked + .switch__slider:before {
   transform: translateX(43px); }
 
 .infobox--activity {
-  display: flex;
   flex-direction: row; }
   .infobox--activity .infobox__content {
     width: 90%; }
@@ -633,7 +656,6 @@ input:checked + .switch__slider:before {
     text-align: center; }
 
 .infobox--members {
-  display: flex;
   flex-direction: column; }
   .infobox--members .date {
     width: 100%; }
@@ -654,30 +676,6 @@ input:checked + .switch__slider:before {
   @media (min-width: 768px) {
     .infobox--members {
       flex-direction: row; } }
-
-.infobox {
-  display: flex;
-  align-items: center;
-  padding: 1.5em 0; }
-  .infobox .profile-pic {
-    margin: 0 0 1em 0; }
-    @media (min-width: 768px) {
-      .infobox .profile-pic {
-        margin: 0 1.25em 0 0; } }
-  .infobox .infobox__detail * {
-    display: block; }
-  @media (min-width: 768px) {
-    .infobox .infobox__detail {
-      margin: 0 1.25em 0 0; } }
-  .infobox > div:last-child {
-    margin: 0; }
-    @media (min-width: 768px) {
-      .infobox > div:last-child {
-        margin-left: auto; } }
-  @media (min-width: 768px) {
-    .infobox {
-      flex-direction: row;
-      align-items: center; } }
 
 .tab--traffic {
   display: flex;
