@@ -844,6 +844,14 @@ input:checked + .switch__slider:before {
   -ms-transform: translateX(43px);
   transform: translateX(43px); }
 
+.link--email {
+  color: #7477BE;
+  text-decoration: none;
+  transition: color 0.2s ease-out; }
+
+.link--email:hover {
+  color: #5155ae; }
+
 .link--arrow {
   text-decoration: none;
   color: #7477BE;

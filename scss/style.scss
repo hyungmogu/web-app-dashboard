@@ -583,6 +583,16 @@ input:checked + .switch__slider:before {
 // Link
 //------------------------------------------------------
 
+.link--email {
+  color: #7477BE;
+  text-decoration: none;
+  transition: color 0.2s ease-out;
+}
+
+.link--email:hover {
+  color: darken(#7477BE, 10%);
+}
+
 .link--arrow {
   text-decoration: none;
   color: #7477BE;
