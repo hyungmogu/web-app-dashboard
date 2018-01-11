@@ -835,14 +835,14 @@ textarea {
   border: 0.0625em solid darkgrey; }
 
 .border {
-  border-bottom: 0.0625em solid darkgrey; }
-  @media (min-width: 454px) {
+  border-bottom: 0.0625em solid darkgrey;
+  border-right: none; }
+  @media (min-width: 768px) {
     .border {
       border-right: 0.0625em solid darkgrey; } }
 
-@media (min-width: 454px) {
-  .border:last-child {
-    border-right: none; } }
+.border:last-child {
+  border-right: none; }
 
 .border--bottom {
   border-bottom: 0.0625em solid darkgrey; }
