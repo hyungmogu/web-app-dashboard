@@ -425,15 +425,12 @@ form label {
 
 .header {
   margin: 0 0 1em 0; }
+  .header .section-title {
+    margin: 0; }
 
 .header--traffic {
   display: flex;
   flex-direction: column; }
-  .header--traffic .section__title {
-    margin-top: 0; }
-    @media (min-width: 768px) {
-      .header--traffic .section__title {
-        margin: 0; } }
   @media (min-width: 768px) {
     .header--traffic .tab--traffic {
       margin-left: auto; } }
@@ -456,6 +453,9 @@ form label {
 
 .no-padding {
   padding: 0; }
+
+.no-margin {
+  margin: 0; }
 
 .border {
   border-bottom: 0.0625em solid darkgrey; }
