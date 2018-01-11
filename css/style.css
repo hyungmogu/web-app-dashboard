@@ -424,22 +424,17 @@ form label {
   display: inline-block; }
 
 .border {
-  border: 0.0625em solid darkgrey; }
+  border-bottom: 0.0625em solid darkgrey; }
+  @media (min-width: 454px) {
+    .border {
+      border-right: 0.0625em solid darkgrey; } }
 
-.border:first-child {
-  border-left: none; }
-
-.border:last-child {
-  border-right: none; }
+@media (min-width: 454px) {
+  .border:last-child {
+    border-right: none; } }
 
 .border--bottom {
   border-bottom: 0.0625em solid darkgrey; }
-
-.no-border--top {
-  border-top: none; }
-
-.no-border--bottom {
-  border-bottom: none; }
 
 .header--traffic {
   display: flex;

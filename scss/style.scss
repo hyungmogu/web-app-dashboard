@@ -22,27 +22,20 @@ form label {
 }
 
 .border {
-  border: em(1px) solid darkgrey;
-}
+  border-bottom: em(1px) solid darkgrey;
 
-.border:first-child {
-  border-left: none;
+  @media #{$brk-mobile} {
+    border-right: em(1px) solid darkgrey;
+  }
 }
-
 .border:last-child {
-  border-right: none;
+  @media #{$brk-mobile} {
+    border-right: none;
+  }
 }
 
 .border--bottom {
   border-bottom: em(1px) solid darkgrey;
-}
-
-.no-border--top {
-  border-top: none;
-}
-
-.no-border--bottom {
-  border-bottom: none;
 }
 
 .header--traffic {
