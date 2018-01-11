@@ -9,7 +9,7 @@
   .theme__colors.g__col--1, .theme__colors.g__col--2, .theme__colors.g__col--3, .theme__colors.g__col--4, .theme__colors.g__col--5, .theme__colors.g__col--6, .theme__colors.g__col--7, .theme__colors.g__col--8, .theme__colors.g__col--9, .theme__colors.g__col--10, .theme__colors.g__col--11, .theme__colors.g__col--12 {
     background-color: grey; }
 
-.btn {
+.btn--default, .btn--info, .btn--success, .btn--alarm {
   border-style: none;
   border-radius: 0.3125em;
   color: white;
@@ -685,22 +685,40 @@ input:checked + .switch__slider:before {
   transition: background-color .2s ease-out; }
   .btn--default:hover {
     background-color: #5155ae; }
+
 .btn--info {
   background-color: grey;
   transition: background-color .2s ease-out; }
   .btn--info:hover {
     background-color: #676767; }
+
 .btn--success {
   background-color: #81C98F;
   transition: background-color .2s ease-out; }
   .btn--success:hover {
     background-color: #5dba6f; }
+
 .btn--alarm {
   border-style: none;
   background-color: transparent;
   padding: 0.25em;
   position: relative;
   cursor: pointer; }
+  .btn--alarm:hover .icon--primary-menu {
+    fill: silver; }
+  .btn--alarm::before {
+    position: absolute;
+    content: "";
+    width: 0.625em;
+    height: 0.625em;
+    border-radius: 50%;
+    background-color: #81C98F;
+    top: 0;
+    right: 0;
+    transition: background-color 0.2s ease-out; }
+  .btn--alarm:hover::before {
+    background-color: #56b769; }
+
 .btn--tab {
   border-style: none;
   background-color: transparent;
@@ -709,9 +727,13 @@ input:checked + .switch__slider:before {
   cursor: pointer;
   padding: 0.625em 0.9375em;
   transition: color 0.2s ease-out, background-color 0.2s ease-out; }
+  .btn--tab:hover {
+    background-color: #81C98F;
+    color: white; }
   @media (min-width: 454px) {
     .btn--tab {
       width: initial; } }
+
 .btn--menu {
   background-color: transparent;
   border-style: none;
@@ -720,33 +742,13 @@ input:checked + .switch__slider:before {
   transition: color 0.2s ease-out;
   cursor: pointer;
   padding: 7px 14px; }
+  .btn--menu:hover {
+    color: silver; }
+    .btn--menu:hover .icon--primary-menu {
+      fill: silver; }
   @media (min-width: 768px) {
     .btn--menu {
       display: none; } }
-
-.btn--menu:hover {
-  color: silver; }
-
-.btn--alarm:hover .icon--primary-menu {
-  fill: silver; }
-
-.btn--alarm:hover::before {
-  background-color: #56b769; }
-
-.btn--alarm::before {
-  position: absolute;
-  content: "";
-  width: 0.625em;
-  height: 0.625em;
-  border-radius: 50%;
-  background-color: #81C98F;
-  top: 0;
-  right: 0;
-  transition: background-color 0.2s ease-out; }
-
-.btn--tab:hover {
-  background-color: #81C98F;
-  color: white; }
 
 .grid__row {
   display: flex;

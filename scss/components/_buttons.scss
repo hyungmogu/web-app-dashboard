@@ -1,98 +1,105 @@
 //------------------------------------------------------
 // Buttons
 //------------------------------------------------------
-
-.btn {
+.btn--default {
   @extend %btn;
+  background-color: #7477BE;
+  transition: background-color .2s ease-out;
+  &:hover{
+    background-color: darken(#7477BE, 10%);
+  }
+}
 
-  &--default {
-    background-color: #7477BE;
-    transition: background-color .2s ease-out;
-    &:hover{
-      background-color: darken(#7477BE, 10%);
+.btn--info {
+  @extend %btn;
+  background-color: grey;
+  transition: background-color .2s ease-out;
+  &:hover{
+    background-color: darken(grey, 10%);
+  }
+}
+
+.btn--success {
+  @extend %btn;
+  background-color: #81C98F;
+  transition: background-color .2s ease-out;
+  &:hover{
+    background-color: darken(#81C98F, 10%);
+  }
+}
+
+.btn--alarm {
+  @extend %btn;
+  border-style: none;
+  background-color: transparent;
+  padding: em(4px);
+  position: relative;
+  cursor: pointer;
+
+  &:hover {
+    .icon--primary-menu {
+      fill: lighten(grey, 25%);
     }
   }
 
-  &--info {
-    background-color: grey;
-    transition: background-color .2s ease-out;
-    &:hover{
-      background-color: darken(grey, 10%);
-    }
-  }
-
-  &--success {
+  &::before {
+    position: absolute;
+    content: "";
+    width: em(10px);
+    height: em(10px);
+    border-radius: 50%;
     background-color: #81C98F;
-    transition: background-color .2s ease-out;
-    &:hover{
-      background-color: darken(#81C98F, 10%);
-    }
+    top: 0;
+    right: 0;
+    transition: background-color 0.2s ease-out;
   }
 
-  &--alarm {
-    border-style: none;
-    background-color: transparent;
-    padding: em(4px);
-    position: relative;
-    cursor: pointer;
+  &:hover::before {
+    background-color: darken(#81C98F, 12%);
   }
+}
 
-  &--tab {
-    border-style: none;
-    background-color: transparent;
-    border-radius: em(34px);
-    width: 100%;
-    cursor: pointer;
-    padding: em(10px) em(15px);
-    transition: color 0.2s ease-out,
-                background-color 0.2s ease-out;
+.btn--tab {
+  border-style: none;
+  background-color: transparent;
+  border-radius: em(34px);
+  width: 100%;
+  cursor: pointer;
+  padding: em(10px) em(15px);
+  transition: color 0.2s ease-out,
+              background-color 0.2s ease-out;
 
-    @media #{$brk-mobile} {
-      width: initial;
-    }
-  }
 
-  &--menu {
-    background-color: transparent;
-    border-style: none;
+  &:hover {
+    background-color: #81C98F;
     color: white;
-    font-size: 1.3em;
-    transition: color 0.2s ease-out;
-    cursor: pointer;
-    padding: 7px 14px;
 
-    @media #{$brk-narrow} {
-      display: none;
-    }
+  }
+
+
+  @media #{$brk-mobile} {
+    width: initial;
   }
 }
 
-.btn--menu:hover {
-  color: lighten(grey, 25%);
-}
-
-.btn--alarm:hover .icon--primary-menu {
-  fill: lighten(grey, 25%);
-}
-
-.btn--alarm:hover::before {
-  background-color: darken(#81C98F, 12%);
-}
-
-.btn--alarm::before {
-  position: absolute;
-  content: "";
-  width: em(10px);
-  height: em(10px);
-  border-radius: 50%;
-  background-color: #81C98F;
-  top: 0;
-  right: 0;
-  transition: background-color 0.2s ease-out;
-}
-
-.btn--tab:hover {
-  background-color: #81C98F;
+.btn--menu {
+  background-color: transparent;
+  border-style: none;
   color: white;
+  font-size: 1.3em;
+  transition: color 0.2s ease-out;
+  cursor: pointer;
+  padding: 7px 14px;
 
+  &:hover {
+    color: lighten(grey, 25%);
+
+    .icon--primary-menu {
+      fill:lighten(grey, 25%);
+    }
+  }
+
+  @media #{$brk-narrow} {
+    display: none;
+  }
 }
