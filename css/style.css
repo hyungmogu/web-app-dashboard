@@ -423,19 +423,19 @@ header {
 form label {
   display: inline-block; }
 
-.header {
+.section__header {
   margin: 0 0 1em 0; }
-  .header .section-title {
+  .section__header .section__title {
     margin: 0; }
 
-.header--traffic {
+.section__header--traffic {
   display: flex;
   flex-direction: column; }
   @media (min-width: 768px) {
-    .header--traffic .tab--traffic {
+    .section__header--traffic .tab--traffic {
       margin-left: auto; } }
   @media (min-width: 768px) {
-    .header--traffic {
+    .section__header--traffic {
       flex-direction: row;
       align-items: center; } }
 
@@ -695,13 +695,13 @@ textarea {
   padding: 1.25em 1.25em;
   border-radius: 0.3125em;
   color: white; }
-  .notification .title {
+  .notification .notification__title {
     margin: 0 0.625em 0 0; }
-  .notification .detail {
+  .notification .notification__detail {
     margin-left: 0.625em; }
-  .notification .close {
+  .notification .notification__close {
     margin-left: auto; }
-    .notification .close * {
+    .notification .notification__close * {
       border-style: none;
       background-color: transparent;
       color: white;
@@ -902,15 +902,15 @@ input:checked + .switch__slider:before {
 .infobox--activity {
   display: flex;
   flex-direction: row; }
-  .infobox--activity .content {
+  .infobox--activity .infobox__content {
     width: 90%; }
     @media (min-width: 768px) {
-      .infobox--activity .content {
+      .infobox--activity .infobox__content {
         display: flex;
         align-items: center; } }
   .infobox--activity .activity {
     margin-bottom: 0.5em; }
-  .infobox--activity .see-more {
+  .infobox--activity .infobox__see-more {
     width: 10%;
     transform: rotate(-135deg);
     text-align: center; }
@@ -924,11 +924,11 @@ input:checked + .switch__slider:before {
       .infobox--members .date {
         width: 30%;
         text-align: right; } }
-  .infobox--members .content {
+  .infobox--members .infobox__content {
     width: 100%;
     margin-bottom: 0.5em; }
     @media (min-width: 768px) {
-      .infobox--members .content {
+      .infobox--members .infobox__content {
         margin: 0;
         display: flex;
         flex-direction: row;
@@ -947,10 +947,10 @@ input:checked + .switch__slider:before {
     @media (min-width: 768px) {
       .infobox .profile-pic {
         margin: 0 1.25em 0 0; } }
-  .infobox .detail * {
+  .infobox .infobox__detail * {
     display: block; }
   @media (min-width: 768px) {
-    .infobox .detail {
+    .infobox .infobox__detail {
       margin: 0 1.25em 0 0; } }
   .infobox > div:last-child {
     margin: 0; }
