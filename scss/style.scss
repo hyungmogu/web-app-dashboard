@@ -21,26 +21,12 @@ form label {
   display: inline-block;
 }
 
-.border {
-  border-bottom: em(1px) solid darkgrey;
-
-  @media #{$brk-mobile} {
-    border-right: em(1px) solid darkgrey;
-  }
-}
-.border:last-child {
-  @media #{$brk-mobile} {
-    border-right: none;
-  }
-}
-
-.border--bottom {
-  border-bottom: em(1px) solid darkgrey;
+.header {
+  margin: 0 0 em(16px) 0;
 }
 
 .header--traffic {
   display: flex;
-  margin-bottom: 0 0 em(16px) 0;
   flex-direction: column;
 
   .section__title {
@@ -80,6 +66,27 @@ form label {
 
 .no-padding {
   padding: 0;
+}
+
+//------------------------------------------------------
+// Border
+//------------------------------------------------------
+
+.border {
+  border-bottom: em(1px) solid darkgrey;
+
+  @media #{$brk-mobile} {
+    border-right: em(1px) solid darkgrey;
+  }
+}
+.border:last-child {
+  @media #{$brk-mobile} {
+    border-right: none;
+  }
+}
+
+.border--bottom {
+  border-bottom: em(1px) solid darkgrey;
 }
 
 //------------------------------------------------------
@@ -597,6 +604,11 @@ input:checked + .switch__slider:before {
   text-decoration: none;
   color: #7477BE;
   font-size: em(25px);
+  transition: color 0.2s ease-out;
+}
+
+.link--arrow:hover {
+  color: darken(#7477BE, 10%);
 }
 
 .link--profile {
