@@ -1,0 +1,94 @@
+//------------------------------------------------------
+// Infobox
+//------------------------------------------------------
+
+.infobox--activity {
+  display: flex;
+  flex-direction: row;
+
+  .infobox__content {
+    width: 90%;
+
+    @media #{$brk-narrow} {
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  .activity {
+    margin-bottom: 0.5em;
+  }
+
+  .infobox__see-more {
+    width: 10%;
+    transform: rotate(-135deg);
+    text-align: center;
+  }
+}
+
+.infobox--members {
+  display: flex;
+  flex-direction: column;
+
+  .date {
+    width: 100%;
+
+    @media #{$brk-narrow} {
+      width: 30%;
+      text-align: right;
+    }
+  }
+
+  .infobox__content {
+    width: 100%;
+    margin-bottom: 0.5em;
+
+    @media #{$brk-narrow} {
+      margin: 0;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      width: 70%;
+
+    }
+  }
+
+  @media #{$brk-narrow} {
+    flex-direction: row;
+  }
+}
+
+.infobox {
+  display: flex;
+  align-items: center;
+  padding: em(24px) 0;
+
+  .profile-pic {
+    margin: 0 0 em(16px) 0;
+
+    @media #{$brk-narrow} {
+      margin: 0 em(20px) 0 0;
+    }
+  }
+
+  .infobox__detail {
+    * {
+      display: block;
+    }
+    @media #{$brk-narrow} {
+      margin: 0 em(20px) 0 0;
+    }
+  }
+
+  & > div:last-child {
+    margin: 0;
+    @media #{$brk-narrow} {
+      margin-left: auto;
+    }
+  }
+
+  @media #{$brk-narrow} {
+    flex-direction: row;
+    align-items: center;
+  }
+}

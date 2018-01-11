@@ -1,0 +1,89 @@
+//------------------------------------------------------
+// Form
+//------------------------------------------------------
+
+form {
+  display: flex;
+  flex-direction: column;
+
+  input {
+    width: 100%;
+    margin: 0 0 em(16px) 0;
+  }
+
+  textarea {
+    width: 100%;
+    margin: 0 0 em(16px) 0;
+  }
+
+  select {
+    width: 100%;
+    margin: 0 0 em(16px) 0;
+  }
+
+  label {
+    margin: 0 0 em(16px) 0;
+  }
+
+  button {
+    width: 100%;
+    margin: 0 0 em(8px) 0;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    @media #{$brk-mobile} {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.form--setting {
+  button {
+    width: 100%;
+    @media #{$brk-mobile} {
+      width: 50%;
+      margin: 0 2%;
+    }
+  }
+
+  button:first-child {
+    @media #{$brk-mobile} {
+      margin-left: 0;
+    }
+  }
+
+  button:last-child {
+    @media #{$brk-mobile} {
+      margin-right: 0;
+    }
+  }
+
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 em(16px) 0;
+
+    &:last-child {
+      margin: 0;
+    }
+
+    input {
+      margin: 0;
+    }
+
+    textarea {
+      margin: 0;
+    }
+
+    select {
+      margin: 0;
+    }
+
+    @media #{$brk-mobile} {
+      flex-direction: row;
+    }
+
+  }
+}

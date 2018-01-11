@@ -1,0 +1,21 @@
+//------------------------------------------------------
+// Grid
+//------------------------------------------------------
+
+.grid__row {
+  display: flex;
+  flex-direction: column;
+
+  @media #{$brk-desktop} {
+    flex-direction: row;
+  }
+}
+
+@for $i from 1 through $g-col-count {
+  .g__col--#{$i} {
+    @extend %g__col;
+    @media #{$brk-desktop} {
+      width: percentage($i/$g-col-count);
+    }
+  }
+}

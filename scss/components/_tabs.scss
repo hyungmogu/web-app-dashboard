@@ -1,0 +1,27 @@
+//------------------------------------------------------
+// Tab
+//------------------------------------------------------
+
+.tab {
+  &--traffic {
+    display: flex;
+    list-style-type: none;
+    flex-direction: column;
+    padding: 0;
+
+    @media #{$brk-mobile} {
+      align-items:center;
+      flex-direction: row;
+    }
+  }
+}
+
+.tab__item--traffic {
+  margin: 0 em(5px);
+  &:first-child {
+    margin-left: 0;
+  }
+  &:last-child {
+    margin-right: 0;
+  }
+}

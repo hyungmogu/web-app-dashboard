@@ -1,0 +1,22 @@
+//------------------------------------------------------
+// Logo
+//------------------------------------------------------
+
+.logo {
+  font-size: em(23px);
+  margin: 0;
+  padding: 0 em(16px) 0 em(5px);
+
+  a {
+    color: white;
+    text-decoration: none;
+  }
+
+  .reduce-font-weight {
+    font-weight: normal;
+  }
+
+  @media #{$brk-mobile} {
+    padding: 0 em(16px);
+  }
+}
