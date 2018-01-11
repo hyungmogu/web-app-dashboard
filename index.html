@@ -89,10 +89,10 @@
             </div>
           </div>
           <div class="grid__row">
-            <div class="g__col--12">
+            <div class="g__col--12 border no-border--top">
               <div class="traffic">
-                <div class="header--traffic">
-                  <h3 class="section__title">Traffic</h3>
+                <div class="header header--traffic">
+                  <h3 class="section-title">Traffic</h3>
                   <ul class="list tab--traffic">
                     <li class="tab__item--traffic"><button class="btn--tab">Hourly</button></li>
                     <li class="tab__item--traffic"><button class="btn--tab">Daily</button></li>
@@ -105,25 +105,31 @@
             </div>
           </div>
           <div class="grid__row">
-            <div class="g__col--6">
+            <div class="g__col--6 border">
               <div class="dtraffic">
-                <h3 class="section__title">Daily Traffic</h3>
+                <div class="header">
+                  <h3 class="section-title">Daily Traffic</h3>
+                </div>
                 <canvas id="graph--dtraffic" width="100%"></canvas>
               </div>
             </div>
-            <div class="g__col--6">
+            <div class="g__col--6 border">
               <div class="users">
-                <h3 class="section__title">Number of Users</h3>
+                <div class="header">
+                  <h3 class="section-title">Number of Users</h3>
+                </div>
                 <canvas id="graph--user" width="100%"></canvas>
               </div>
             </div>
           </div>
           <div class="grid__row">
-            <div class="g__col--12">
-              <h3 class="section__title">Social Stats</h3>
+            <div class="g__col--12 border">
+              <div class="header ">
+                <h3 class="section-title">Social Stats</h3>
+              </div>
               <div class="grid__row">
                 <div class="g__col--4">
-                  <div class="stat stat--fb border">
+                  <div class="stat stat--fb">
                     <div class="stat__icon">
                       <svg class="icon--stat" width="50px" height="50px">
                         <use xlink:href="sprite.svg#icon-facebook" class="icon--fb">
@@ -136,7 +142,7 @@
                   </div>
                 </div>
                 <div class="g__col--4">
-                  <div class="stat stat--twt border">
+                  <div class="stat stat--twt">
                     <div class="stat__icon">
                       <svg class="icon--stat" width="50px" height="50px">
                         <use xlink:href="sprite.svg#icon-twitter" class="icon--twt">
@@ -149,7 +155,7 @@
                   </div>
                 </div>
                 <div class="g__col--4">
-                  <div class="stat stat--gp border">
+                  <div class="stat stat--gp">
                     <div class="stat__icon">
                       <svg class="icon--stat" width="50px" height="50px">
                         <use xlink:href="sprite.svg#icon-google-plus" class="icon--gp">
@@ -165,9 +171,11 @@
             </div>
           </div>
           <div class="grid__row">
-            <div class="g__col--6">
+            <div class="g__col--6 border">
               <div class="members">
-                <h3 class="section_title">New Members</h3>
+                <div class="header">
+                  <h3 class="section-title">New Members</h3>
+                </div>
                 <ul class="list">
                   <li class="list__item border--bottom">
                     <div class="infobox infobox--members">
@@ -177,7 +185,7 @@
                         </div>
                         <div class="detail">
                           <span class="name">Victoria Chambers</span>
-                          <a class="link">victoria.chambers80@example.com</a>
+                          <a class="link--email" href="#">victoria.chambers80@example.com</a>
                         </div>
                       </div>
                       <div class="date">11/10/15</div>
@@ -191,7 +199,7 @@
                         </div>
                         <div class="detail">
                           <span class="name">Victoria Chambers</span>
-                          <a class="link">victoria.chambers80@example.com</a>
+                          <a class="link--email" href="#">victoria.chambers80@example.com</a>
                         </div>
                       </div>
                       <div class="date">11/10/15</div>
@@ -205,13 +213,13 @@
                         </div>
                         <div class="detail">
                           <span class="name">Victoria Chambers</span>
-                          <a class="link">victoria.chambers80@example.com</a>
+                          <a class="link--email" href="#">victoria.chambers80@example.com</a>
                         </div>
                       </div>
                       <div class="date">11/10/15</div>
                     </div>
                   </li>
-                  <li class="list__item border--bottom">
+                  <li class="list__item">
                     <div class="infobox infobox--members">
                       <div class="content">
                         <div class="profile-pic">
@@ -219,7 +227,7 @@
                         </div>
                         <div class="detail">
                           <span class="name">Victoria Chambers</span>
-                          <a class="link">victoria.chambers80@example.com</a>
+                          <a class="link--email" href="#">victoria.chambers80@example.com</a>
                         </div>
                       </div>
                       <div class="date">11/10/15</div>
@@ -228,9 +236,11 @@
                 </ul>
               </div>
             </div>
-            <div class="g__col--6">
+            <div class="g__col--6 border">
               <div class="news">
-                <h3 class="section_title">Recent Activity</h3>
+                <div class="header ">
+                  <h3 class="section-title">Recent Activity</h3>
+                </div>
                 <ul class="list">
                   <li class="list__item border--bottom">
                     <div class="infobox infobox--activity">
@@ -280,7 +290,7 @@
                       </div>
                     </div>
                   </li>
-                  <li class="list__item border--bottom">
+                  <li class="list__item">
                     <div class="infobox infobox--activity">
                       <div class="content">
                         <div class="profile-pic">
@@ -301,9 +311,11 @@
             </div>
           </div>
           <div class="grid__row">
-            <div class="g__col--6">
+            <div class="g__col--6 border">
               <div class="message">
-                <h3 class="section__title">Message User</h3>
+                <div class="header">
+                  <h3 class="section-title">Message User</h3>
+                </div>
                 <form class="form--message" method="post">
                   <input class="input" name="msg__receipient" type="text" placeholder="Search for User">
                   <textarea class="input" name="msg__text" placeholder="Message for User"></textarea>
@@ -311,9 +323,11 @@
                 </form>
               </div>
             </div>
-            <div class="g__col--6">
+            <div class="g__col--6 border">
               <div class="setting">
-                <h3 class="section__title">Settings</h3>
+                <div class="header">
+                  <h3 class="section-title">Settings</h3>
+                </div>
                 <form class="form--setting">
                   <div class="form-group grid__row">
                     <div class="g__col--5 no-padding">
@@ -381,6 +395,6 @@
         </div>
       </div>
     </body>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>    
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="js/app.js"></script>
 </html>

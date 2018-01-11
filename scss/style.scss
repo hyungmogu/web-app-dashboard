@@ -21,25 +21,18 @@ form label {
   display: inline-block;
 }
 
-.border {
-  border: em(1px) solid darkgrey;
-}
+.header {
+  margin: 0 0 em(16px) 0;
 
-.border--bottom {
-  border-bottom: em(1px) solid darkgrey;
+  .section-title {
+      margin: 0;
+  }
 }
 
 .header--traffic {
   display: flex;
-  margin-bottom: 0 0 em(16px) 0;
   flex-direction: column;
 
-  .section__title {
-    margin-top: 0;
-    @media #{$brk-narrow} {
-      margin: 0;
-    }
-  }
   .tab--traffic {
     @media #{$brk-narrow} {
       margin-left: auto;
@@ -71,6 +64,31 @@ form label {
 
 .no-padding {
   padding: 0;
+}
+
+.no-margin {
+  margin: 0;
+}
+
+//------------------------------------------------------
+// Border
+//------------------------------------------------------
+
+.border {
+  border-bottom: em(1px) solid darkgrey;
+
+  @media #{$brk-mobile} {
+    border-right: em(1px) solid darkgrey;
+  }
+}
+.border:last-child {
+  @media #{$brk-mobile} {
+    border-right: none;
+  }
+}
+
+.border--bottom {
+  border-bottom: em(1px) solid darkgrey;
 }
 
 //------------------------------------------------------
@@ -574,10 +592,25 @@ input:checked + .switch__slider:before {
 // Link
 //------------------------------------------------------
 
+.link--email {
+  color: #7477BE;
+  text-decoration: none;
+  transition: color 0.2s ease-out;
+}
+
+.link--email:hover {
+  color: darken(#7477BE, 10%);
+}
+
 .link--arrow {
   text-decoration: none;
   color: #7477BE;
   font-size: em(25px);
+  transition: color 0.2s ease-out;
+}
+
+.link--arrow:hover {
+  color: darken(#7477BE, 10%);
 }
 
 .link--profile {
