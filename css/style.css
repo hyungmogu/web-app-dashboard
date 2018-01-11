@@ -426,8 +426,20 @@ form label {
 .border {
   border: 0.0625em solid darkgrey; }
 
+.border:first-child {
+  border-left: none; }
+
+.border:last-child {
+  border-right: none; }
+
 .border--bottom {
   border-bottom: 0.0625em solid darkgrey; }
+
+.no-border--top {
+  border-top: none; }
+
+.no-border--bottom {
+  border-bottom: none; }
 
 .header--traffic {
   display: flex;

@@ -25,8 +25,24 @@ form label {
   border: em(1px) solid darkgrey;
 }
 
+.border:first-child {
+  border-left: none;
+}
+
+.border:last-child {
+  border-right: none;
+}
+
 .border--bottom {
   border-bottom: em(1px) solid darkgrey;
+}
+
+.no-border--top {
+  border-top: none;
+}
+
+.no-border--bottom {
+  border-bottom: none;
 }
 
 .header--traffic {
