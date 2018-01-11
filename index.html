@@ -75,11 +75,11 @@
                 <ul class="list">
                   <li class="list__item">
                     <div class="notification notification--default">
-                      <div class="title">
+                      <div class="notification__header">
                         <h4 class="title">Alert</h4>
                       </div>
-                      <div class="detail">Lorem ipsum. I hope you guys have a happy new year!</div>
-                      <div class="close">
+                      <div class="notification__detail">Lorem ipsum. I hope you guys have a happy new year!</div>
+                      <div class="notification__close">
                         <button>x</button>
                       </div>
                     </div>
@@ -91,8 +91,8 @@
           <div class="grid__row">
             <div class="g__col--12 border no-border--top">
               <div class="traffic">
-                <div class="header header--traffic">
-                  <h3 class="section-title">Traffic</h3>
+                <div class="section__header section__header--traffic">
+                  <h3 class="section__title">Traffic</h3>
                   <ul class="list tab--traffic">
                     <li class="tab__item--traffic"><button class="btn--tab">Hourly</button></li>
                     <li class="tab__item--traffic"><button class="btn--tab">Daily</button></li>
@@ -107,16 +107,16 @@
           <div class="grid__row">
             <div class="g__col--6 border">
               <div class="dtraffic">
-                <div class="header">
-                  <h3 class="section-title">Daily Traffic</h3>
+                <div class="section__header">
+                  <h3 class="section__title">Daily Traffic</h3>
                 </div>
                 <canvas id="graph--dtraffic" width="100%"></canvas>
               </div>
             </div>
             <div class="g__col--6 border">
               <div class="users">
-                <div class="header">
-                  <h3 class="section-title">Number of Users</h3>
+                <div class="section__header">
+                  <h3 class="section__title">Number of Users</h3>
                 </div>
                 <canvas id="graph--user" width="100%"></canvas>
               </div>
@@ -124,8 +124,8 @@
           </div>
           <div class="grid__row">
             <div class="g__col--12 border">
-              <div class="header ">
-                <h3 class="section-title">Social Stats</h3>
+              <div class="section__header">
+                <h3 class="section__title">Social Stats</h3>
               </div>
               <div class="grid__row">
                 <div class="g__col--4">
@@ -173,17 +173,17 @@
           <div class="grid__row">
             <div class="g__col--6 border">
               <div class="members">
-                <div class="header">
-                  <h3 class="section-title">New Members</h3>
+                <div class="section__header">
+                  <h3 class="section__title">New Members</h3>
                 </div>
                 <ul class="list">
                   <li class="list__item border--bottom">
                     <div class="infobox infobox--members">
-                      <div class="content">
+                      <div class="infobox__content">
                         <div class="profile-pic">
                           <img class="img--profile" src="http://via.placeholder.com/75x75"/>
                         </div>
-                        <div class="detail">
+                        <div class="infobox__detail">
                           <span class="name">Victoria Chambers</span>
                           <a class="link--email" href="#">victoria.chambers80@example.com</a>
                         </div>
@@ -193,11 +193,11 @@
                   </li>
                   <li class="list__item border--bottom">
                     <div class="infobox infobox--members">
-                      <div class="content">
+                      <div class="infobox__content">
                         <div class="profile-pic">
                           <img class="img--profile" src="http://via.placeholder.com/75x75"/>
                         </div>
-                        <div class="detail">
+                        <div class="infobox__detail">
                           <span class="name">Victoria Chambers</span>
                           <a class="link--email" href="#">victoria.chambers80@example.com</a>
                         </div>
@@ -207,11 +207,11 @@
                   </li>
                   <li class="list__item border--bottom">
                     <div class="infobox infobox--members">
-                      <div class="content">
+                      <div class="infobox__content">
                         <div class="profile-pic">
                           <img class="img--profile" src="http://via.placeholder.com/75x75"/>
                         </div>
-                        <div class="detail">
+                        <div class="infobox__detail">
                           <span class="name">Victoria Chambers</span>
                           <a class="link--email" href="#">victoria.chambers80@example.com</a>
                         </div>
@@ -221,11 +221,11 @@
                   </li>
                   <li class="list__item">
                     <div class="infobox infobox--members">
-                      <div class="content">
+                      <div class="infobox__content">
                         <div class="profile-pic">
                           <img class="img--profile" src="http://via.placeholder.com/75x75"/>
                         </div>
-                        <div class="detail">
+                        <div class="infobox__detail">
                           <span class="name">Victoria Chambers</span>
                           <a class="link--email" href="#">victoria.chambers80@example.com</a>
                         </div>
@@ -238,70 +238,70 @@
             </div>
             <div class="g__col--6 border">
               <div class="news">
-                <div class="header ">
-                  <h3 class="section-title">Recent Activity</h3>
+                <div class="section__header">
+                  <h3 class="section__title">Recent Activity</h3>
                 </div>
                 <ul class="list">
                   <li class="list__item border--bottom">
                     <div class="infobox infobox--activity">
-                      <div class="content">
+                      <div class="infobox__content">
                         <div class="profile-pic">
                           <img class="img--profile" src="http://via.placeholder.com/75x75"/>
                         </div>
-                        <div class="detail">
+                        <div class="infobox__detail">
                           <span class="activity">Victoria Chambers Commented on Youtube's CEO tips</span>
-                          <span class="time--last_active">4 hours ago</span>
+                          <span class="last-active">4 hours ago</span>
                         </div>
                       </div>
-                      <div class="see-more">
+                      <div class="infobox__see-more">
                         <a class="link link--arrow" href="#">&#8735;</a>
                       </div>
                     </div>
                   </li>
                   <li class="list__item border--bottom">
                     <div class="infobox infobox--activity">
-                      <div class="content">
+                      <div class="infobox__content">
                         <div class="profile-pic">
                           <img class="img--profile" src="http://via.placeholder.com/75x75"/>
                         </div>
-                        <div class="detail">
+                        <div class="infobox__detail">
                           <span class="activity">Victoria Chambers Commented on Youtube's CEO tips</span>
-                          <span class="time--last_active">4 hours ago</span>
+                          <span class="last-active">4 hours ago</span>
                         </div>
                       </div>
-                      <div class="see-more">
+                      <div class="infobox__see-more">
                         <a class="link link--arrow" href="#">&#8735;</a>
                       </div>
                     </div>
                   </li>
                   <li class="list__item border--bottom">
                     <div class="infobox infobox--activity">
-                      <div class="content">
+                      <div class="infobox__content">
                         <div class="profile-pic">
                           <img class="img--profile" src="http://via.placeholder.com/75x75"/>
                         </div>
-                        <div class="detail">
+                        <div class="infobox__detail">
                           <span class="activity">Victoria Chambers Commented on Youtube's CEO tips</span>
-                          <span class="time--last_active">4 hours ago</span>
+                          <span class="last-active">4 hours ago</span>
                         </div>
                       </div>
-                      <div class="see-more">
+                      <div class="infobox__see-more">
                         <a class="link link--arrow" href="#">&#8735;</a>
                       </div>
                     </div>
                   </li>
                   <li class="list__item">
                     <div class="infobox infobox--activity">
-                      <div class="content">
+                      <div class="infobox__content">
                         <div class="profile-pic">
                           <img class="img--profile" src="http://via.placeholder.com/75x75"/>
                         </div>
-                        <div class="detail">
+                        <div class="infobox__detail">
                           <span class="activity">Victoria Chambers Commented on Youtube's CEO tips</span>
-                          <span class="time--last_active">4 hours ago</span>
+                          <span class="last-active">4 hours ago</span>
                         </div>
                       </div>
-                      <div class="see-more">
+                      <div class="infobox__see-more">
                         <a class="link link--arrow" href="#">&#8735;</a>
                       </div>
                     </div>
@@ -313,8 +313,8 @@
           <div class="grid__row">
             <div class="g__col--6 border">
               <div class="message">
-                <div class="header">
-                  <h3 class="section-title">Message User</h3>
+                <div class="section__header">
+                  <h3 class="section__title">Message User</h3>
                 </div>
                 <form class="form--message" method="post">
                   <input class="input" name="msg__receipient" type="text" placeholder="Search for User">
@@ -325,8 +325,8 @@
             </div>
             <div class="g__col--6 border">
               <div class="setting">
-                <div class="header">
-                  <h3 class="section-title">Settings</h3>
+                <div class="section__header">
+                  <h3 class="section__title">Settings</h3>
                 </div>
                 <form class="form--setting">
                   <div class="form-group grid__row">
