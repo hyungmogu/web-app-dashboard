@@ -1,30 +1,14 @@
 //------------------------------------------------------
 // Buttons
 //------------------------------------------------------
-.btn--default {
-  @extend %btn;
-  background-color: map-get($ui-theme,"default");
-  transition: background-color .2s ease-out;
-  &:hover{
-    background-color: darken(map-get($ui-theme,"default"), 10%);
-  }
-}
-
-.btn--info {
-  @extend %btn;
-  background-color: map-get($ui-theme,"info");
-  transition: background-color .2s ease-out;
-  &:hover{
-    background-color: darken(map-get($ui-theme,"info"), 10%);
-  }
-}
-
-.btn--success {
-  @extend %btn;
-  background-color: map-get($ui-theme,"success");
-  transition: background-color .2s ease-out;
-  &:hover{
-    background-color: darken(map-get($ui-theme,"success"), 10%);
+@each $theme, $color in $ui-theme {
+  .btn--#{$theme} {
+    @extend %btn;
+    background-color: map-get($ui-theme,$theme);
+    transition: background-color .2s ease-out;
+    &:hover{
+      background-color: darken(map-get($ui-theme,$theme), 10%);
+    }
   }
 }
 
@@ -42,21 +26,7 @@
     }
   }
 
-  &::before {
-    position: absolute;
-    content: "";
-    width: em(10px);
-    height: em(10px);
-    border-radius: 50%;
-    background-color: map-get($ui-theme,"success");
-    top: 0;
-    right: 0;
-    transition: background-color 0.2s ease-out;
-  }
-
-  &:hover::before {
-    background-color: darken(map-get($ui-theme,"success"), 12%);
-  }
+  @include notification_dot;
 }
 
 .btn--tab {
