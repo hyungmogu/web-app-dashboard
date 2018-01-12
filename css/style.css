@@ -687,10 +687,10 @@ input:checked + .switch__slider:before {
     background-color: #5155ae; }
 
 .btn--info {
-  background-color: grey;
+  background-color: #676767;
   transition: background-color .2s ease-out; }
   .btn--info:hover {
-    background-color: #676767; }
+    background-color: #4e4e4e; }
 
 .btn--success {
   background-color: #81C98F;
@@ -705,7 +705,7 @@ input:checked + .switch__slider:before {
   position: relative;
   cursor: pointer; }
   .btn--alarm:hover .icon--primary-menu {
-    fill: silver; }
+    fill: #a7a7a7; }
   .btn--alarm::before {
     position: absolute;
     content: "";
@@ -743,9 +743,9 @@ input:checked + .switch__slider:before {
   cursor: pointer;
   padding: 7px 14px; }
   .btn--menu:hover {
-    color: silver; }
+    color: #a7a7a7; }
     .btn--menu:hover .icon--primary-menu {
-      fill: silver; }
+      fill: #a7a7a7; }
   @media (min-width: 768px) {
     .btn--menu {
       display: none; } }

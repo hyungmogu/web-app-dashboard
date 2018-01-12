@@ -27,7 +27,6 @@ $ship-cove: #7477BE;
 $de-york: #81C98F;
 $dove-grey: #676767;
 
-
 $color__link: $ship-cove;
 $color__text--primary: $dove-grey;
 $color__text--secondary: white;
@@ -35,7 +34,7 @@ $color__text--secondary: white;
 // UI theme
 $ui-theme: (
   default: $ship-cove,
-  info: grey,
+  info: $dove-grey,
   success: $de-york
 );
 
