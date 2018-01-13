@@ -1,0 +1,43 @@
+//------------------------------------------------------
+// Base
+//------------------------------------------------------
+* {
+  box-sizing: border-box;
+  word-wrap: break-word;
+}
+
+header {
+  background-color: #7477BE;
+  display: flex;
+  align-items: center;
+  padding: 0.6em 0;
+}
+
+form label {
+  display: inline-block;
+}
+
+.main {
+  display: flex;
+}
+
+.main-content {
+  width: 100%;
+  transition: width 0.5s ease-out;
+
+  &.make-room {
+    width: calc(100% - 77px);
+  }
+
+  @media #{$brk-narrow} {
+    width: calc(100% - 77px);
+  }
+}
+
+.no-padding {
+  padding: 0;
+}
+
+.no-margin {
+  margin: 0;
+}

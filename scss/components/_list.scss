@@ -1,0 +1,48 @@
+//------------------------------------------------------
+// List
+//------------------------------------------------------
+
+.list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.list--primary-menu {
+  display: flex;
+  list-style-type: none;
+  align-items:center;
+  padding: 0;
+  margin: 0;
+
+  .list__item {
+    padding: 0 em(16px);
+  }
+
+  .alarm {
+    @media #{$brk-mobile}{
+      border-right: 1px solid darken(#7477BE, 25%);
+    }
+  }
+
+  .profile {
+    display: none;
+    @media #{$brk-mobile} {
+      display: initial;
+    }
+  }
+
+  .img--profile {
+    width: em(36.8px);
+    height: em(36.8px);
+  }
+}
+
+.list--secondary-menu {
+  display: inline-block;
+  background-color: darken(#7477BE, 45%);
+  height: 100%;
+  .list__item {
+    padding: em(10px) 0;
+  }
+}

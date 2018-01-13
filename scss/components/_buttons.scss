@@ -1,0 +1,71 @@
+//------------------------------------------------------
+// Buttons
+//------------------------------------------------------
+@each $theme, $color in $ui-theme {
+  .btn--#{$theme} {
+    @extend %btn;
+    background-color: map-get($ui-theme,$theme);
+    transition: background-color .2s ease-out;
+    &:hover{
+      background-color: darken(map-get($ui-theme,$theme), 10%);
+    }
+  }
+}
+
+.btn--alarm {
+  @extend %btn;
+  border-style: none;
+  background-color: transparent;
+  padding: em(4px);
+  position: relative;
+  cursor: pointer;
+
+  &:hover {
+    .icon--primary-menu {
+      fill: lighten(map-get($ui-theme,"info"), 25%);
+    }
+  }
+
+  @include notification_dot;
+}
+
+.btn--tab {
+  border-style: none;
+  background-color: transparent;
+  border-radius: em(34px);
+  width: 100%;
+  cursor: pointer;
+  padding: em(10px) em(15px);
+  transition: color 0.2s ease-out,
+              background-color 0.2s ease-out;
+  &:hover {
+    background-color: map-get($ui-theme,"success");
+    color: white;
+
+  }
+  @media #{$brk-mobile} {
+    width: initial;
+  }
+}
+
+.btn--menu {
+  background-color: transparent;
+  border-style: none;
+  color: white;
+  font-size: 1.3em;
+  transition: color 0.2s ease-out;
+  cursor: pointer;
+  padding: em(7px) em(14px);
+
+  &:hover {
+    color: lighten(map-get($ui-theme,"info"), 25%);
+
+    .icon--primary-menu {
+      fill:lighten(map-get($ui-theme,"info"), 25%);
+    }
+  }
+
+  @media #{$brk-narrow} {
+    display: none;
+  }
+}

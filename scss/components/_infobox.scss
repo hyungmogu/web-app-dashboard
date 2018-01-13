@@ -1,0 +1,59 @@
+//------------------------------------------------------
+// Infobox
+//------------------------------------------------------
+
+.infobox--activity {
+  @extend %infobox;
+  flex-direction: row;
+
+  .infobox__content {
+    width: 90%;
+
+    @media #{$brk-narrow} {
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  .activity {
+    margin-bottom: 0.5em;
+  }
+
+  .infobox__see-more {
+    width: 10%;
+    transform: rotate(-135deg);
+    text-align: center;
+  }
+}
+
+.infobox--members {
+  @extend %infobox;
+  flex-direction: column;
+
+  .date {
+    width: 100%;
+
+    @media #{$brk-narrow} {
+      width: 30%;
+      text-align: right;
+    }
+  }
+
+  .infobox__content {
+    width: 100%;
+    margin-bottom: 0.5em;
+
+    @media #{$brk-narrow} {
+      margin: 0;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      width: 70%;
+
+    }
+  }
+
+  @media #{$brk-narrow} {
+    flex-direction: row;
+  }
+}

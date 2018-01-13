@@ -1,0 +1,23 @@
+//------------------------------------------------------
+// Navigations
+//------------------------------------------------------
+.primary-menu {
+  margin-left: auto;
+}
+
+.secondary-menu {
+  width: em(77px);
+  display: none;
+  transform: translateX(-77px);
+  transition: transform 0.5s ease-out;
+
+  &.open {
+    display: initial;
+    transform: translateX(0px);
+  }
+
+  @media #{$brk-narrow} {
+    display: initial;
+    transform: translate(0px);
+  }
+}

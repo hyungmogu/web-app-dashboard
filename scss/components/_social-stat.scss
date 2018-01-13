@@ -1,0 +1,48 @@
+//------------------------------------------------------
+// Social Stats Box
+//------------------------------------------------------
+
+.stat {
+  @extend %border;
+  display: flex;
+  padding: em(28.8px) em(27.2px);
+  background-color: lighten(grey, 47%);
+  flex-direction: column;
+  border-radius: em(5px);
+
+  @media #{$brk-mobile} {
+    flex-direction: row;
+    align-items:center;
+  }
+}
+
+.stat__icon {
+  margin-bottom: 0.5em;
+  width: 100%;
+
+  @media #{$brk-mobile} {
+    width: initial;
+    margin: 0 em(25px) 0 0;
+  }
+}
+
+.stat__detail {
+  width: 100%;
+
+  @media #{$brk-mobile} {
+    width: initial;
+  }
+}
+
+.stat__title {
+  color: #7477BE;
+  margin: 0;
+}
+
+.stat__number {
+  font-size: em(30px);
+  color: darken(grey, 10%);
+  @media #{$brk-wide} {
+    font-size: em(40px);
+  }
+}

@@ -1,0 +1,19 @@
+//------------------------------------------------------
+// Border
+//------------------------------------------------------
+
+.border {
+  border-bottom: em(1px) solid darkgrey;
+  border-right: none;
+
+  @media #{$brk-narrow} {
+    border-right: em(1px) solid darkgrey;
+  }
+} 
+.border:last-child {
+  border-right: none;
+}
+
+.border--bottom {
+  border-bottom: em(1px) solid darkgrey;
+}

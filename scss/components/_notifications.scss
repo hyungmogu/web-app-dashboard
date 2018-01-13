@@ -1,0 +1,45 @@
+//------------------------------------------------------
+// Notification
+//------------------------------------------------------
+
+.notification {
+  display: flex;
+  align-items: center;
+  padding: em(20px) em(20px);
+  border-radius: em(5px);
+  color: white;
+
+  .notification__title {
+    margin: 0 em(10px) 0 0;
+  }
+  .notification__detail {
+    margin-left: em(10px);
+  }
+  .notification__close {
+    margin-left: auto;
+
+    * {
+      border-style: none;
+      background-color: transparent;
+      color: white;
+      cursor: pointer;
+      font-weight: bold;
+    }
+  }
+
+  .title {
+    margin: 0;
+  }
+
+  &--default {
+    background-color: #7477BE;
+  }
+
+  &--info {
+    background-color: grey;
+  }
+
+  &--success {
+    background-color: #81C98F;
+  }
+}
