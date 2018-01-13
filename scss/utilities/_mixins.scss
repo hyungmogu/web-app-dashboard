@@ -15,3 +15,19 @@
     background-color: darken(map-get($ui-theme,"success"), 12%);
   }
 }
+
+@mixin form-position__input($width, $margin-bottom) {
+  width: $width;
+  margin: 0 0 em($margin-bottom) 0;
+}
+
+
+@mixin flush-element($direction,$type, $no-media: true) {
+  @if $no-media {
+    #{$type}-#{$direction}: 0;
+  } @else {
+    @media #{$brk-mobile} {
+      #{$type}-#{$direction}: 0;
+    }
+  }
+}
