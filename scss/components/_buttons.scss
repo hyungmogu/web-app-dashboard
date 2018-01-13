@@ -55,7 +55,7 @@
   font-size: 1.3em;
   transition: color 0.2s ease-out;
   cursor: pointer;
-  padding: 7px 14px;
+  padding: em(7px) em(14px);
 
   &:hover {
     color: lighten(map-get($ui-theme,"info"), 25%);

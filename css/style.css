@@ -741,7 +741,7 @@ input:checked + .switch__slider:before {
   font-size: 1.3em;
   transition: color 0.2s ease-out;
   cursor: pointer;
-  padding: 7px 14px; }
+  padding: 0.4375em 0.875em; }
   .btn--menu:hover {
     color: #a7a7a7; }
     .btn--menu:hover .icon--primary-menu {
