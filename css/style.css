@@ -43,6 +43,10 @@
       flex-direction: row;
       align-items: center; } }
 
+form, .form--setting .form-group {
+  display: flex;
+  flex-direction: column; }
+
 /*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -518,52 +522,39 @@ form label {
   .link--secondary-menu:active::before {
     opacity: 1; }
 
-form {
-  display: flex;
-  flex-direction: column; }
-  form input {
-    width: 100%;
-    margin: 0 0 1em 0; }
-  form textarea {
-    width: 100%;
-    margin: 0 0 1em 0; }
-  form select {
-    width: 100%;
-    margin: 0 0 1em 0; }
-  form label {
-    margin: 0 0 1em 0; }
-  form button {
-    width: 100%;
-    margin: 0 0 0.5em 0; }
+form input,
+form textarea,
+form select {
+  width: 100%;
+  margin: 0 0 1em 0; }
+form label {
+  width: "initial";
+  margin: 0 0 1em 0; }
+form button {
+  width: 100%;
+  margin: 0 0 0.5em 0; }
+  @media (min-width: 454px) {
     form button:last-child {
-      margin-bottom: 0; }
-    @media (min-width: 454px) {
-      form button {
-        margin-bottom: 0; } }
+      margin-bottom: 0; } }
 
 .form--setting button {
   width: 100%; }
+  .form--setting button:first-child {
+    margin-left: 0; }
+  .form--setting button:last-child {
+    margin-right: 0; }
   @media (min-width: 454px) {
     .form--setting button {
       width: 50%;
       margin: 0 2%; } }
-@media (min-width: 454px) {
-  .form--setting button:first-child {
-    margin-left: 0; } }
-@media (min-width: 454px) {
-  .form--setting button:last-child {
-    margin-right: 0; } }
 .form--setting .form-group {
-  display: flex;
-  flex-direction: column;
+  width: "initial";
   margin: 0 0 1em 0; }
-  .form--setting .form-group:last-child {
-    margin: 0; }
-  .form--setting .form-group input {
-    margin: 0; }
-  .form--setting .form-group textarea {
-    margin: 0; }
+  .form--setting .form-group input,
+  .form--setting .form-group textarea,
   .form--setting .form-group select {
+    margin: 0; }
+  .form--setting .form-group:last-child {
     margin: 0; }
   @media (min-width: 454px) {
     .form--setting .form-group {

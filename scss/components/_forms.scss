@@ -3,38 +3,22 @@
 //------------------------------------------------------
 
 form {
-  display: flex;
-  flex-direction: column;
-
-  input {
-    width: 100%;
-    margin: 0 0 em(16px) 0;
-  }
-
-  textarea {
-    width: 100%;
-    margin: 0 0 em(16px) 0;
-  }
-
+  @extend %responsive-layout;
+  input,
+  textarea,
   select {
-    width: 100%;
-    margin: 0 0 em(16px) 0;
+    @include form-position__input(100%, 16px);
   }
 
   label {
-    margin: 0 0 em(16px) 0;
+    @include form-position__input("initial", 16px);
   }
 
   button {
-    width: 100%;
-    margin: 0 0 em(8px) 0;
+    @include form-position__input(100%, 8px);
 
     &:last-child {
-      margin-bottom: 0;
-    }
-
-    @media #{$brk-mobile} {
-      margin-bottom: 0;
+      @include flush-element("bottom", "margin", false);
     }
   }
 }
@@ -42,42 +26,32 @@ form {
 .form--setting {
   button {
     width: 100%;
+
+    &:first-child {
+      @include flush-element("left","margin");
+    }
+
+    &:last-child {
+      @include flush-element("right","margin");
+    }
+
     @media #{$brk-mobile} {
       width: 50%;
       margin: 0 2%;
     }
   }
 
-  button:first-child {
-    @media #{$brk-mobile} {
-      margin-left: 0;
-    }
-  }
-
-  button:last-child {
-    @media #{$brk-mobile} {
-      margin-right: 0;
-    }
-  }
-
   .form-group {
-    display: flex;
-    flex-direction: column;
-    margin: 0 0 em(16px) 0;
+    @extend %responsive-layout;
+    @include form-position__input("initial", 16px);
+
+    input,
+    textarea,
+    select {
+      margin: 0;
+    }
 
     &:last-child {
-      margin: 0;
-    }
-
-    input {
-      margin: 0;
-    }
-
-    textarea {
-      margin: 0;
-    }
-
-    select {
       margin: 0;
     }
 
