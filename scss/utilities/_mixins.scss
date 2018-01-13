@@ -1,0 +1,17 @@
+@mixin notification-dot {
+  &::before {
+    position: absolute;
+    content: "";
+    width: em(10px);
+    height: em(10px);
+    border-radius: 50%;
+    background-color: map-get($ui-theme,"success");
+    top: 0;
+    right: 0;
+    transition: background-color 0.2s ease-out;
+  }
+
+  &:hover::before {
+    background-color: darken(map-get($ui-theme,"success"), 12%);
+  }
+}
