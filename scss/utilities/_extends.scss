@@ -53,3 +53,8 @@
     align-items: center;
   }
 }
+
+%responsive-layout {
+  display: flex;
+  flex-direction: column;
+}
