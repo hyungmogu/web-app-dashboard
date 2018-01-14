@@ -3,20 +3,17 @@
 //------------------------------------------------------
 
 .icon--secondary-menu {
-  @include object-dimension(em(37px),em(37px));
-  transition: fill 0.2s ease-out;
-  fill: darkgrey;
+  $color: lighten(map-get($ui-theme, "info"),15%);
+  @include icon-base-property(em(37px),em(37px),$color);
 }
 
 .icon--primary-menu {
-  @include object-dimension(em(26px),em(26px));
-  transition: fill 0.2s ease-out;
-  fill: white;
+  @include icon-base-property(em(26px),em(26px),white);
 }
 
 .icon--stat {
-  @include object-dimension(em(55px),em(55px));
-  fill: #7477BE;
+  $color: map-get($ui-theme, "default");
+  @include icon-base-property(em(55px),em(55px),$color, false);
 
   @media #{$brk-wide} {
     @include object-dimension(em(75px),em(75px));

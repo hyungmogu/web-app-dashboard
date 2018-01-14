@@ -635,14 +635,14 @@ input:checked + .switch__slider:before {
 .icon--secondary-menu {
   width: 2.3125em;
   height: 2.3125em;
-  transition: fill 0.2s ease-out;
-  fill: darkgrey; }
+  fill: #8d8d8d;
+  transition: fill 0.2s ease-out; }
 
 .icon--primary-menu {
   width: 1.625em;
   height: 1.625em;
-  transition: fill 0.2s ease-out;
-  fill: white; }
+  fill: white;
+  transition: fill 0.2s ease-out; }
 
 .icon--stat {
   width: 3.4375em;
