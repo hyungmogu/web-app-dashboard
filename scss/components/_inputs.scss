@@ -5,7 +5,7 @@
 *::-ms-input-placeholder,
 *:-ms-input-placeholder,
 *::placeholder {
-  color: darkgrey; // the same color as the border color
+  color: map-get($ui-theme,"info"); // the same color as the border color
 }
 
 select,
@@ -15,6 +15,6 @@ input {
 }
 
 select {
-  color: darkgrey; // same color as placeholder & border
+  color: map-get($ui-theme,"info"); // same color as placeholder & border
   margin: 0;
 }
