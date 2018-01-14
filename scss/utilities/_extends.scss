@@ -16,7 +16,7 @@
 }
 
 %border {
-  border: em(1px) solid darkgrey;
+  border: em(1px) solid map-get($ui-theme,"info");
 }
 
 %infobox {
@@ -57,4 +57,11 @@
 %responsive-layout {
   display: flex;
   flex-direction: column;
+}
+
+%input {
+  background-color: lighten(grey, 47%); // same background color as .stats
+  padding: em(10px) em(15px);
+  border-radius: em(5px);
+  border: em(1px) solid map-get($ui-theme,"info"); //same value as .border
 }

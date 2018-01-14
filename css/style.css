@@ -17,7 +17,7 @@
   cursor: pointer; }
 
 .stat {
-  border: 0.0625em solid darkgrey; }
+  border: 0.0625em solid #676767; }
 
 .infobox--activity, .infobox--members {
   display: flex;
@@ -46,6 +46,14 @@
 form, .form--setting .form-group {
   display: flex;
   flex-direction: column; }
+
+select,
+textarea,
+input {
+  background-color: #f8f8f8;
+  padding: 0.625em 0.9375em;
+  border-radius: 0.3125em;
+  border: 0.0625em solid #676767; }
 
 /*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */
 /* Document
@@ -796,36 +804,14 @@ input:checked + .switch__slider:before {
   .g__col--12 {
     width: 100%; } }
 
+*::-ms-input-placeholder,
+*:-ms-input-placeholder,
 *::placeholder {
-  color: darkgrey; }
-
-*:-ms-input-placeholder {
-  /* Internet Explorer 10-11 */
-  color: darkgrey; }
-
-*::-ms-input-placeholder {
-  /* Microsoft Edge */
-  color: darkgrey; }
+  color: #676767; }
 
 select {
-  background-color: #f8f8f8;
-  padding: 10px 15px;
-  border-radius: 5px;
-  border: 0.0625em solid darkgrey;
-  color: darkgrey;
+  color: #676767;
   margin: 0; }
-
-input {
-  background-color: #f8f8f8;
-  padding: 10px 15px;
-  border-radius: 5px;
-  border: 0.0625em solid darkgrey; }
-
-textarea {
-  background-color: #f8f8f8;
-  padding: 10px 15px;
-  border-radius: 5px;
-  border: 0.0625em solid darkgrey; }
 
 .border {
   border-bottom: 0.0625em solid darkgrey;
