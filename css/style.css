@@ -50,7 +50,7 @@ form, .form--setting .form-group, .section__header--traffic {
 select,
 textarea,
 input {
-  background-color: #f8f8f8;
+  background-color: #dfdfdf;
   padding: 0.625em 0.9375em;
   border-radius: 0.3125em;
   border: 0.0625em solid #676767; }
@@ -916,7 +916,7 @@ select {
 .stat {
   display: flex;
   padding: 1.8em 1.7em;
-  background-color: #f8f8f8;
+  background-color: #dfdfdf;
   flex-direction: column;
   border-radius: 0.3125em; }
   @media (min-width: 454px) {
@@ -944,7 +944,7 @@ select {
 
 .stat__number {
   font-size: 1.875em;
-  color: #676767; }
+  color: #4e4e4e; }
   @media (min-width: 1280px) {
     .stat__number {
       font-size: 2.5em; } }
