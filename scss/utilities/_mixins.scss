@@ -31,3 +31,16 @@
     }
   }
 }
+
+@mixin object-dimension($width,$height) {
+  width: $width;
+  height: $height;
+}
+
+@mixin icon-base-property($width, $height, $color, $include-transition: true) {
+  @include object-dimension($width,$height);
+  fill: $color;
+  @if $include-transition {
+    transition: fill 0.2s ease-out;
+  }
+}
