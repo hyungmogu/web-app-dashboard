@@ -44,3 +44,20 @@
     transition: fill 0.2s ease-out;
   }
 }
+
+
+@mixin link-base-properties($color,$hover-color:$color) {
+  color: $color;
+  text-decoration: none;
+  transition: color 0.2s ease-out;
+
+  @if $hover-color == $color {
+    &:hover {
+      color: darken($hover-color,10%);
+    }
+  } @else {
+    &:hover {
+      color: $hover-color;
+    }
+  }
+}

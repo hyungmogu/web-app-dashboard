@@ -3,40 +3,28 @@
 //------------------------------------------------------
 
 .link--email {
-  color: #7477BE;
-  text-decoration: none;
-  transition: color 0.2s ease-out;
+  $color: map-get($ui-theme,"default");
+  @include link-base-properties($color);
 }
 
-.link--email:hover {
-  color: darken(#7477BE, 10%);
-}
 
 .link--arrow {
-  text-decoration: none;
-  color: #7477BE;
+  $color: map-get($ui-theme,"default");
+  @include link-base-properties($color);
   font-size: em(25px);
-  transition: color 0.2s ease-out;
-}
-
-.link--arrow:hover {
-  color: darken(#7477BE, 10%);
 }
 
 .link--profile {
+  $color: white;
+  $hover-color: lighten(map-get($ui-theme,"info"), 25%);
+  @include link-base-properties($color,$hover-color);
+
   display: flex;
   align-items: center;
-  text-decoration: none;
-  color: white;
-  transition: color 0.2s ease-out;
 
   .name {
     padding: em(15px);
   }
-}
-
-.link--profile:hover {
-  color: lighten(grey, 25%);
 }
 
 .link--secondary-menu {
@@ -45,11 +33,10 @@
   position: relative;
 
   &::before {
+    @include object-dimension(em(8px), 100%);
     position: absolute;
     content: "";
-    width: em(8px);
-    height: 100%;
-    background-color: #81C98F;
+    background-color: map-get($ui-theme,"success");
     border-radius: em(34px);
     left: em(-4px);
     top: 0;
@@ -57,20 +44,15 @@
     transition: opacity 0.2s ease-out;
   }
 
-  &:hover .icon--secondary-menu {
-    fill: white;
+  &:hover {
+    .icon--secondary-menu{
+      fill: white;
+    }
   }
 
+  &:focus::before,
+  &:active::before,
   &:hover::before {
     opacity: 1;
   }
-
-  &:focus::before {
-    opacity: 1;
-  }
-
-  &:active::before {
-    opacity: 1;
-  }
-
 }

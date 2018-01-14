@@ -481,40 +481,37 @@ form label {
   color: #7477BE;
   text-decoration: none;
   transition: color 0.2s ease-out; }
-
-.link--email:hover {
-  color: #5155ae; }
+  .link--email:hover {
+    color: #5155ae; }
 
 .link--arrow {
-  text-decoration: none;
   color: #7477BE;
-  font-size: 1.5625em;
-  transition: color 0.2s ease-out; }
-
-.link--arrow:hover {
-  color: #5155ae; }
+  text-decoration: none;
+  transition: color 0.2s ease-out;
+  font-size: 1.5625em; }
+  .link--arrow:hover {
+    color: #5155ae; }
 
 .link--profile {
-  display: flex;
-  align-items: center;
-  text-decoration: none;
   color: white;
-  transition: color 0.2s ease-out; }
+  text-decoration: none;
+  transition: color 0.2s ease-out;
+  display: flex;
+  align-items: center; }
+  .link--profile:hover {
+    color: #a7a7a7; }
   .link--profile .name {
     padding: 0.9375em; }
-
-.link--profile:hover {
-  color: silver; }
 
 .link--secondary-menu {
   padding: 0.625em 1.25em;
   display: inline-block;
   position: relative; }
   .link--secondary-menu::before {
-    position: absolute;
-    content: "";
     width: 0.5em;
     height: 100%;
+    position: absolute;
+    content: "";
     background-color: #81C98F;
     border-radius: 2.125em;
     left: -0.25em;
@@ -523,11 +520,7 @@ form label {
     transition: opacity 0.2s ease-out; }
   .link--secondary-menu:hover .icon--secondary-menu {
     fill: white; }
-  .link--secondary-menu:hover::before {
-    opacity: 1; }
-  .link--secondary-menu:focus::before {
-    opacity: 1; }
-  .link--secondary-menu:active::before {
+  .link--secondary-menu:focus::before, .link--secondary-menu:active::before, .link--secondary-menu:hover::before {
     opacity: 1; }
 
 form input,
