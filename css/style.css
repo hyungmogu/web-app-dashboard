@@ -60,6 +60,15 @@ input {
   padding: 0;
   list-style-type: none; }
 
+.notification--default, .notification--info, .notification--success {
+  display: flex;
+  align-items: center;
+  padding: 1.25em 1.25em;
+  border-radius: 0.3125em;
+  color: white; }
+  .notification--default .title, .notification--info .title, .notification--success .title {
+    margin: 0; }
+
 /*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -869,32 +878,27 @@ select {
       flex-direction: row;
       align-items: center; } }
 
-.notification {
-  display: flex;
-  align-items: center;
-  padding: 1.25em 1.25em;
-  border-radius: 0.3125em;
-  color: white; }
-  .notification .notification__title {
-    margin: 0 0.625em 0 0; }
-  .notification .notification__detail {
-    margin-left: 0.625em; }
-  .notification .notification__close {
-    margin-left: auto; }
-    .notification .notification__close * {
-      border-style: none;
-      background-color: transparent;
-      color: white;
-      cursor: pointer;
-      font-weight: bold; }
-  .notification .title {
-    margin: 0; }
-  .notification--default {
-    background-color: #7477BE; }
-  .notification--info {
-    background-color: grey; }
-  .notification--success {
-    background-color: #81C98F; }
+.notification__title {
+  margin: 0 0.625em 0 0; }
+
+.notification__detail {
+  margin: 0 0 0 0.625em; }
+
+.notification__close {
+  margin-left: auto; }
+  .notification__close * {
+    border-style: none;
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+    font-weight: bold; }
+
+.notification--default {
+  background-color: #7477BE; }
+.notification--info {
+  background-color: #676767; }
+.notification--success {
+  background-color: #81C98F; }
 
 .primary-menu {
   margin-left: auto; }
