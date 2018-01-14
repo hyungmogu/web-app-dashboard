@@ -31,3 +31,8 @@
     }
   }
 }
+
+@mixin object-dimension($width,$height) {
+  width: $width;
+  height: $height;
+}

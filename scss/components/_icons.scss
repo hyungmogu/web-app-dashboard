@@ -3,26 +3,22 @@
 //------------------------------------------------------
 
 .icon--secondary-menu {
-  width: em(37px);
-  height: em(37px);
+  @include object-dimension(em(37px),em(37px));
   transition: fill 0.2s ease-out;
   fill: darkgrey;
 }
 
 .icon--primary-menu {
-  width: em(26px);
-  height: em(26px);
+  @include object-dimension(em(26px),em(26px));
   transition: fill 0.2s ease-out;
   fill: white;
 }
 
 .icon--stat {
+  @include object-dimension(em(55px),em(55px));
   fill: #7477BE;
-  width: em(55px);
-  height: em(55px);
 
   @media #{$brk-wide} {
-    width: em(75px);
-    height: em(75px);
+    @include object-dimension(em(75px),em(75px));
   }
 }
