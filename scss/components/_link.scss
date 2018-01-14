@@ -3,41 +3,27 @@
 //------------------------------------------------------
 
 .link--email {
-  color: #7477BE;
-  text-decoration: none;
-  transition: color 0.2s ease-out;
-
-  &:hover {
-    color: darken(#7477BE, 10%);
-  }
-
+  $color: map-get($ui-theme,"default");
+  @include link-base-properties($color);
 }
 
 
 .link--arrow {
-  text-decoration: none;
-  color: #7477BE;
+  $color: map-get($ui-theme,"default");
+  @include link-base-properties($color);
   font-size: em(25px);
-  transition: color 0.2s ease-out;
-
-  &:hover {
-    color: darken(#7477BE, 10%);
-  }
 }
 
 .link--profile {
+  $color: white;
+  $hover-color: darken(grey, 25%);
+  @include link-base-properties($color,$hover-color);
+
   display: flex;
   align-items: center;
-  text-decoration: none;
-  color: white;
-  transition: color 0.2s ease-out;
 
   .name {
     padding: em(15px);
-  }
-
-  &:hover {
-    color: lighten(grey, 25%);
   }
 }
 
@@ -47,10 +33,9 @@
   position: relative;
 
   &::before {
+    @include object-dimension(em(8px), 100%);
     position: absolute;
     content: "";
-    width: em(8px);
-    height: 100%;
     background-color: #81C98F;
     border-radius: em(34px);
     left: em(-4px);
@@ -63,16 +48,9 @@
     fill: white;
   }
 
+  &:focus::before,
+  &:active::before,
   &:hover::before {
     opacity: 1;
   }
-
-  &:focus::before {
-    opacity: 1;
-  }
-
-  &:active::before {
-    opacity: 1;
-  }
-
 }
