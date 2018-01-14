@@ -44,8 +44,10 @@
     transition: opacity 0.2s ease-out;
   }
 
-  &:hover .icon--secondary-menu {
-    fill: white;
+  &:hover {
+    .icon--secondary-menu{
+      fill: white;
+    }
   }
 
   &:focus::before,
