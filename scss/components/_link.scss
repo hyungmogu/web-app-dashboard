@@ -6,21 +6,23 @@
   color: #7477BE;
   text-decoration: none;
   transition: color 0.2s ease-out;
+
+  &:hover {
+    color: darken(#7477BE, 10%);
+  }
+
 }
 
-.link--email:hover {
-  color: darken(#7477BE, 10%);
-}
 
 .link--arrow {
   text-decoration: none;
   color: #7477BE;
   font-size: em(25px);
   transition: color 0.2s ease-out;
-}
 
-.link--arrow:hover {
-  color: darken(#7477BE, 10%);
+  &:hover {
+    color: darken(#7477BE, 10%);
+  }
 }
 
 .link--profile {
@@ -33,10 +35,10 @@
   .name {
     padding: em(15px);
   }
-}
 
-.link--profile:hover {
-  color: lighten(grey, 25%);
+  &:hover {
+    color: lighten(grey, 25%);
+  }
 }
 
 .link--secondary-menu {

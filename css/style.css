@@ -481,18 +481,16 @@ form label {
   color: #7477BE;
   text-decoration: none;
   transition: color 0.2s ease-out; }
-
-.link--email:hover {
-  color: #5155ae; }
+  .link--email:hover {
+    color: #5155ae; }
 
 .link--arrow {
   text-decoration: none;
   color: #7477BE;
   font-size: 1.5625em;
   transition: color 0.2s ease-out; }
-
-.link--arrow:hover {
-  color: #5155ae; }
+  .link--arrow:hover {
+    color: #5155ae; }
 
 .link--profile {
   display: flex;
@@ -502,9 +500,8 @@ form label {
   transition: color 0.2s ease-out; }
   .link--profile .name {
     padding: 0.9375em; }
-
-.link--profile:hover {
-  color: silver; }
+  .link--profile:hover {
+    color: silver; }
 
 .link--secondary-menu {
   padding: 0.625em 1.25em;
