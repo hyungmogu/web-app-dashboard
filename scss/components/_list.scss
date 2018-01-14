@@ -1,43 +1,38 @@
 //------------------------------------------------------
 // List
 //------------------------------------------------------
-
 .list {
-  @include no-margin-padding;
-  list-style-type: none;
+  @extend %list;
 }
 
 .list--primary-menu {
-  @include no-margin-padding;
+  @extend %list;
   display: flex;
   list-style-type: none;
   align-items:center;
-
   .list__item {
     padding: 0 em(16px);
   }
-
   .alarm {
     @media #{$brk-mobile}{
-      border-right: 1px solid darken(#7477BE, 25%);
+      border-right: 1px solid darken(map-get($ui-theme,"default"), 25%);
     }
   }
-
   .profile {
     display: none;
     @media #{$brk-mobile} {
       display: initial;
     }
   }
-
   .img--profile {
     @include object-dimension(em(36.8px), em(36.8px));
   }
 }
 
 .list--secondary-menu {
+  @extend %list;
   display: inline-block;
-  background-color: darken(#7477BE, 45%);
+  background-color: darken(map-get($ui-theme,"default"), 45%);
   height: 100%;
   .list__item {
     padding: em(10px) 0;

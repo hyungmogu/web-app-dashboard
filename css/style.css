@@ -55,6 +55,11 @@ input {
   border-radius: 0.3125em;
   border: 0.0625em solid #676767; }
 
+.list, .list--primary-menu, .list--secondary-menu {
+  margin: 0;
+  padding: 0;
+  list-style-type: none; }
+
 /*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -823,14 +828,7 @@ select {
   width: 100% !important;
   height: auto !important; }
 
-.list {
-  padding: 0;
-  margin: 0;
-  list-style-type: none; }
-
 .list--primary-menu {
-  padding: 0;
-  margin: 0;
   display: flex;
   list-style-type: none;
   align-items: center; }
