@@ -31,3 +31,38 @@
     }
   }
 }
+
+@mixin object-dimension($width,$height) {
+  width: $width;
+  height: $height;
+}
+
+@mixin icon-base-property($width, $height, $color, $include-transition: true) {
+  @include object-dimension($width,$height);
+  fill: $color;
+  @if $include-transition {
+    transition: fill 0.2s ease-out;
+  }
+}
+
+
+@mixin link-base-properties($color,$hover-color:$color) {
+  color: $color;
+  text-decoration: none;
+  transition: color 0.2s ease-out;
+
+  @if $hover-color == $color {
+    &:hover {
+      color: darken($hover-color,10%);
+    }
+  } @else {
+    &:hover {
+      color: $hover-color;
+    }
+  }
+}
+
+@mixin no-margin-padding {
+  padding: 0;
+  margin: 0;
+}

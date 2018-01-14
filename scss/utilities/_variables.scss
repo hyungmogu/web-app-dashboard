@@ -8,6 +8,7 @@ $font__size--base: 16px;
 //------------------------------------------------
 $font__url--google: "https://fonts.googleapis.com/css?family=Roboto+Slab:700,300";
 
+$font-family--primary: "Roboto", sans-serif;
 
 //------------------------------------------------
 // Font Weight
@@ -26,6 +27,7 @@ $font__weight--ultrabold: 900;
 $ship-cove: #7477BE;
 $de-york: #81C98F;
 $dove-grey: #676767;
+$grey: grey;
 
 $color__link: $ship-cove;
 $color__text--primary: $dove-grey;
@@ -34,7 +36,7 @@ $color__text--secondary: white;
 // UI theme
 $ui-theme: (
   default: $ship-cove,
-  info: $dove-grey,
+  info: $grey,
   success: $de-york
 );
 

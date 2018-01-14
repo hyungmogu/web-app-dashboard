@@ -4,9 +4,8 @@
 
 .tab {
   &--traffic {
-    display: flex;
+    @extend %responsive-layout;
     list-style-type: none;
-    flex-direction: column;
     padding: 0;
 
     @media #{$brk-mobile} {

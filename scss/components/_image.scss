@@ -2,7 +2,6 @@
 // Image
 //------------------------------------------------------
 .img--profile {
-  width: em(55px);
-  height: em(55px);
+  @include object-dimension(em(55px),em(55px));
   border-radius: 50%;
 }

@@ -7,8 +7,7 @@
 }
 
 .section__header--traffic {
-  display: flex;
-  flex-direction: column;
+  @extend %responsive-layout;
 
   .tab--traffic {
     @media #{$brk-narrow} {
