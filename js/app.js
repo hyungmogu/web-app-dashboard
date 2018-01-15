@@ -2,21 +2,21 @@
 // Forms - Message
 //------------------------------------------------------
 
-let checkBeforeSubmit = function() {
-  // prevent form from submitting as default
-  // check if title field has been filled
-    // if not, display message to try again
-  // check if message field has been filled
-    // if not, display message to try again
-  // if all is well, submit to server
-    // if sent, send a message saying the submission is successful
-}
+// let checkBeforeSubmit = function() {
+//   // prevent form from submitting as default
+//   // check if title field has been filled
+//     // if not, display message to try again
+//   // check if message field has been filled
+//     // if not, display message to try again
+//   // if all is well, submit to server
+//     // if sent, send a message saying the submission is successful
+// }
 
 
 //------------------------------------------------------
 // Menu
 //------------------------------------------------------
-const $menu_id = ".btn--menu"
+const $menu_id = ".btn--menu";
 
 let toggleMenu = function() {
   $(".secondary-menu").toggleClass("open");

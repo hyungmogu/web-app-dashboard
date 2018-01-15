@@ -9,6 +9,8 @@ var svgSprite = require('gulp-svg-sprite');
 var concat = require("gulp-concat");
 var minHtml = require("gulp-minify-html");
 var uglify = require("gulp-uglify");
+var gutil = require("gulp-util");
+var babel = require("gulp-babel");
 
 // SVG Config
 var config = {
@@ -42,6 +44,17 @@ gulp.task("html", function() {
   .pipe(minHtml())
   .pipe(concat("index.html"))
   .pipe(gulp.dest("./"))
-}); 
+});
 
-gulp.task('default', ['sprite-page', 'sprite-shortcut',"html"]);
+gulp.task("js", function(){
+  gulp.src("js/app.js")
+  .pipe(babel({
+    presets: ["es2015"]
+  }))
+  .on("error", gutil.log)
+  .pipe(uglify())
+  .pipe(concat("app.min.js"))
+  .pipe(gulp.dest("js"))
+}) 
+
+gulp.task('default', ['sprite-page', 'sprite-shortcut',"html","js"]);
