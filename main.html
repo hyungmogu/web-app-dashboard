@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Web App Dashboard</title>
+        <link rel="stylesheet" href="css/style.css" />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.bundle.min.js"></script>
+    </head>
+    <body>
+      <header>
+        <button class="btn--menu">&#9776;</button>
+        <h1 class="logo">
+          <a class="link--logo" href="#">
+            Your<span class="reduce-font-weight">App&#8482;</span>
+          </a>
+        </h1>
+        <nav class="primary-menu">
+          <ul class="list--primary-menu">
+            <li class="list__item alarm">
+              <button class="btn--alarm">
+                <svg class="icon--primary-menu">
+                  <use xlink:href="sprite.svg#icon-bell" />
+                </svg>
+              </button>
+            </li>
+            <li class="list__item profile">
+              <a class="link--profile" href="#">
+                <div class="profile-pic">
+                  <img class="img--profile" src="http://via.placeholder.com/60x60" />
+                </div>
+                <span class="name">John Wilks</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <div class="main">
+        <nav class="secondary-menu">
+          <ul class="list--secondary-menu">
+            <li class="list__item">
+              <a class="link--secondary-menu" href="#">
+                <svg class="icon icon--secondary-menu">
+                  <use xlink:href="sprite.svg#icon-dashboard" />
+                </svg>
+              </a>
+            </li>
+            <li class="list__item">
+              <a class="link--secondary-menu" href="#">
+                <svg class="icon icon--secondary-menu">
+                  <use class="icon icon--members" xlink:href="sprite.svg#icon-members" />
+                </svg>
+              </a>
+            </li>
+            <li class="list__item">
+              <a class="link--secondary-menu" href="#">
+                <svg class="icon icon--secondary-menu">
+                  <use xlink:href="sprite.svg#icon-visits" />
+                </svg>
+              </a>
+            </li>
+            <li class="list__item">
+              <a class="link--secondary-menu" href="#">
+                <svg class="icon icon--secondary-menu">
+                  <use xlink:href="sprite.svg#icon-settings" />
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <div class="main-content">
+          <div class="grid__row">
+            <div class="g__col--12">
+              <div class="notifications">
+                <ul class="list">
+                  <li class="list__item">
+                    <div class="notification--default">
+                      <div class="notification__header">
+                        <h4 class="title">Alert</h4>
+                      </div>
+                      <div class="notification__detail">Lorem ipsum. I hope you guys have a happy new year!</div>
+                      <div class="notification__close">
+                        <button>x</button>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="grid__row">
+            <div class="g__col--12 border no-border--top">
+              <div class="traffic">
+                <div class="section__header section__header--traffic">
+                  <h3 class="section__title">Traffic</h3>
+                  <ul class="list tab--traffic">
+                    <li class="tab__item--traffic"><button class="btn--tab">Hourly</button></li>
+                    <li class="tab__item--traffic"><button class="btn--tab">Daily</button></li>
+                    <li class="tab__item--traffic"><button class="btn--tab">Weekly</button></li>
+                    <li class="tab__item--traffic"><button class="btn--tab">Monthly</button></li>
+                  </ul>
+                </div>
+                <canvas id="graph--traffic" width="100%"></canvas>
+              </div>
+            </div>
+          </div>
+          <div class="grid__row">
+            <div class="g__col--6 border">
+              <div class="dtraffic">
+                <div class="section__header">
+                  <h3 class="section__title">Daily Traffic</h3>
+                </div>
+                <canvas id="graph--dtraffic" width="100%"></canvas>
+              </div>
+            </div>
+            <div class="g__col--6 border">
+              <div class="users">
+                <div class="section__header">
+                  <h3 class="section__title">Number of Users</h3>
+                </div>
+                <canvas id="graph--user" width="100%"></canvas>
+              </div>
+            </div>
+          </div>
+          <div class="grid__row">
+            <div class="g__col--12 border">
+              <div class="section__header">
+                <h3 class="section__title">Social Stats</h3>
+              </div>
+              <div class="grid__row">
+                <div class="g__col--4">
+                  <div class="stat stat--fb">
+                    <div class="stat__icon">
+                      <svg class="icon--stat" width="50px" height="50px">
+                        <use xlink:href="sprite.svg#icon-facebook" class="icon--fb">
+                      </svg>
+                    </div>
+                    <div class="stat__detail">
+                      <h4 class="stat__title">Facebook</h4>
+                      <span class="stat__number">400000</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="g__col--4">
+                  <div class="stat stat--twt">
+                    <div class="stat__icon">
+                      <svg class="icon--stat" width="50px" height="50px">
+                        <use xlink:href="sprite.svg#icon-twitter" class="icon--twt">
+                      </svg>
+                    </div>
+                    <div class="stat__detail">
+                      <h4 class="stat__title">Twitter</h4>
+                      <span class="stat__number">400000</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="g__col--4">
+                  <div class="stat stat--gp">
+                    <div class="stat__icon">
+                      <svg class="icon--stat" width="50px" height="50px">
+                        <use xlink:href="sprite.svg#icon-google-plus" class="icon--gp">
+                      </svg>
+                    </div>
+                    <div class="stat__detail">
+                      <h4 class="stat__title">Google Plus</h4>
+                      <span class="stat__number">400000</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="grid__row">
+            <div class="g__col--6 border">
+              <div class="members">
+                <div class="section__header">
+                  <h3 class="section__title">New Members</h3>
+                </div>
+                <ul class="list">
+                  <li class="list__item border--bottom">
+                    <div class="infobox--members">
+                      <div class="infobox__content">
+                        <div class="profile-pic">
+                          <img class="img--profile" src="http://via.placeholder.com/75x75"/>
+                        </div>
+                        <div class="infobox__detail">
+                          <span class="name">Victoria Chambers</span>
+                          <a class="link--email" href="#">victoria.chambers80@example.com</a>
+                        </div>
+                      </div>
+                      <div class="date">11/10/15</div>
+                    </div>
+                  </li>
+                  <li class="list__item border--bottom">
+                    <div class="infobox--members">
+                      <div class="infobox__content">
+                        <div class="profile-pic">
+                          <img class="img--profile" src="http://via.placeholder.com/75x75"/>
+                        </div>
+                        <div class="infobox__detail">
+                          <span class="name">Victoria Chambers</span>
+                          <a class="link--email" href="#">victoria.chambers80@example.com</a>
+                        </div>
+                      </div>
+                      <div class="date">11/10/15</div>
+                    </div>
+                  </li>
+                  <li class="list__item border--bottom">
+                    <div class="infobox--members">
+                      <div class="infobox__content">
+                        <div class="profile-pic">
+                          <img class="img--profile" src="http://via.placeholder.com/75x75"/>
+                        </div>
+                        <div class="infobox__detail">
+                          <span class="name">Victoria Chambers</span>
+                          <a class="link--email" href="#">victoria.chambers80@example.com</a>
+                        </div>
+                      </div>
+                      <div class="date">11/10/15</div>
+                    </div>
+                  </li>
+                  <li class="list__item">
+                    <div class="infobox--members">
+                      <div class="infobox__content">
+                        <div class="profile-pic">
+                          <img class="img--profile" src="http://via.placeholder.com/75x75"/>
+                        </div>
+                        <div class="infobox__detail">
+                          <span class="name">Victoria Chambers</span>
+                          <a class="link--email" href="#">victoria.chambers80@example.com</a>
+                        </div>
+                      </div>
+                      <div class="date">11/10/15</div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="g__col--6 border">
+              <div class="news">
+                <div class="section__header">
+                  <h3 class="section__title">Recent Activity</h3>
+                </div>
+                <ul class="list">
+                  <li class="list__item border--bottom">
+                    <div class="infobox--activity">
+                      <div class="infobox__content">
+                        <div class="profile-pic">
+                          <img class="img--profile" src="http://via.placeholder.com/75x75"/>
+                        </div>
+                        <div class="infobox__detail">
+                          <span class="activity">Victoria Chambers Commented on Youtube's CEO tips</span>
+                          <span class="last-active">4 hours ago</span>
+                        </div>
+                      </div>
+                      <div class="infobox__see-more">
+                        <a class="link link--arrow" href="#">&#8735;</a>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="list__item border--bottom">
+                    <div class="infobox--activity">
+                      <div class="infobox__content">
+                        <div class="profile-pic">
+                          <img class="img--profile" src="http://via.placeholder.com/75x75"/>
+                        </div>
+                        <div class="infobox__detail">
+                          <span class="activity">Victoria Chambers Commented on Youtube's CEO tips</span>
+                          <span class="last-active">4 hours ago</span>
+                        </div>
+                      </div>
+                      <div class="infobox__see-more">
+                        <a class="link link--arrow" href="#">&#8735;</a>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="list__item border--bottom">
+                    <div class="infobox--activity">
+                      <div class="infobox__content">
+                        <div class="profile-pic">
+                          <img class="img--profile" src="http://via.placeholder.com/75x75"/>
+                        </div>
+                        <div class="infobox__detail">
+                          <span class="activity">Victoria Chambers Commented on Youtube's CEO tips</span>
+                          <span class="last-active">4 hours ago</span>
+                        </div>
+                      </div>
+                      <div class="infobox__see-more">
+                        <a class="link link--arrow" href="#">&#8735;</a>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="list__item">
+                    <div class="infobox--activity">
+                      <div class="infobox__content">
+                        <div class="profile-pic">
+                          <img class="img--profile" src="http://via.placeholder.com/75x75"/>
+                        </div>
+                        <div class="infobox__detail">
+                          <span class="activity">Victoria Chambers Commented on Youtube's CEO tips</span>
+                          <span class="last-active">4 hours ago</span>
+                        </div>
+                      </div>
+                      <div class="infobox__see-more">
+                        <a class="link link--arrow" href="#">&#8735;</a>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="grid__row">
+            <div class="g__col--6 border">
+              <div class="message">
+                <div class="section__header">
+                  <h3 class="section__title">Message User</h3>
+                </div>
+                <form class="form--message" method="post">
+                  <input class="input" name="msg__receipient" type="text" placeholder="Search for User">
+                  <textarea class="input" name="msg__text" placeholder="Message for User"></textarea>
+                  <button class="btn btn--default" value="send">Send</button>
+                </form>
+              </div>
+            </div>
+            <div class="g__col--6 border">
+              <div class="setting">
+                <div class="section__header">
+                  <h3 class="section__title">Settings</h3>
+                </div>
+                <form class="form--setting">
+                  <div class="form-group grid__row">
+                    <div class="g__col--5 no-padding">
+                      <label for="email-notifications">Send Email Notifications</label>
+                    </div>
+                    <div class="g__col--7 no-padding">
+                      <label class="switch">
+                        <input id="email-notifications" type="checkbox" name="email-notification" id="send-email-notification" />
+                        <span class="switch__slider"></span>
+                        <span class="switch__text">On</span>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="form-group grid__row">
+                    <div class="g__col--5 no-padding">
+                      <label for="public-profile">set Profile to Public</span>
+                    </div>
+                    <div class="g__col--7 no-padding">
+                      <label class="switch">
+                        <input id="public-profile" type="checkbox" name="public-profile" id="set-public-profile" />
+                        <span class="switch__slider"></span>
+                        <span class="switch__text">On</span>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <select>
+                      <option disabled selected value>-- Select a Time Zone --</option>
+                      <option value="1.0">(GMT+1:00) European Central Time</option>
+                      <option value="2.0">(GMT+2:00) Eastern European Time</option>
+                      <option value="3.0">(GMT+3:00) Eastern African Time</option>
+                      <option value="3.5">(GMT+3:30) Middle East Time</option>
+                      <option value="4.0">(GMT+4:00) Near East Time</option>
+                      <option value="5.0">(GMT+5:00) Pakistan Lahore Time</option>
+                      <option value="5.5">(GMT+5:30) India Standard Time</option>
+                      <option value="6.0">(GMT+6:00) Bangladesh Standard Time</option>
+                      <option value="7.0">(GMT+7:00) Vietnam Standard Time</option>
+                      <option value="8.0">(GMT+8:00) China Taiwan Time</option>
+                      <option value="9.0">(GMT+9:00) Japan Standard Time</option>
+                      <option value="9.5">(GMT+9:30) Australia Central Time</option>
+                      <option value="10.0">(GMT+10:00) Australia Eastern Time</option>
+                      <option value="11.0">(GMT+11:00) Solomon Standard Time</option>
+                      <option value="12.0">(GMT+12:00) New Zealand Standard Time</option>
+                      <option value="-11.0">(GMT-11:00) Midway Islands Time</option>
+                      <option value="-10.0">(GMT-10:00) Hawaii Standard Time</option>
+                      <option value="-9.0">(GMT-9:00) Alaska Standard Time</option>
+                      <option value="-8.0">(GMT-8:00) Pacific Standard Time</option>
+                      <option value="-7.0">(GMT-7:00) Mountain Standard Time</option>
+                      <option value="-6.0">(GMT-6:00) Central Standard Time</option>
+                      <option value="-5.0">(GMT-5:00) Eastern Standard Time</option>
+                      <option value="-4.0">(GMT-4:00) Puerto Rico and US Virgin Islands Time</option>
+                      <option value="-3.5">(GMT-3:30) Canada Newfoundland Time</option>
+                      <option value="-3.0">(GMT-3:00) Argentina Standard Time</option>
+                      <option value="-1.0">(GMT-1:00) Central African Time</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <button class="btn btn--default" value="submit" />Submit</button>
+                    <button class="btn btn--info" value="cancel" />Cancel</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="js/app.min.js"></script>
+</html>
