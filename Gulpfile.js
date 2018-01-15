@@ -6,6 +6,10 @@
 
 var gulp = require('gulp');
 var svgSprite = require('gulp-svg-sprite');
+var concat = require("gulp-concat");
+var minHtml = require("gulp-minify-html");
+var uglify = require("gulp-uglify");
+
 // SVG Config
 var config = {
   mode: {
@@ -33,4 +37,11 @@ gulp.task('sprite-shortcut', function() {
     .pipe(gulp.dest('.'));
 });
 
-gulp.task('default', ['sprite-page', 'sprite-shortcut']);
+gulp.task("html", function() {
+  gulp.src("./main.html")
+  .pipe(minHtml())
+  .pipe(concat("index.html"))
+  .pipe(gulp.dest("./"))
+}); 
+
+gulp.task('default', ['sprite-page', 'sprite-shortcut',"html"]);

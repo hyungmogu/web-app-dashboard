@@ -1,4 +1,19 @@
 //------------------------------------------------------
+// Forms - Message
+//------------------------------------------------------
+
+let checkBeforeSubmit = function() {
+  // prevent form from submitting as default
+  // check if title field has been filled
+    // if not, display message to try again
+  // check if message field has been filled
+    // if not, display message to try again
+  // if all is well, submit to server
+    // if sent, send a message saying the submission is successful
+}
+
+
+//------------------------------------------------------
 // Menu
 //------------------------------------------------------
 const $menu_id = ".btn--menu"
@@ -8,9 +23,23 @@ let toggleMenu = function() {
   $(".main-content").toggleClass("make-room");
 };
 
+//------------------------------------------------------
+// Notifications
+//------------------------------------------------------
+
+let closeNotification = function(event) {
+  // on clicking close button slide up the box
+  // after the animation is complete, hide the box from viewport
+  $(event.target).slideUp().hide();
+}
+
 $(function(){
   $($menu_id).click(function(){
     toggleMenu();
+  });
+
+  $(".notification__close button").on("click", function(event){
+    closeNotification(event);
   });
 });
 
